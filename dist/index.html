@@ -1,0 +1,783 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="img/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#32322D">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#32322D">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#32322D">
+
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
+
+</head>
+
+<body>
+	<div class="preloader"><span>Загрузка...</span></div>
+
+	<header id="home" class="main-header">
+		<div class="top-menu">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-xs-12 col-sm-4 col-md-3 col-lg-2">
+						<a class="logo" href="#"><img src="img/logo.svg" alt="Домашних дел мастера"></a>
+					</div>
+
+					<div class="col-xs-12 col-sm-8 col-md-9 col-lg-3 col-lg-push-7">
+						<div class="phone-header">
+							<div class="phone-header_number">
+								<i class="fa fa-mobile" aria-hidden="true"></i>
+								<a href="tel:+73833801422">+7 (383) 380-14-22</a>
+							</div>
+
+							<div class="phone-header_callback">
+								<a href="#call" data-form="Обратный звонок: шапка" data-text="Заказать звонок">
+									Заказать обратный звонок
+								</a>
+							</div>
+						</div>
+
+						<div class="toggle-mnu-container visible-xs">
+							<a href="#" class="toggle-mnu hidden-sm hidden-md hidden-lg"><span></span></a>
+						</div>
+
+					</div>
+
+					<div class="col-xs-12 col-sm-12 col-md-12 col-lg-7 col-lg-pull-3">
+						<ul class="nav-menu">
+							<li><a href="#home">Главная</a></li>
+							<li><a href="#about">О компании</a></li>
+							<li><a href="#services">Услуги</a></li>
+							<li><a href="#contacts">Контакты</a></li>
+						</ul>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+		<div class="banner">
+			<div class="container">
+
+				<h1>Электрик, сантехник, "муж на час", ремонт и обслуживание систем кондиционирования и вентиляции</h1>
+
+				<ul class="banner-features">
+					<li><i class="fa fa-check" aria-hidden="true"></i> Любые объемы</li>
+					<li><i class="fa fa-check" aria-hidden="true"></i> Срочный вызов</li>
+				</ul>
+
+				<a class="btn btn-l" href="#call" data-form="Вызвать мастера: шапка" data-text="Вызвать мастера">Вызвать мастера</a>
+
+			</div>
+		</div>
+
+		<div id="indexes" class="indexes hidden-xs hidden-sm">
+			<div class="container">
+				<div class="row">
+
+					<div class="col-xs-4">
+						<div class="index-header"><span class="accent ix" data-count="7"></span><span class="stock">лет</span></div>
+						<div class="index-desc">Успешной работы</div>
+					</div>
+
+					<div class="col-xs-4">
+						<div class="index-header"><span class="accent ix" data-count="800"></span><span class="stock">клиентов</span></div>
+						<div class="index-desc">Более 800 довольных клиентов</div>
+					</div>
+
+					<div class="col-xs-4">
+						<div class="index-header"><span class="accent ix" data-count="1200"></span><span class="stock">объектов</span></div>
+						<div class="index-desc">Более 1100 выполненных работ</div>
+					</div>
+
+				</div>
+			</div>
+		</div>
+
+	</header>
+
+	<section class="s-block features">
+
+		<h2>Наши приемущества</h2>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="features-item">
+						<img src="img/guarantee.svg" alt="Гарантия">
+						<h3>Гарантия</h3>
+						<div>Мы уверены в профессионализме наших мастеров и поэтому готовы предоставить гарантию</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="features-item">
+						<img src="img/up.svg" alt="Качество">
+						<h3>Качество</h3>
+						<div>Большое число постоянных клиентов говорит о качестве предоставляемых услуг</div>
+					</div>
+				</div>
+
+				<div class="clearfix visible-sm"></div>
+
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="features-item">
+						<img src="img/worker.svg" alt="Любые объемы">
+						<h3>Любые объемы</h3>
+						<div>Мы не боимся работы, поэтому беремся за объекты любой сложности и объема</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-md-3">
+					<div class="features-item">
+						<img src="img/clock.svg" alt="Срочный вызов">
+						<h3>Срочный вызов</h3>
+						<div>Наши мастера оперативно откликнутся на ваш вызов и устранят проблему</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="about clearfix">
+
+		<div class="about-left">
+			<div class="form-wrap">
+				<div class="row">
+					<form class="form-inline" id="callback">
+
+						<input type="hidden" name="formData" value="Отправить заявку: о нас">
+
+						<div class="form-group">
+							<label for="name" class="col-xs-12 col-md-4">Ф.И.О.</label>
+							<div class="col-xs-12 col-md-8">
+								<input type="text" class="form-control" id="name" name="name" placeholder="" required>
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="phone" class="col-xs-12 col-md-4">Ваш телефон</label>
+							<div class="col-xs-12 col-md-8">
+								<input type="tel" class="form-control" id="phone" name="phone" placeholder="" required pattern="^[ 0-9]+$">
+							</div>
+						</div>
+
+						<div class="form-group">
+							<label for="phone" class="col-xs-12 col-md-4">Дополнительно</label>
+							<div class="col-xs-12 col-md-8">
+								<textarea rows="6" name="text"></textarea>
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-md-8 col-md-offset-4">
+							<button type="submit" name="submit" class="btn btn-l btn-resp">Оставить заявку</button>
+						</div>
+
+					</form>
+				</div>
+			</div>
+		</div>
+		<div id="about" class="about-right">
+			<div class="about-wrap clearfix">
+				<div class="col-xs-12">
+
+					<h3>"Домашних дел мастера" – мы сделаем<br class="hidden-xs"> ваш быт комфортным!</h3>
+
+					<p>
+						Проводим все виды <strong>сантехнических</strong> работ: ремонт систем водоснабжения, отопления, элементов сантехники, устранение неполадок, прочистка сантехники. Все виды работ по <strong>электрике</strong>: установка и подключение осветительных приборов, ремонт или замена электропроводки, розеток, выключателей. Мелкий ремонт и монтаж, украшение и обустройство помещений (<strong>домашний мастер</strong>, <strong>муж на час</strong>). Выполним ремонт, и возьмем на обслуживание системы <strong>вентиляции</strong> и <strong>кондиционирования.</strong>
+					</p>
+
+					<p>
+						Если у вас свой бизнес, то вам не нужно держать в штате сантехника, электрика и например специалиста по вентиляции, мы готовы предоставить вам свои услуги на обслуживания ваших помещений и инженерных систем.
+					</p>
+
+					<a href="#"><strong>Читать подробнее >></strong></a>
+
+				</div>
+			</div>
+		</div>
+
+	</section>
+
+	<section id="services" class="s-block services">
+
+		<h2>Предоставляемые услуги</h2>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<div class="services-item santech">
+						<div class="services-item_header">
+							<img src="img/santech.svg" alt="Сантехник" class="img-svg">
+						</div>
+
+						<div class="services-item_desc">
+							<h3>Сантехник</h3>
+							<div>Любые сантехнические работы, будь то: системы водоснабжения, отопления или канализации</div>
+						</div>
+
+						<div class="services-item_btn">
+							<a class="btn btn-invert btn-blue" href="#pricesantech">Смотреть прайс</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<div class="services-item electric">
+						<div class="services-item_header">
+							<img src="img/electric.svg" alt="Сантехник" class="img-svg">
+						</div>
+
+						<div class="services-item_desc">
+							<h3>Электрик</h3>
+							<div>Все виды работ связанных с осветительными приборами, электропроводкой, розетками, выключателями</div>
+						</div>
+
+						<div class="services-item_btn">
+							<a class="btn btn-invert btn-yellow" href="#">Смотреть прайс</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="clearfix visible-sm"></div>
+
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<div class="services-item dommaster">
+						<div class="services-item_header">
+							<img src="img/dommaster.svg" alt="Сантехник" class="img-svg">
+						</div>
+
+						<div class="services-item_desc">
+							<h3>Домашний мастер</h3>
+							<div>Мелкий ремонт и монтаж, украшение и обустройство помещений, подключение бытовой техники</div>
+						</div>
+
+						<div class="services-item_btn">
+							<a class="btn btn-invert btn-red" href="#">Смотреть прайс</a>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-lg-3">
+					<div class="services-item engineer">
+						<div class="services-item_header">
+							<img src="img/engineer.svg" alt="Сантехник" class="img-svg">
+						</div>
+
+						<div class="services-item_desc">
+							<h3>Инженерные системы</h3>
+							<div>Любые сантехнические работы, будь то: системы водоснабжения, отопления или канализации</div>
+						</div>
+
+						<div class="services-item_btn">
+							<a class="btn btn-invert btn-green" href="#">Смотреть прайс</a>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section class="s-block partners">
+
+		<h2>Наши партнеры</h2>
+
+		<div class="container">
+			<div class="partner-carousel-wrap">
+				<div class="partner-carousel owl-carousel">
+					<div>
+						<img src="img/electrolux.svg" alt="Electrolux" class="img-svg">
+					</div>
+
+					<div>
+						<img src="img/iddis.svg" alt="Iddis" class="img-svg">
+					</div>
+
+					<div>
+						<img src="img/legrand.svg" alt="Legrand" class="img-svg">
+					</div>
+
+					<div>
+						<img src="img/sanita.svg" alt="Sanita Luxe" class="img-svg">
+					</div>
+
+					<div>
+						<img src="img/schneider.svg" alt="Schneider" class="img-svg">
+					</div>
+
+					<div>
+						<img src="img/legrand.svg" alt="Legrand" class="img-svg">
+					</div>
+
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="s-block testimonials">
+
+		<h2>Отзывы наших клиентов</h2>
+
+		<div class="container">
+			<div class="row">
+
+				<div class="col-xs-12 col-md-6 testimonial-item"">
+					<div class="row">
+						<div class="col-cs-12 col-sm-4">
+							<div class="testimonial-img-wrap">
+								<img src="img/t1.png" class="testimonial-img" height="110" width="110">
+							</div>
+						</div>
+
+						<div class="col-xs-12 col-sm-8">
+							<div class="testimonial-text">
+
+								<h3>Короткий заголовок отзыва</h3>
+
+								<p>День добрый! Не раз обращался в эту компанию за помощью в мелком ремонте в квартире.</p>
+
+								<div class="testimonial-autor">Иванов Иван</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ol-xs-12 col-md-6 testimonial-item"">
+					<div class="row">
+						<div class="col-cs-12 col-sm-4">
+							<div class="testimonial-img-wrap">
+								<img src="img/t2.png" class="testimonial-img" height="110" width="110">
+							</div>
+						</div>
+
+						<div class="col-cs-12 col-sm-8">
+							<div class="testimonial-text">
+
+								<h3>Короткий заголовок отзыва</h3>
+
+								<p>День добрый! Не раз обращался в эту компанию за помощью в мелком ремонте в квартире, Огромное спасибо вашему сайту и вашим мастерам!!! Советую всем</p>
+
+								<div class="testimonial-autor">Галина Ивановна</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ol-xs-12 col-md-6 testimonial-item"">
+					<div class="row">
+						<div class="col-cs-12 col-sm-4">
+							<div class="testimonial-img-wrap">
+								<img src="img/t3.png" class="testimonial-img" height="110" width="110">
+							</div>
+						</div>
+
+						<div class="col-cs-12 col-sm-8">
+							<div class="testimonial-text">
+
+								<h3>Короткий заголовок отзыва</h3>
+
+								<p>День добрый!</p>
+
+								<div class="testimonial-autor">Александр Пушкин</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="ol-xs-12 col-md-6 testimonial-item">
+					<div class="row">
+						<div class="col-cs-12 col-sm-4">
+							<div class="testimonial-img-wrap">
+								<img src="img/t4.png" class="testimonial-img" height="110" width="110">
+							</div>
+						</div>
+
+						<div class="col-cs-12 col-sm-8">
+							<div class="testimonial-text">
+
+								<h3>Короткий заголовок отзыва</h3>
+
+								<p>День добрый! Не раз обращался в эту компанию за помощью в мелком ремонте в квартире, Огромное спасибо вашему сайту.</p>
+
+								<div class="testimonial-autor">Олег Онегин</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+			</div>
+		</div>
+	</section>
+
+	<section id="contacts" class="s-block contacts">
+
+		<h2>Контакты</h2>
+
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12 col-sm-6 col-lg-5">
+					<div class="contacts-phone">
+						<a href="tel:+73833801422">
+							<span class="icon-wrap animated"><i class="fa fa-mobile"></i></span>
+							+7 (383) 380-14-22
+						</a>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-sm-6 col-lg-4">
+					<div class="contacts-mail">
+						<a href="mailto:ask@htmlbook.ru">
+							<span class="icon-wrap animated"><i class="fa fa-envelope-o"></i></span>
+							mail@domdelmaster.ru
+						</a>
+					</div>
+				</div>
+
+				<div class="col-xs-12 col-lg-3">
+					<div class="contacts-callback">
+						<a class="btn btn-invert" href="#call" data-form="Отправить заявку: футер" data-text="Отправить заявку">Отправить заявку</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			© Домашних Дел Мастера, 2010-2017
+		</div>
+	</footer>
+
+	<div class="hidden">
+		<div id="call" class="clearfix">
+			<form class="form-inline">
+
+				<input type="hidden" name="admin-data">
+
+				<div class="form-group">
+					<label for="name" class="col-xs-12">Ф.И.О.</label>
+					<div class="col-xs-12">
+						<input type="text" class="form-control" id="name" placeholder="" required>
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="phone" class="col-xs-12">Ваш телефон</label>
+					<div class="col-xs-12">
+						<input type="tel" class="form-control" id="phone" placeholder="" required pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}">
+					</div>
+				</div>
+
+				<div class="form-group">
+					<label for="info" class="col-xs-12">Дополнительно</label>
+					<div class="col-xs-12">
+						<textarea rows="6" name="text" id="info"></textarea>
+					</div>
+				</div>
+
+				<div class="col-xs-12">
+					<button type="submit" class="btn btn-l btn-resp call-go">Оставить заявку</button>
+				</div>
+
+			</form>
+		</div>
+	</div>
+
+	<div class="hidden">
+		<div id="pricesantech" class="price-popup">
+			<div class="price-wrap">
+
+				<div class="price-header">
+					<h2>Услуги сантехника</h2>
+				</div>
+
+				<p class="p-top hidden-xs">Специалисты нашей компании оказывают услуги по ремонту и монтажу сантехники. Это может быть ремонт канализации, полная или частичная замена труб, устранение мелких технических проблем. Мы несем полную ответственность за проведенную работу и обеспечиваем каждого клиента гарантией.</p>
+
+				<h3 class="hidden-xs">Стоимость услуг</h3>
+
+				<ul>
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Владельцам магнита и постоянным клиентам, скидка</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>10%</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Составление сметы на стоймость работ 5000-10000 руб.(далее 5% от стоймости работ)</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>500 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Минимальная стоймость выполнения работ(уточняется по телефону в зависимости от района)</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 500 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Закуп материалов</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 200 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Монтаж раковины</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 500 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Сборка душевой кабины с подключением</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 3000 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Монтаж радиатора отопления</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 800 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Установка унитаза</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 1200 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Монтаж инстоляции</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 3000 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Установка водонагревателя</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 1000 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Установка полотенцесушителя</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 1000 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Ремонт или замена арматуры унитаз</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 500 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Установка смесителя</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 500 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Установка водосчетчика</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 250 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Установка сифона</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 400 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Установка мелких элементов(фильтры,краны, тройники и т.д.)</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 250 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Установка полипропиленовых труб</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 150 руб./м.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Монтаж труб канализации</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 350 руб./м.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Устранение засоров канализации</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 1000 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Демонтаж труб водоснабжения и канализации</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 350 руб./м.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Демонтаж элементов сантехники</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 100 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Вынос мусора и элиментов демонтажа</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>от 300 руб.</strong></div>
+							</div>
+						</div>
+					</li>
+
+					<li>
+						<div class="row">
+							<div class="col-xs-12 col-sm-9">
+								<div class="price-name">Продвижение ваших товаров и услуг</div>
+							</div>
+							<div class="col-xs-12 col-sm-3">
+								<div class="price-index"><strong>Дог.</strong></div>
+							</div>
+						</div>
+					</li>
+				</ul>
+				<div class="price-footer">
+					<p class="p-bottom">Не нашли необходимые услуги? Свяжитесь с нами по телефону <a href="tel:+73833801422"><strong>+7 (383) 380-14-22</strong></a></p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/scripts.min.js"></script>
+
+</body>
+</html>
