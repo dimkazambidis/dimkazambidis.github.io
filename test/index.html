@@ -1,0 +1,1021 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+
+	<meta charset="utf-8">
+
+	<title>Title</title>
+	<meta name="description" content="">
+
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+	<meta property="og:image" content="path/to/image.jpg">
+	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
+	<link rel="apple-touch-icon" href="images/favicon/apple-touch-icon.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/favicon/apple-touch-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
+
+	<!-- Chrome, Firefox OS and Opera -->
+	<meta name="theme-color" content="#000">
+	<!-- Windows Phone -->
+	<meta name="msapplication-navbutton-color" content="#000">
+	<!-- iOS Safari -->
+	<meta name="apple-mobile-web-app-status-bar-style" content="#000">
+
+	<!--<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>-->
+	<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+</head>
+
+<body>
+	<div class="site">
+		<header class="site-header">
+			<div class="container">
+				<div class="site-header-content">
+					<div class="site-header-logo">
+						<img src="images/logo.svg" alt="По адресу">
+						<h1>По адресу</h1>
+						<!-- <div class="site-header-logo-heading">По адресу</div> -->
+						<div class="site-header-logo-desc">Агентство по продаже<br> новостроек в Новосибирске</div>
+						<a href="index.html"></a>
+					</div>
+
+					<nav class="site-header-nav clearfix">
+						<ul>
+							<li><a href="#home-pluses" class="anchor-link">Преимущества новостроек</a></li>
+							<li><a href="#home-catalog" class="anchor-link">Каталог</a></li>
+							<li><a href="#home-contacts" class="anchor-link">Контакты</a></li>
+						</ul>
+						<div class="toggle-menu-container">
+							<a href="#" class="toggle-menu"><span></span></a>
+						</div>
+					</nav>
+
+					<div class="site-header-contacts">
+						<div>
+							<a href="tel:+73833884438">+7 (383) 388-44-38</a>
+							<a href="#callback-popup" data-fancybox data-src="#callback-popup">Заказать звонок</a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</header>
+
+		<div class="site-primary">
+			<main class="site-content">
+				<section class="home-banner">
+					<div class="home-banner-bg imgfill">
+						<img src="images/banner.jpg" alt="">
+					</div>
+
+					<div class="home-banner-content">
+						<div>
+							<div class="container">
+								<h2>В течении <strong>30 минут</strong> подберем<br> <strong>5 вариантов</strong> квартир<br> от <strong>45 застройщиков</strong>, которые<br> подойдут именно вам.</h2>
+								<ul>
+									<li>Составим оптимальный маршрут</li>
+									<li>Привезем на экскурсию в любое удобное для<br> вас время</li>
+								</ul>
+								<a href="#home-quest" class="btn btn_down btn_shadow anchor-link">Подобрать квартиру</a>
+							</div>
+						</div>
+					</div>
+
+					<div class="home-banner-mouse">
+						<div></div>
+					</div>
+				</section>
+
+				<section class="home-features">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-sm-6 col-md-4 col-lg col-xl-2">
+								<div class="home-features-img">
+									<div>
+										<img src="images/house.svg" alt="Проверенные новостройки">
+									</div>
+								</div>
+								<div class="home-features-text">100% проверенные<br> новостройки</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg col-xl-2">
+								<div class="home-features-img">
+									<div>
+										<img src="images/book.svg" alt="Скидки и акции">
+									</div>
+								</div>
+								<div class="home-features-text">Знаем всё про<br> закрытые скидки<br> и акции</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg col-xl-2">
+								<div class="home-features-img">
+									<div>
+										<img src="images/no-entry.svg" alt="Никакой комиссии">
+									</div>
+								</div>
+								<div class="home-features-text">Абсолютно никакой<br> комиссии</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg col-xl-2">
+								<div class="home-features-img">
+									<div>
+										<img src="images/contract.svg" alt="Помощь в получении ипотеки">
+									</div>
+								</div>
+								<div class="home-features-text">Помощь в получении<br> ипотеки</div>
+							</div>
+							<div class="col-sm-6 col-md-4 col-lg col-xl-2">
+								<div class="home-features-img">
+									<div>
+										<img src="images/bus.svg" alt="Трансфер">
+									</div>
+								</div>
+								<div class="home-features-text">Трансфер<br> для иногородних<br> от аэропорта</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="home-quest" id="home-quest">
+					<div class="container">
+						<div class="row justify-content-center">
+							<div class="col-md-10 col-lg-6">
+								<div class="home-quest-desc">
+									<div>
+										<h2>Подберите себе<br> лучшее</h2>
+										<p>Ответьте на вопросы и получите 5 самых<br> интересных вариантов квартиры именно<br> для Вас:</p>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-6">
+								<div class="home-quest-slider">
+									<div class="home-quest-slide">
+										<h3>Скольки комнатную квартиру<br> хотите купить?</h3>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-count-1" type="radio" name="room-count" value="Студию">
+													<label for="room-count-1">Студию</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-count-2" type="radio" name="room-count" value="1-комнатную">
+													<label for="room-count-2">1-комнатную</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-count-3" type="radio" name="room-count" value="2-комнатную студию">
+													<label for="room-count-3">2-комнатную студию</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-count-4" type="radio" name="room-count" value="2-комнатную">
+													<label for="room-count-4">2-комнатную</label>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-count-5" type="radio" name="room-count" value="3-комнатную студию">
+													<label for="room-count-5">3-комнатную студию</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-count-6" type="radio" name="room-count" value="3-комнатную">
+													<label for="room-count-6">3-комнатную</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-count-7" type="radio" name="room-count" value="4-комнатную и более">
+													<label for="room-count-7">4-комнатную и более</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="home-quest-slide">
+										<h3>Для каких целей приобретаете<br> квартиру?</h3>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-target-1" type="radio" name="room-target" value="Для своего проживания">
+													<label for="room-target-1">Для своего проживания</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-target-2" type="radio" name="room-target" value="Для инвестиции (последующая перепродажа)">
+													<label for="room-target-2">Для инвестиции (последующая перепродажа)</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-target-3" type="radio" name="room-target" value="Для сдачи в аренду">
+													<label for="room-target-3">Для сдачи в аренду</label>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-target-4" type="radio" name="room-target" value="Для ребенка">
+													<label for="room-target-4">Для ребенка</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-target-5" type="radio" name="room-target" value="Для родителей">
+													<label for="room-target-5">Для родителей</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-target-6" type="radio" name="room-target" value="Другое">
+													<label for="room-target-6">Другое</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="home-quest-slide">
+										<h3>В каком районе планируете<br> приобрести квартиру?</h3>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-1" type="radio" name="room-area" value="Октябрьский">
+													<label for="room-area-1">Октябрьский</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-2" type="radio" name="room-area" value="Советский">
+													<label for="room-area-2">Советский</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-3" type="radio" name="room-area" value="Первомайский">
+													<label for="room-area-3">Первомайский</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-4" type="radio" name="room-area" value="Центральный">
+													<label for="room-area-4">Центральный</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-5" type="radio" name="room-area" value="Железнодорожный">
+													<label for="room-area-5">Железнодорожный</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-6" type="radio" name="room-area" value="Калининский">
+													<label for="room-area-6">Калининский</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-7" type="radio" name="room-area" value="Заельцовский">
+													<label for="room-area-7">Заельцовский</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-8" type="radio" name="room-area" value="Дзержинский">
+													<label for="room-area-8">Дзержинский</label>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-9" type="radio" name="room-area" value="Ленинский">
+													<label for="room-area-9">Ленинский</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-10" type="radio" name="room-area" value="Кировский">
+													<label for="room-area-10">Кировский</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-11" type="radio" name="room-area" value="Бердск">
+													<label for="room-area-11">Бердск</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-12" type="radio" name="room-area" value="Обь">
+													<label for="room-area-12">Обь</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-13" type="radio" name="room-area" value="Кольцово">
+													<label for="room-area-13">Кольцово</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-14" type="radio" name="room-area" value="Краснообск">
+													<label for="room-area-14">Краснообск</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-area-15" type="radio" name="room-area" value="другое">
+													<label for="room-area-15">другое</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="home-quest-slide">
+										<h3>Когда должен быть сдан<br> жилой комплекс?</h3>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-time-1" type="radio" name="room-time" value="Уже сдан">
+													<label for="room-time-1">Уже сдан</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-time-2" type="radio" name="room-time" value="До конца 2018">
+													<label for="room-time-2">До конца 2018</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-time-3" type="radio" name="room-time" value="1-ая половина 2019">
+													<label for="room-time-3">1-ая половина 2019</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-time-4" type="radio" name="room-time" value="2-ая половина 2019">
+													<label for="room-time-4">2-ая половина 2019</label>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-time-5" type="radio" name="room-time" value="1-ая половина 2020">
+													<label for="room-time-5">1-ая половина 2020</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-time-6" type="radio" name="room-time" value="2-ая половина 2020">
+													<label for="room-time-6">2-ая половина 2020</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-time-7" type="radio" name="room-time" value="1-ая половина 2021">
+													<label for="room-time-7">1-ая половина 2021</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-time-8" type="radio" name="room-time" value="2-ая половина 2021">
+													<label for="room-time-8">2-ая половина 2021</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="home-quest-slide">
+										<h3>За какаю стоимость планируете<br> приобрести квартиру?</h3>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-price-1" type="radio" name="room-price" value="до 1 млн.руб">
+													<label for="room-price-1">до 1 млн.руб</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-price-2" type="radio" name="room-price" value="до 1 – 1,5 млн.руб">
+													<label for="room-price-2">до 1 – 1,5 млн.руб</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-price-3" type="radio" name="room-price" value="до 1,5 – 2 млн.руб">
+													<label for="room-price-3">до 1,5 – 2 млн.руб</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-price-4" type="radio" name="room-price" value="до 2 – 2,5 млн.руб">
+													<label for="room-price-4">до 2 – 2,5 млн.руб</label>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-price-5" type="radio" name="room-price" value="до 2,5 – 3 млн.руб">
+													<label for="room-price-5">до 2,5 – 3 млн.руб</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-price-6" type="radio" name="room-price" value="до 3 – 3,5 млн.руб">
+													<label for="room-price-6">до 3 – 3,5 млн.руб</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-price-7" type="radio" name="room-price" value="3,5 – 4 млн.руб">
+													<label for="room-price-7">3,5 – 4 млн.руб</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-price-8" type="radio" name="room-price" value="более 4 млн.руб">
+													<label for="room-price-8">более 4 млн.руб</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="home-quest-slide" data-tax="pay">
+										<h3>Какой способ оплаты<br> Вы планируете использовать?</h3>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-pay-1" type="radio" name="room-pay" value="Наличный расчет">
+													<label for="room-pay-1">Наличный расчет</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-pay-2" type="radio" name="room-pay" value="Ипотека">
+													<label for="room-pay-2">Ипотека</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-pay-3" type="radio" name="room-pay" value="Рассрочка">
+													<label for="room-pay-3">Рассрочка</label>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-pay-4" type="radio" name="room-pay" value="Материнский капитал">
+													<label for="room-pay-4">Материнский капитал</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-pay-5" type="radio" name="room-pay" value="Продажа своего">
+													<label for="room-pay-5">Продажа своего</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="home-quest-slide" data-tax="term">
+										<h3>Укажите, когда Вы планируете<br> приобрести квартиру?</h3>
+										<div class="row">
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-term-1" type="radio" name="room-term" value="В течение месяца">
+													<label for="room-term-1">В течение месяца</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-term-2" type="radio" name="room-term" value="В течение 3-х месяцев">
+													<label for="room-term-2">В течение 3-х месяцев</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-term-3" type="radio" name="room-term" value="В течение полугода">
+													<label for="room-term-3">В течение полугода</label>
+												</div>
+											</div>
+											<div class="col-sm-6">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-term-4" type="radio" name="room-term" value="В течение года">
+													<label for="room-term-4">В течение года</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-term-5" type="radio" name="room-term" value="Как только продам свое жилье">
+													<label for="room-term-5">Как только продам свое жилье</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="home-quest-slide">
+										<h3>Хотите ли Вы получить<br> квартиру со скидкой?</h3>
+										<div class="row">
+											<div class="col-12">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-sale-3" type="radio" name="room-sale" value="Да">
+													<label for="room-sale-3">Да</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-sale-4" type="radio" name="room-sale" value="Нет">
+													<label for="room-sale-4">Нет</label>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="home-quest-slide">
+										<h3>Спасибо за ответы</h3>
+										<div class="row">
+											<div class="col-12">
+												<div class="input-container">
+													<input type="text" name="quest-name" placeholder="Ваше имя*">
+												</div>
+												<div class="input-container">
+													<input type="email" name="quest-email" placeholder="Ваш e-mail">
+												</div>
+												<div class="input-container">
+													<input type="tel" name="quest-tel" placeholder="Ваш телефон*">
+												</div>
+												<div class="input-container">
+													<label for="submit" class="submit-container btn_next">
+														Отправить<input id="submit" type="submit" value="Отправить">
+													</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="home-quest-control">
+									<div class="row">
+										<div class="col-sm-6 col-lg-7 col-xl-6">
+											<div class="row home-quest-btns">
+												<div class="col-4">
+													<a href="#" class="btn btn_prev btn_dark btn_small disabled"></a>
+												</div>
+												<div class="col-8">
+													<a href="#" class="btn btn_next btn_dark btn_small">Далее</a>
+												</div>
+											</div>
+										</div>
+										<div class="col-sm-6 col-lg-5 col-xl-6">
+											<div class="home-quest-indicator">
+												<div class="home-quest-indicator-line">
+													<div class="home-quest-indicator-bar"></div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="home-quest-slide-hidden credit">
+									<div class="home-quest-slide" data-tax="credit" data-role="hidden">
+										<h3>Получено ли кредитное решение?</h3>
+										<div class="row">
+											<div class="col-12">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-credit-1" type="radio" name="room-credit" value="Да">
+													<label for="room-credit-1">Да</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-credit-2" type="radio" name="room-credit" value="Нет">
+													<label for="room-credit-2">Нет</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="home-quest-slide-hidden bank">
+									<div class="home-quest-slide" data-tax="bank" data-role="hidden">
+										<h3>В каком банке?</h3>
+										<div class="row">
+											<div class="col-12">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-bank-1" type="radio" name="room-bank" value="Да">
+													<label for="room-bank-1">Сбербанк</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-bank-2" type="radio" name="room-bank" value="Нет">
+													<label for="room-bank-2">ВТБ</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-bank-3" type="radio" name="room-bank" value="Нет">
+													<label for="room-bank-3">Альфа-Банк</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="home-quest-slide-hidden help">
+									<div class="home-quest-slide" data-tax="help" data-role="hidden">
+										<h3>Требуется ли помощь в получении?</h3>
+										<div class="row">
+											<div class="col-12">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-help-1" type="radio" name="room-help" value="Да">
+													<label for="room-help-1">Да</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-help-2" type="radio" name="room-help" value="Нет">
+													<label for="room-help-2">Нет</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="home-quest-slide-hidden helppay">
+									<div class="home-quest-slide" data-tax="helppay" data-role="hidden">
+										<h3>Требуется ли помощь в продаже своего жилья?</h3>
+										<div class="row">
+											<div class="col-12">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-helppay-1" type="radio" name="room-helppay" value="Да">
+													<label for="room-helppay-1">Да</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-helppay-2" type="radio" name="room-helppay" value="Нет">
+													<label for="room-helppay-2">Нет</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+
+								<div class="home-quest-slide-hidden helppay2">
+									<div class="home-quest-slide" data-tax="helppay2" data-role="hidden">
+										<h3>Требуется ли помощь в продаже своего жилья?</h3>
+										<div class="row">
+											<div class="col-12">
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-helppay2-1" type="radio" name="room-helppay2" value="Да">
+													<label for="room-helppay2-1">Да</label>
+												</div>
+												<div class="input-container">
+													<input class="checkbox_yellow" id="room-helppay2-2" type="radio" name="room-helppay2" value="Нет">
+													<label for="room-helppay2-2">Нет</label>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="home-welcome">
+					<div class="home-welcome-bg imgfill">
+						<img src="images/welcome-bg.jpg" alt="Здание">
+					</div>
+					<div class="home-welcome-content">
+						<div class="container">
+							<h2>“ Если <strong>вы ищите</strong> квартиру в новостройке,<br> тогда вы обратились <strong>по адресу!</strong> ”</h2>
+						</div>
+					</div>
+				</section>
+
+				<section class="home-pluses" id="home-pluses">
+					<div class="container">
+						<h2>Преимущества приобретения квартиры<br> в новостройке</h2>
+						<div class="row justify-content-center">
+							<div class="col-md-8 col-lg-6 col-xl-5">
+								<div class="home-pluses-item">
+									<input type="checkbox" id="card1" class="more" aria-hidden="true">
+									<div class="wrap">
+										<div class="home-pluses-item-front">
+											<div class="home-pluses-item-bg" style="background-image: url(images/pluses-1.jpg);"></div>
+											<div class="home-pluses-item-front-content">
+												<div>
+													<h3>Комфорт</h3>
+													<label for="card1" class="btn btn_next btn_white btn_small" aria-hidden="true">Подробнее</label>
+												</div>
+											</div>
+										</div>
+										<div class="home-pluses-item-back">
+											<div class="home-pluses-item-front-content">
+												<h3>Комфорт</h3>
+												<ul>
+													<li>Стабильный прирост на 25-30% в стоимости в год</li>
+													<li>Возможность сдачи в аренду</li>
+													<li>“Твердая” валюта</li>
+													<li>“Антикризисное” предложение</li>
+													<li>Покупка на стадии строительства значительно удешевляет стоимость вложения</li>
+												</ul>
+												<label for="card1" class="btn btn_prev btn_dark btn_small" aria-hidden="true"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-8 col-lg-6 col-xl-5">
+								<div class="home-pluses-item">
+									<input type="checkbox" id="card2" class="more" aria-hidden="true">
+									<div class="wrap">
+										<div class="home-pluses-item-front">
+											<div class="home-pluses-item-bg" style="background-image: url(images/pluses-2.jpg);"></div>
+											<div class="home-pluses-item-front-content">
+												<div>
+													<h3>Ликвидность</h3>
+													<label for="card2" class="btn btn_next btn_white btn_small" aria-hidden="true">Подробнее</label>
+												</div>
+											</div>
+										</div>
+										<div class="home-pluses-item-back">
+											<div class="home-pluses-item-front-content">
+												<h3>Ликвидность</h3>
+												<ul>
+													<li>Стабильный прирост на 25-30% в стоимости в год</li>
+													<li>Возможность сдачи в аренду</li>
+													<li>“Твердая” валюта</li>
+													<li>“Антикризисное” предложение</li>
+													<li>Покупка на стадии строительства значительно удешевляет стоимость вложения</li>
+												</ul>
+												<label for="card2" class="btn btn_prev btn_dark btn_small" aria-hidden="true"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-8 col-lg-6 col-xl-5">
+								<div class="home-pluses-item">
+									<input type="checkbox" id="card3" class="more" aria-hidden="true">
+									<div class="wrap">
+										<div class="home-pluses-item-front">
+											<div class="home-pluses-item-bg" style="background-image: url(images/pluses-3.jpg);"></div>
+											<div class="home-pluses-item-front-content">
+												<div>
+													<h3>Доступность</h3>
+													<label for="card3" class="btn btn_next btn_white btn_small" aria-hidden="true">Подробнее</label>
+												</div>
+											</div>
+										</div>
+										<div class="home-pluses-item-back">
+											<div class="home-pluses-item-front-content">
+												<h3>Доступность</h3>
+												<ul>
+													<li>Стабильный прирост на 25-30% в стоимости в год</li>
+													<li>Возможность сдачи в аренду</li>
+													<li>“Твердая” валюта</li>
+													<li>“Антикризисное” предложение</li>
+													<li>Покупка на стадии строительства значительно удешевляет стоимость вложения</li>
+												</ul>
+												<label for="card3" class="btn btn_prev btn_dark btn_small" aria-hidden="true"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="col-md-8 col-lg-6 col-xl-5">
+								<div class="home-pluses-item">
+									<input type="checkbox" id="card4" class="more" aria-hidden="true">
+									<div class="wrap">
+										<div class="home-pluses-item-front">
+											<div class="home-pluses-item-bg" style="background-image: url(images/pluses-4.jpg);"></div>
+											<div class="home-pluses-item-front-content">
+												<div>
+													<h3>Безопасность</h3>
+													<label for="card4" class="btn btn_next btn_white btn_small" aria-hidden="true">Подробнее</label>
+												</div>
+											</div>
+										</div>
+										<div class="home-pluses-item-back">
+											<div class="home-pluses-item-front-content">
+												<h3>Безопасность</h3>
+												<ul>
+													<li>Стабильный прирост на 25-30% в стоимости в год</li>
+													<li>Возможность сдачи в аренду</li>
+													<li>“Твердая” валюта</li>
+													<li>“Антикризисное” предложение</li>
+													<li>Покупка на стадии строительства значительно удешевляет стоимость вложения</li>
+												</ul>
+												<label for="card4" class="btn btn_prev btn_dark btn_small" aria-hidden="true"></label>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="home-form" style="background-image: url(images/form-bg.jpg);">
+					<div class="home-form-bg"></div>
+					<div class="container">
+						<h2>Хотите узнать все акции и специальные<br> предложения по новостройкам?</h2>
+
+						<form action="#">
+							<div class="row justify-content-center">
+								<div class="col-md-12 col-lg-8 col-xl-12">
+									<div class="row">
+										<div class="col-sm-6 col-xl-3">
+											<input type="text" class="input_invert" name="home-form-name" placeholder="Как к вам обращаться?*">
+										</div>
+										<div class="col-sm-6 col-xl-3">
+											<input type="tel" class="input_invert" name="home-form-tel" placeholder="Контактный номер телефона*">
+										</div>
+										<div class="col-sm-6 col-xl-3">
+											<div class="input-dropdawn input-dropdawn_invert">
+												<div>"Зеленый берег"</div>
+												<input type="hidden">
+												<ul>
+													<li data-val="1">"Зеленый берег"</li>
+													<li data-val="2">"Зеленый берег1"</li>
+													<li data-val="3">"Зеленый берег2"</li>
+													<li data-val="4">"Зеленый берег3"</li>
+													<li data-val="5">"Зеленый берег4"</li>
+												</ul>
+											</div>
+										</div>
+										<div class="col-sm-6 col-xl-3">
+											<label for="home-form-submit" class="submit-container btn_next btn_shadow">
+												Подобрать квартиру<input id="home-form-submit" type="submit" value="Подобрать квартиру">
+											</label>
+										</div>
+										<div class="col-12">
+											<input class="checkbox_invert" id="agree-check" type="checkbox" name="phone-check" value="checkbox" checked>
+											<label for="agree-check">Я согласен на <a href="#" target="_blank">обработку персональных данных</a></label>
+										</div>
+									</div>
+								</div>
+							</div>
+						</form>
+					</div>
+				</section>
+
+				<section class="home-catalog" id="home-catalog">
+					<div class="container">
+						<h2>Наши новостройки</h2>
+						<div class="row">
+							<div class="col-sm-6 col-lg-4">
+								<a class="home-catalog-item" href="#" data-fancybox data-src="#catalog-popup">
+									<span class="home-catalog-item-img imgfill">
+										<img src="images/nefr.jpg" alt="ЖК “Нефиговая получилась высотка”">
+									</span>
+									ЖК “Нефиговая получилась высотка”
+								</a>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<a class="home-catalog-item" href="#" data-fancybox data-src="#catalog-popup">
+									<span class="home-catalog-item-img imgfill">
+										<img src="images/nefr.jpg" alt="ЖК “Нефиговая получилась высотка”">
+									</span>
+									ЖК “Нефиговая получилась высотка”
+								</a>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<a class="home-catalog-item" href="#" data-fancybox data-src="#catalog-popup">
+									<span class="home-catalog-item-img imgfill">
+										<img src="images/nefr.jpg" alt="ЖК “Нефиговая получилась высотка”">
+									</span>
+									ЖК “Нефиговая получилась высотка”
+								</a>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<a class="home-catalog-item" href="#" data-fancybox data-src="#catalog-popup">
+									<span class="home-catalog-item-img imgfill">
+										<img src="images/nefr.jpg" alt="ЖК “Нефиговая получилась высотка”">
+									</span>
+									ЖК “Нефиговая получилась высотка”
+								</a>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<a class="home-catalog-item" href="#" data-fancybox data-src="#catalog-popup">
+									<span class="home-catalog-item-img imgfill">
+										<img src="images/nefr.jpg" alt="ЖК “Нефиговая получилась высотка”">
+									</span>
+									ЖК “Нефиговая получилась высотка”
+								</a>
+							</div>
+							<div class="col-sm-6 col-lg-4">
+								<a class="home-catalog-item" href="#" data-fancybox data-src="#catalog-popup">
+									<span class="home-catalog-item-img imgfill">
+										<img src="images/nefr.jpg" alt="ЖК “Нефиговая получилась высотка”">
+									</span>
+									ЖК “Нефиговая получилась высотка”
+								</a>
+							</div>
+						</div>
+						<div class="home-catalog-control">
+							<div class="row">
+								<div class="col-3 col-md-2"><a href="#" class="btn btn_prev btn_dark btn_small"></a></div>
+								<div class="col">
+									<div class="pagination">
+										<span class="page-numbers current">1</span>
+										<a class="page-numbers" href="#">2</a>
+										<a class="page-numbers" href="#">3</a>
+										<a class="page-numbers" href="#">4</a>
+										<a class="page-numbers" href="#">5</a>
+										<a class="page-numbers" href="#">...</a>
+									</div>
+								</div>
+								<div class="col-3 col-md-2"><a href="#" class="btn btn_next btn_dark btn_small">Далее</a></div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="home-contacts" id="home-contacts">
+					<div class="container">
+						<div class="home-contacts-container">
+							<div class="home-contacts-content" itemscope itemtype="http://schema.org/Organization">
+								<img src="images/logo-invert.svg" alt="По адресу">
+								<div class="home-contacts-heading">
+									<h2 itemprop="name">По адресу</h2>
+									<div>Агентство по продаже<br> новостроек в Новосибирске</div>
+								</div>
+								<div class="home-contacts-adress" itemprop="address" itemscope itemtype="http://schema.org/PostalAddress">
+									г. <span itemprop="addressLocality">Новосибирск</span>.<br>
+									<span itemprop="streetAddress">ул Дружелюбного соседа, 174,<br> оф. 666</span>
+								</div>
+								<a class="home-contacts-tel" href="tel:+73833884438" itemprop="telephone">+7(383) 388-44-38</a><br>
+								<a class="home-contacts-mail" href="email:vratavad@rambler.ru" itemprop="email">vratavad@rambler.ru</a>
+							</div>
+
+							<div class="home-contacts-desc">Если <strong>вы ищите</strong> квартиру в новостройке,<br> тогда вы обратились <strong>по адресу!</strong></div>
+							<a href="#home-quest" class="btn btn_next btn_shadow anchor-link anchor-link">Подобрать квартиру</a>
+						</div>
+					</div>
+					<div id="map"></div>
+				</section>
+
+				<div class="catalog-popup" id="catalog-popup">
+					<div class="container">
+						<div class="row justify-content-center catalog-popup-gallery">
+							<div class="col-md-10 col-lg-8">
+								<div class="catalog-popup-img-big imgfillresp">
+									<img src="images/popup-big-1.jpg" alt="">
+								</div>
+							</div>
+							<div class="col-md-10 col-lg-2 catalog-popup-img-list">
+								<div class="row">
+									<div class="col-4 col-lg-12 catalog-popup-img-item">
+										<a href="images/popup-big-1.jpg" class="catalog-popup-img-small imgfillresp">
+											<img src="images/popup-small-1.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-4 col-lg-12 catalog-popup-img-item">
+										<a href="images/popup-big-2.jpg" class="catalog-popup-img-small imgfillresp">
+											<img src="images/popup-small-2.jpg" alt="">
+										</a>
+									</div>
+									<div class="col-4 col-lg-12 catalog-popup-img-item">
+										<a href="images/popup-big-3.jpg" class="catalog-popup-img-small imgfillresp">
+											<img src="images/popup-small-3.jpg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="catalog-popup-content">
+							<div class="row justify-content-center">
+								<div class="col-md-7 col-lg-5">
+									<div class="catalog-popup-desc">
+										<div class="catalog-popup-desc-name">Микрорайон</div>
+										<h3>“Европейский берег”</h3>
+										<table>
+											<tr>
+												<td>Застройщик</td>
+												<td>ООО “В душе не знаю”</td>
+											</tr>
+											<tr>
+												<td>Район</td>
+												<td>Задрипщенский</td>
+											</tr>
+											<tr>
+												<td>Адрес</td>
+												<td>Бульвар Проглотов, 98 - 102</td>
+											</tr>
+											<tr>
+												<td>Срок сдачи</td>
+												<td>2 квартал 2020 года</td>
+											</tr>
+											<tr>
+												<td>Стоимость</td>
+												<td>от 56 т.р/м2</td>
+											</tr>
+										</table>
+									</div>
+								</div>
+
+								<div class="col-md-7 col-lg-5 col-xl-4 offset-xl-1">
+									<div class="catalog-popup-form">
+										<h3>Форма заявки</h3>
+										<form action="#">
+											<input type="text" name="home-form-name" placeholder="Как к вам обращаться?*">
+
+											<input type="tel" name="home-form-tel" placeholder="Контактный номер телефона*">
+
+											<input id="agree-check-gallery" type="checkbox" name="phone-check" value="checkbox" checked>
+											<label for="agree-check-gallery">Я согласен на <a href="#" target="_blank">обработку персональных данных</a></label>
+
+											<label for="home-form-submit" class="submit-container btn_next btn_shadow">
+												Подобрать квартиру<input id="home-form-submit" type="submit" value="Подобрать квартиру">
+											</label>
+										</form>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="callback-popup" id="callback-popup">
+					<h2>Заказать звонок</h2>
+					<p>Заполните форму, и наш менеджер свяжется<br> с вами в ближайшее время</p>
+					<form action="#">
+						<input type="text" name="home-form-name" placeholder="Как к вам обращаться?*">
+
+						<input type="tel" name="home-form-tel" placeholder="Контактный номер телефона*">
+
+						<input id="agree-check-callback" type="checkbox" name="phone-check" value="checkbox" checked>
+						<label for="agree-check-callback">Я согласен на <a href="#" target="_blank">обработку персональных данных</a></label>
+
+						<label for="home-form-submit" class="submit-container btn_next btn_shadow">
+							Подобрать квартиру<input id="home-form-submit" type="submit" value="Подобрать квартиру">
+						</label>
+					</form>
+				</div>
+
+				<div class="callback-popup" id="thanks-popup">
+					<h2>Спасибо за заявку</h2>
+					<p>Наш расторопный менеджер свяжется с вами<br> в ближайшее время, а значит кваритра<br> вашей мечты уже совсем близко</p>
+				</div>
+			</main>
+		</div>
+
+		<footer class="site-footer">
+	<div class="site-footer-top">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-7 site-footer-top-left">
+					<div class="site-footer-logo">
+						<img src="images/logo.svg" alt="По адресу">
+						<div class="site-header-logo-heading">По адресу</div>
+						<div class="site-header-logo-desc">Агентство по продаже<br> новостроек в Новосибирске</div>
+						<a href="index.html"></a>
+					</div>
+
+					<div class="site-footer-desc">Если <strong>вы ищите</strong> квартиру в новостройке,<br> тогда вы обратились <strong>по адресу!</strong></div>
+				</div>
+				<div class="col-lg-5 site-footer-top-right">
+					<div class="site-footer-adress">
+						г. <span>Новосибирск</span>.<br>
+						<span>ул Дружелюбного соседа, 174,<br> оф. 666</span>
+					</div>
+					<a class="site-footer-tel" href="tel:+73833884438">+7(383) 388-44-38</a><br>
+					<a class="site-footer-mail" href="email:vratavad@rambler.ru">vratavad@rambler.ru</a>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="site-footer-bottom">
+		<div class="container">
+			<div class="row">
+				<div class="col-sm-7 site-footer-copy">© 2018 По адресу. Все права защищены.</div>
+				<div class="col-sm-5 site-footer-dev">
+					<span>Разработано: <a href="https://dafocus.ru" target="_blank" rel="nofollow noopener"><img src="images/dev-logo.png" alt="Focus"></a></span>
+				</div>
+			</div>
+		</div>
+	</div>
+</footer>
+	</div>
+
+	<link rel="stylesheet" href="css/style.css">
+	<script src="js/scripts.js"></script>
+</body>
+</html>
