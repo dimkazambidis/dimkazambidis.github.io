@@ -182,6 +182,16 @@ $(function() {
 		}
 	});
 
+	//----- Fixed header -----//
+	$(window).on('scroll', function() {
+		var scr = $('html, body').scrollTop();
+		if (scr > 160) {
+			$('.site-header').addClass('site-header_fixed');
+		} else if (scr == 0) {
+			$('.site-header').removeClass('site-header_fixed');
+		}
+	});
+
 	//----- Toggle menu -----//
 	$('a.toggle-menu').on('click', function() {
 		$('.site').toggleClass('site_menu-on');
