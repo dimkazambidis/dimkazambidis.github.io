@@ -183,13 +183,19 @@ $(function() {
 	});
 
 	//----- Fixed header -----//
-	$(window).on('scroll', function() {
+	function fixedHeader(height) {
 		var scr = $('html, body').scrollTop();
-		if (scr > 160) {
+		if (scr > height) {
 			$('.site-header').addClass('site-header_fixed');
 		} else if (scr == 0) {
 			$('.site-header').removeClass('site-header_fixed');
 		}
+	}
+
+	fixedHeader(160);
+
+	$(window).on('scroll', function() {
+		fixedHeader(160);
 	});
 
 	//----- Toggle menu -----//
@@ -308,7 +314,7 @@ $(function() {
 	//----- Anchor link -----//
 	$('.anchor-link').on('click', function() {
 		var thisId = $(this).attr('href');
-		var elScroll = $(thisId).offset().top;
+		var elScroll = $(thisId).offset().top - 60;
 		if($(window).width() <= 1230) {
 			$('.site').removeClass('site_menu-on');
 		}
