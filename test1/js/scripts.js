@@ -492,6 +492,18 @@ $(function() {
 
 	alignHeight('.home-spec-item');
 
+	//===== Spec content =====//
+	$('.home-ready-item-more').on('click', function() {
+		$(this).closest('.home-ready-item').addClass('active')
+	});
+
+	$('.home-ready-item-close').on('click', function() {
+		$(this).closest('.home-ready-item').removeClass('active');
+	});
+	// $('.home-ready-item').on('click', function(e) {
+	// 	$(this).toggleClass('active');
+	// });
+
 	//===== Qwiz slider =====//
 	$('.home-qwiz-slider').slick({
 		adaptiveHeight: true,
