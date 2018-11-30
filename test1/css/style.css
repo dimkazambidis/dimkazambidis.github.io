@@ -5394,6 +5394,16 @@ a.back::before {
           background-size: cover;
   background-position: 50% 50%;
   margin-bottom: 24px;
+  overflow: hidden;
+}
+
+.home-folio-item a {
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
 }
 
 .home-folio-item h3 {
@@ -5720,6 +5730,65 @@ a.home-contacts-mail {
   max-width: 320px;
   margin-left: auto;
   margin-right: auto;
+}
+
+.fancybox-button--close {
+  opacity: 0.5;
+  background-color: transparent;
+}
+
+.fancybox-button--close:hover {
+  opacity: 1;
+}
+
+.fancybox-button--close::before, .fancybox-button--close::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 6px;
+  right: 6px;
+  height: 2px;
+  margin-top: -1px;
+  background-color: #333;
+}
+
+.fancybox-button--close::before {
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
+}
+
+.fancybox-button--close::after {
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
+}
+
+.fancybox-button--arrow_right, .fancybox-button--arrow_left {
+  opacity: 0.5 !important;
+  background-color: #e8cd76;
+  text-align: center;
+  font-size: 24px;
+  line-height: 38px;
+  text-decoration: none;
+}
+
+.fancybox-button--arrow_right:hover, .fancybox-button--arrow_left:hover {
+  text-decoration: none;
+  opacity: 1 !important;
+}
+
+.fancybox-button--arrow_right::before, .fancybox-button--arrow_left::before {
+  font-family: "icons", sans-serif;
+  color: #333;
+}
+
+.fancybox-button--arrow_right::before {
+  content: "\e902";
+}
+
+.fancybox-button--arrow_left::before {
+  content: "\e901";
 }
 
 /*=============  Footert  =============*/
