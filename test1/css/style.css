@@ -5266,6 +5266,7 @@ a.back::before {
 }
 
 .home-ready-item-close {
+  display: none;
   position: absolute;
   width: 22px;
   height: 22px;
@@ -6274,6 +6275,9 @@ a.home-contacts-mail {
   }
   .site-header-toggle-info a {
     margin-top: 10px;
+  }
+  .home-ready-item-close {
+    display: block;
   }
   .home-ready-item:hover .home-ready-item-content {
     -webkit-transform: translateY(500px);
