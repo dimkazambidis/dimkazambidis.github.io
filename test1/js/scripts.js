@@ -470,7 +470,19 @@ $(function() {
 		speed: 600,
 		cssEase: 'cubic-bezier(0.215, 0.61, 0.355, 1)',
 		arrows: false,
-		centerPadding: '0px'
+		centerPadding: '0px',
+		dots: true,
+		appendDots: $('.home-spec-list-dots'),
+		responsive: [
+			{
+				breakpoint: 576,
+				settings: {
+					arrows: true,
+					prevArrow: '<button type="button" class="home-spec-list-prev"><span class="icon-arrow-left"></span></button>',
+					nextArrow: '<button type="button" class="home-spec-list-next"><span class="icon-arrow-right"></span></button>',
+				}
+			}
+		]
 	});
 
 	$('.home-spec-item').on('click', function() {
