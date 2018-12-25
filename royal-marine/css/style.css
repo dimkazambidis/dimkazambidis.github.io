@@ -5066,10 +5066,10 @@ blockquote::before {
 }
 
 .home-welcome.animate .home-welcome-img::after {
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
   -webkit-animation-name: slideRight;
@@ -5566,10 +5566,10 @@ a.main-banner-anchor:hover {
 }
 
 .welcome-pattern.animate .container div {
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }
@@ -6009,10 +6009,10 @@ a.main-banner-anchor:hover {
 }
 
 .bankets-pattern.animate .container div {
-  -webkit-animation-duration: 1.5s;
-          animation-duration: 1.5s;
-  -webkit-animation-timing-function: linear;
-          animation-timing-function: linear;
+  -webkit-animation-duration: 3s;
+          animation-duration: 3s;
+  -webkit-animation-timing-function: ease-out;
+          animation-timing-function: ease-out;
   -webkit-animation-fill-mode: both;
           animation-fill-mode: both;
 }

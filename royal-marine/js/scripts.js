@@ -289,7 +289,8 @@ $(function() {
 
 	//===== Scrolling animation effects =====//
 	$('[data-animate]').waypoint(function() {
-		$(this.element).toggleClass('animate');
+		$(this.element).addClass('animate');
+		this.destroy();
 	}, {
 		offset: '65%'
 	});
@@ -302,7 +303,7 @@ $(function() {
 		if (queueTimer) return // We're already processing the queue
 		queueTimer = window.setInterval(function () {
 			if (itemQueue.length) {
-				$(itemQueue.shift()).toggleClass('animate');
+				$(itemQueue.shift()).addClass('animate');
 				processItemQueue();
 			}
 			else {
@@ -315,7 +316,7 @@ $(function() {
 	$('[data-animate-step]').waypoint(function () {
 		itemQueue.push(this.element);
 		processItemQueue();
-		console.log(1);
+		this.destroy();
 	}, {
 		offset: '65%'
 	})
