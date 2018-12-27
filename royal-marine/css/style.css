@@ -9512,10 +9512,6 @@ button.fancybox-button.button_gal-close:focus {
   #single-item-popup, #pay-popup {
     max-width: 540px;
   }
-  #single-item-popup button.fancybox-button.button_gal-close, #pay-popup button.fancybox-button.button_gal-close {
-    top: -36px;
-    right: 0;
-  }
   .single-item-popup-big {
     width: 100%;
   }
