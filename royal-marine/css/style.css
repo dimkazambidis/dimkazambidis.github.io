@@ -5841,8 +5841,9 @@ a.main-banner-anchor:hover {
   z-index: 1;
 }
 
-.bankets-halls-item > img {
-  width: 100%;
+.bankets-halls-item .bankets-halls-item-bg {
+  position: relative;
+  height: 340px;
   -webkit-transform-origin: 0 100%;
       -ms-transform-origin: 0 100%;
           transform-origin: 0 100%;
@@ -5856,11 +5857,15 @@ a.main-banner-anchor:hover {
   transition: transform 6s ease-out, -webkit-transform 6s ease-out;
 }
 
+.bankets-halls-item .bankets-halls-item-bg img {
+  width: 100%;
+}
+
 .bankets-halls-item:hover::before {
   background-color: rgba(0, 0, 0, 0.3);
 }
 
-.bankets-halls-item:hover > img {
+.bankets-halls-item:hover .bankets-halls-item-bg {
   -webkit-transform: scale(1.1);
       -ms-transform: scale(1.1);
           transform: scale(1.1);
@@ -6420,6 +6425,7 @@ button.fancybox-button.button_gal-close {
   top: 12px;
   right: 12px;
   cursor: pointer;
+  background-color: #fff;
 }
 
 button.fancybox-button.button_gal-close::before, button.fancybox-button.button_gal-close::after {
@@ -6430,7 +6436,7 @@ button.fancybox-button.button_gal-close::before, button.fancybox-button.button_g
   left: 0;
   width: 100%;
   height: 1px;
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 button.fancybox-button.button_gal-close::before {
@@ -6443,6 +6449,10 @@ button.fancybox-button.button_gal-close::after {
   -webkit-transform: rotate(-45deg);
       -ms-transform: rotate(-45deg);
           transform: rotate(-45deg);
+}
+
+button.fancybox-button.button_gal-close:focus {
+  outline: none;
 }
 
 .boat-our {
@@ -7904,12 +7914,11 @@ button.fancybox-button.button_gal-close::after {
   padding-right: 0;
   padding-bottom: 16px;
   overflow: visible;
-  margin-top: 36px;
 }
 
 #single-item-popup button.fancybox-button.button_gal-close {
-  top: -36px;
-  right: -36px;
+  top: 0px;
+  right: 0px;
 }
 
 .slick-slide:focus {
@@ -8144,14 +8153,13 @@ button.fancybox-button.button_gal-close::after {
   background-color: #fff;
   padding: 0;
   margin: 0;
-  margin-top: 36px;
   overflow: visible;
   display: none;
 }
 
 #pay-popup button.fancybox-button.button_gal-close {
-  top: -36px;
-  right: -36px;
+  top: 0;
+  right: 0;
 }
 
 .pay-popup-container {
@@ -9151,6 +9159,9 @@ button.fancybox-button.button_gal-close::after {
   .bankets-halls-item {
     height: 240px;
   }
+  .bankets-halls-item .bankets-halls-item-bg {
+    height: 240px;
+  }
   .bankets-halls-item-content > div {
     padding-top: 10px;
   }
@@ -9571,6 +9582,9 @@ button.fancybox-button.button_gal-close::after {
             transition-delay: 0s !important;
   }
   .bankets-halls-item {
+    height: auto;
+  }
+  .bankets-halls-item .bankets-halls-item-bg {
     height: auto;
   }
   .service-price-table {
