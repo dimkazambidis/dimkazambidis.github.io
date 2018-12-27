@@ -5702,8 +5702,11 @@ a.main-banner-anchor:hover {
 }
 
 .bankets-halls {
-  padding-top: 50px;
   padding-bottom: 0;
+}
+
+.bankets-halls.bankets-halls_bt {
+  padding-top: 50px;
 }
 
 .bankets-halls-list {
@@ -5720,6 +5723,7 @@ a.main-banner-anchor:hover {
 }
 
 .bankets-halls-item {
+  height: 340px;
   width: 50%;
   position: relative;
   overflow: hidden;
@@ -5917,7 +5921,7 @@ a.main-banner-anchor:hover {
   font-weight: 700;
   text-transform: uppercase;
   letter-spacing: 0.08em;
-  margin-bottom: 12px;
+  margin-bottom: 10px;
 }
 
 .bankets-halls-item-content .bankets-halls-group {
@@ -6199,6 +6203,8 @@ a.main-banner-anchor:hover {
   max-width: 360px;
   margin-left: auto;
   margin-right: auto;
+  font-size: 1rem;
+  letter-spacing: 0.1em;
 }
 
 .banket-single-feat {
@@ -8349,6 +8355,11 @@ button.fancybox-button.button_gal-close::after {
   max-width: 100%;
 }
 
+.parking-sale .boat-prices-sales {
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
 /*=============  Footert  =============*/
 .site-footer {
   -webkit-box-flex: 0;
@@ -9003,6 +9014,9 @@ button.fancybox-button.button_gal-close::after {
   #pay-popup {
     max-width: 720px;
   }
+  .bankets-halls .desc-section br {
+    display: none;
+  }
 }
 
 /* Small Devices, Tablets */
@@ -9133,6 +9147,9 @@ button.fancybox-button.button_gal-close::after {
   .site-footer-dev {
     text-align: center;
     margin-bottom: 20px;
+  }
+  .bankets-halls-item {
+    height: 240px;
   }
   .bankets-halls-item-content > div {
     padding-top: 10px;
@@ -9270,7 +9287,28 @@ button.fancybox-button.button_gal-close::after {
     content: none;
   }
   .boat-prices-sales {
-    display: none;
+    margin-left: -16px;
+    margin-right: -16px;
+  }
+  .boat-prices-sales-item {
+    height: 264px;
+  }
+  .boat-prices-sales-item-content {
+    padding: 42px 16px 0 16px;
+  }
+  .boat-prices-sales-item-content p {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+  }
+  .boat-prices-sales-slider-dots {
+    bottom: 26px;
+    left: 16px;
+  }
+  .boat-prices-sales-link {
+    right: 16px;
+  }
+  .parking-sale .boat-prices-sales {
+    margin-bottom: 0;
   }
   .service-price {
     padding-top: 30px;
@@ -9531,6 +9569,9 @@ button.fancybox-button.button_gal-close::after {
     -webkit-transition-delay: 0s !important;
          -o-transition-delay: 0s !important;
             transition-delay: 0s !important;
+  }
+  .bankets-halls-item {
+    height: auto;
   }
   .service-price-table {
     margin-left: -16px;
