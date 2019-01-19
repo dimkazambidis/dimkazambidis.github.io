@@ -2893,7 +2893,7 @@ p {
   position: relative;
   padding-top: 4.5rem;
   padding-bottom: 6rem;
-  background-color: #506874;
+  background-color: #456575;
   -webkit-transform-origin: 0 0;
       -ms-transform-origin: 0 0;
           transform-origin: 0 0;
@@ -2909,8 +2909,8 @@ p {
   top: 0;
   left: 0;
   right: 0;
-  background-color: #465A65;
-  border-bottom: 2px solid #394F5A;
+  background-color: rgba(0, 0, 0, 0.15);
+  border-bottom: 2px solid rgba(0, 0, 0, 0.15);
 }
 
 .site-header .container {
@@ -3172,7 +3172,7 @@ p {
   -webkit-flex: 0 0 auto;
       -ms-flex: 0 0 auto;
           flex: 0 0 auto;
-  background-color: #465A65;
+  background-color: #3B5664;
   text-align: center;
   color: #fff;
   font-size: 0.875rem;
