@@ -1,1 +1,23 @@
-<svg xmlns="http://www.w3.org/2000/svg" height="154.999" width="370" id="Слой_1"><path id="path2" d="M.001 0H370v90c-81.984 0-117.986 64.974-185 64.999C117.986 154.973 81.984 90 0 90V0z" clip-rule="evenodd" fill="#aecc53" fill-rule="evenodd"/></svg>
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   xmlns:dc="http://purl.org/dc/elements/1.1/"
+   xmlns:cc="http://creativecommons.org/ns#"
+   xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+   xmlns:svg="http://www.w3.org/2000/svg"
+   xmlns="http://www.w3.org/2000/svg"
+   xml:space="preserve"
+   enable-background="new 0 0 960 640"
+   viewBox="0 0 370 154.99899"
+   height="154.99899"
+   width="370"
+   y="0px"
+   x="0px"
+   id="Слой_1"
+   version="1.1"><metadata
+     id="metadata9"><rdf:RDF><cc:Work
+         rdf:about=""><dc:format>image/svg+xml</dc:format><dc:type
+           rdf:resource="http://purl.org/dc/dcmitype/StillImage" /><dc:title></dc:title></cc:Work></rdf:RDF></metadata><defs
+     id="defs7" /><path
+     style="clip-rule:evenodd;fill:#aecc53;fill-rule:evenodd"
+     id="path2"
+     d="M 10e-4,0 H 370 V 90 C 288.016,90 252.014,154.974 185,154.999 117.986,154.973 81.984,90 0,90 V 0 Z" /></svg>
