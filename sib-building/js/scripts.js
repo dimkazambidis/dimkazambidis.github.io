@@ -145,6 +145,12 @@ $(function() {
 			$('input[name="type-total-visit-expo"]').val($(this).val());
 		}
 		$('input[data-type][type="text"]').val('');
+
+		if ( $(this).hasClass('check-unlock') ) {
+			$('#type-other-visit-expo').prop('disabled', false);
+		} else {
+			$('#type-other-visit-expo').prop('disabled', true);
+		}
 	});
 
 	$('input[data-type][type="text"]').on('keyup', function(e) {
@@ -155,6 +161,12 @@ $(function() {
 	$('input[data-target][type="radio"]').on('change', function(e) {
 		if ( $(this).prop('checked') == true ) {
 			$('input[name="target-total-visit-expo"]').val($(this).val());
+		}
+	});
+	//=====
+	$('input[data-level-post][type="radio"]').on('change', function(e) {
+		if ( $(this).prop('checked') == true ) {
+			$('input[name="level-post-total-visit-expo"]').val($(this).val());
 		}
 	});
 	//=====

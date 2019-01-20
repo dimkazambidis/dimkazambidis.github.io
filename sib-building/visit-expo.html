@@ -143,7 +143,7 @@
 				<section class="c-section">
 					<div class="container">
 						<h1>Посетить выставку</h1>
-						<p>Посетить выставку SibBuilding Week 2019 вы можете бесплатно, пройдя регистрацию.</p>
+						<p>Зарегистрируйтесь, чтобы посетить выставку SibBuilding Week 2019 бесплатно.</p>
 						<p>Для этого необходимо заполнить</p>
 						<div class="panel">Все поля анкеты, маркированные * подлежат обязательному заполнению.</div>
 						<form action="#" class="form-validate">
@@ -152,14 +152,8 @@
 								<div class="row">
 									<div class="col-sm-6">
 										<div class="input-container">
-											<label for="name-visit-expo"><div>Имя*</div></label>
-											<input data-require id="name-visit-expo" type="text" placeholder="Укажите имя">
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="input-container">
-											<label for="family-visit-expo"><div>Фамилия*</div></label>
-											<input data-require id="family-visit-expo" type="text" placeholder="Укажите фамилию">
+											<label for="name-visit-expo"><div>Ф.И.О*</div></label>
+											<input data-require id="name-visit-expo" type="text" placeholder="Укажите Ф.И.О">
 										</div>
 									</div>
 									<div class="col-sm-6">
@@ -194,12 +188,6 @@
 									</div>
 									<div class="col-sm-6">
 										<div class="input-container">
-											<label for="state-visit-expo"><div>Область/штат</div></label>
-											<input id="state-visit-expo" type="text" placeholder="Укажите область/штат">
-										</div>
-									</div>
-									<div class="col-sm-6">
-										<div class="input-container">
 											<label for="city-visit-expo"><div>Город*</div></label>
 											<input data-require id="city-visit-expo" type="text" placeholder="Укажите город">
 										</div>
@@ -210,11 +198,32 @@
 											<input id="tel-visit-expo" type="tel" placeholder="Укажите телефон">
 										</div>
 									</div>
-									<div class="col-sm-6">
-										<div class="input-container">
-											<label for="site-visit-expo"><div>Web-site</div></label>
-											<input id="site-visit-expo" type="email" placeholder="Укажите сайт">
-										</div>
+								</div>
+							</div>
+
+							<div class="form-section">
+								<input data-require name="level-post-total-visit-expo" type="hidden" value="">
+								<h2>Уровень занимаемой должности*</h2>
+								<div class="checkboxes-container">
+									<div class="check-container">
+										<input data-level-post id="level-post-ruk-visit-expo" type="radio" name="level-post-visit-expo" value="Руководитель компании / Учредитель">
+										<label for="level-post-ruk-visit-expo">Руководитель компании / Учредитель</label>
+									</div>
+									<div class="check-container">
+										<input data-level-post id="level-post-zam-visit-expo" type="radio" name="level-post-visit-expo" value="Заместитель руководителя компании">
+										<label for="level-post-zam-visit-expo">Заместитель руководителя компании</label>
+									</div>
+									<div class="check-container">
+										<input data-level-post id="level-post-otd-visit-expo" type="radio" name="level-post-visit-expo" value="Руководитель отдела / группы">
+										<label for="level-post-otd-visit-expo">Руководитель отдела / группы</label>
+									</div>
+									<div class="check-container">
+										<input data-level-post id="level-post-manager-visit-expo" type="radio" name="level-post-visit-expo" value="Менеджер / Специалист">
+										<label for="level-post-manager-visit-expo">Менеджер / Специалист</label>
+									</div>
+									<div class="check-container">
+										<input data-level-post id="level-post-ip-visit-expo" type="radio" name="level-post-visit-expo" value="Индивидуальный предприниматель">
+										<label for="level-post-ip-visit-expo">Индивидуальный предприниматель</label>
 									</div>
 								</div>
 							</div>
@@ -224,16 +233,16 @@
 								<h2>Тип деятельности компании*</h2>
 								<div class="checkboxes-container">
 									<div class="check-container">
-										<input data-type id="type-creat-visit-expo" type="radio" name="type-visit-expo" value="Производитель">
-										<label for="type-creat-visit-expo">Производитель</label>
+										<input data-type id="type-creat-visit-expo" type="radio" name="type-visit-expo" value="Производство (строительный рынок)">
+										<label for="type-creat-visit-expo">Производство (строительный рынок)</label>
 									</div>
 									<div class="check-container">
-										<input data-type id="type-opt-visit-expo" type="radio" name="type-visit-expo" value="Оптовая">
-										<label for="type-opt-visit-expo">Оптовая</label>
+										<input data-type id="type-opt-visit-expo" type="radio" name="type-visit-expo" value="Оптовая торговля (строительный рынок)">
+										<label for="type-opt-visit-expo">Оптовая торговля (строительный рынок)</label>
 									</div>
 									<div class="check-container">
-										<input data-type id="type-rozn-visit-expo" type="radio" name="type-visit-expo" value="Розничная">
-										<label for="type-rozn-visit-expo">Розничная</label>
+										<input data-type id="type-rozn-visit-expo" type="radio" name="type-visit-expo" value="Розничная торговля (строительный рынок)">
+										<label for="type-rozn-visit-expo">Розничная торговля (строительный рынок)</label>
 									</div>
 									<div class="check-container">
 										<input data-type id="type-int-visit-expo" type="radio" name="type-visit-expo" value="Архитектура и дизайн интерьеров">
@@ -241,10 +250,10 @@
 									</div>
 									<div class="check-container">
 										<input data-type id="type-project-visit-expo" type="radio" name="type-visit-expo" value="Проектирование зданий, сооружений">
-										<label for="type-project-visit-expo">Строительство зданий, сооружений</label>
+										<label for="type-project-visit-expo">Проектирование зданий, сооружений</label>
 									</div>
 									<div class="check-container">
-										<input data-type id="type-build-visit-expo" type="radio" name="type-visit-expo" value="Проектирование зданий, сооружений">
+										<input data-type id="type-build-visit-expo" type="radio" name="type-visit-expo" value="Строительство зданий, сооружений">
 										<label for="type-build-visit-expo">Строительство зданий, сооружений</label>
 									</div>
 									<div class="check-container">
@@ -260,10 +269,9 @@
 										<label for="type-smi-visit-expo">СМИ</label>
 									</div>
 									<div class="check-container">
-										<!-- <div class="input-container">
-											<label for="site-visit-expo">Другое (Пожалуйста, укажите)</label> -->
-											<input data-type id="type-other-visit-expo" type="text" placeholder="Другое (Пожалуйста, укажите)">
-										<!-- </div> -->
+										<input class="check-unlock" data-type id="type-other-check-visit-expo" type="radio" name="type-visit-expo" value="">
+										<label for="type-other-check-visit-expo">Другое</label>
+										<input data-type id="type-other-visit-expo" type="text" placeholder="Другое (Пожалуйста, укажите)" disabled>
 									</div>
 								</div>
 							</div>
@@ -287,10 +295,6 @@
 									<div class="check-container">
 										<input data-target id="target-event-visit-expo" type="radio" name="target-visit-expo" value="Мероприятия деловой программы">
 										<label for="target-event-visit-expo">Мероприятия деловой программы</label>
-									</div>
-									<div class="check-container">
-										<input data-target id="target-other-visit-expo" type="radio" name="target-visit-expo" value="Прочее">
-										<label for="target-other-visit-expo">Прочее</label>
 									</div>
 								</div>
 							</div>
@@ -351,10 +355,9 @@
 										<label for="area-designer-visit-expo">Специальные экспозиции дизайнеров</label>
 									</div>
 									<div class="check-container">
-										<!-- <div class="input-container">
-											<label for="site-visit-expo">Другое (Пожалуйста, укажите)</label> -->
+										<div class="check-container">
 											<input data-area id="area-other-visit-expo" type="text" placeholder="Другое (Пожалуйста, укажите)">
-										<!-- </div> -->
+										</div>
 									</div>
 								</div>
 							</div>
@@ -374,7 +377,7 @@
 								</div>
 							</div>
 
-							<div class="form-section">
+							<!-- <div class="form-section">
 								<h2>Как Вы узнали о выставке?*</h2>
 								<div class="checkboxes-container">
 									<div class="check-container">
@@ -410,17 +413,14 @@
 										<label for="discover-smi-visit-expo">Реклама статья в журнале/газете</label>
 									</div>
 									<div class="check-container">
-										<!-- <div class="input-container">
-											<label for="site-visit-expo">Другое (Пожалуйста, укажите)</label> -->
-											<input data-discover id="discover-other-visit-expo" type="text" placeholder="Другое (Пожалуйста, укажите)">
-										<!-- </div> -->
+										<input data-discover id="discover-other-visit-expo" type="text" placeholder="Другое (Пожалуйста, укажите)">
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 							<div class="form-section">
 								<input data-require name="visit-total-visit-expo" type="hidden" value="">
-								<h2>Вы уже посещали выставку Batimat Russia ранее?*</h2>
+								<h2>Вы уже посещали выставку SibBuilding Week ранее?*</h2>
 								<div class="checkboxes-container">
 									<div class="check-container">
 										<input data-visit id="visit-yes-visit-expo" type="radio" name="visit-visit-expo" value="Да">
@@ -433,7 +433,7 @@
 								</div>
 							</div>
 
-							<div class="form-section">
+							<!-- <div class="form-section">
 								<input data-require name="interest-total-visit-expo" type="hidden" value="">
 								<h2>Заинтересованы ли вы в посещении программы мероприятий выставки?*</h2>
 								<div class="checkboxes-container">
@@ -446,7 +446,7 @@
 										<label for="interest-no-visit-expo">Нет</label>
 									</div>
 								</div>
-							</div>
+							</div> -->
 
 							<div class="form-section">
 								<h2>Заполняя данную анкету, я даю свое согласие на обработку персональных данныхв соответствии со статьей 9 Федерального закона от 27.07.2006 № 152-ФЗ 'О персональных данных' и на получение информации по каналам связи.*</h2>

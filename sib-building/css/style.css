@@ -4385,6 +4385,10 @@ a.link-all {
   margin-bottom: 0;
 }
 
+.check-unlock + label {
+  margin-right: 24px;
+}
+
 .btn-container {
   padding-top: 14px;
 }
@@ -4813,7 +4817,7 @@ a.link-all {
 }
 
 .price-item figure {
-  height: 216px;
+  height: 260px;
   margin-bottom: 0;
   margin-bottom: 1.42857rem;
 }
@@ -5279,6 +5283,10 @@ a.link-all {
   .program-btn a.btn {
     margin-left: auto;
     margin-right: auto;
+  }
+  .check-unlock + label {
+    display: block;
+    padding-bottom: 10px;
   }
 }
 
