@@ -3826,10 +3826,6 @@ h3 {
   line-height: 1.35714rem;
 }
 
-form {
-  max-width: 520px;
-}
-
 a.btn, input[type="submit"], input[type="button"], button {
   display: block;
   width: 100%;
@@ -4506,6 +4502,7 @@ a.link-all {
 
 .form-section {
   margin-bottom: 20px;
+  max-width: 520px;
 }
 
 .form-section h2 {
@@ -4519,6 +4516,10 @@ a.link-all {
   font-weight: 400;
   font-size: 1.42857rem;
   margin-bottom: 24px;
+}
+
+.form-section.form-section_full {
+  max-width: 100%;
 }
 
 .form-section.last-child {
