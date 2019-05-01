@@ -3798,7 +3798,6 @@ body {
   position: relative;
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
-  opacity: 1;
   color: #4F4F4F;
   font-size: 16px;
   line-height: 1.406;
@@ -5424,4 +5423,8 @@ a.btn:focus, input[type="submit"]:focus, input[type="button"]:focus, button:focu
   .hidden-xl {
     display: none;
   }
+}
+
+body {
+  opacity: 1;
 }
