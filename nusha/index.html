@@ -18,20 +18,20 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
 
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#C44447">
+	<meta name="theme-color" content="#4F4F4F">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#C44447">
+	<meta name="msapplication-navbutton-color" content="#4F4F4F">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#C44447">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#4F4F4F">
 
-	<!--<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>-->
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
 </head>
 
 <body>
 	<div class="site site_menu-on">
 		<header class="site-header">
-			<nav class="site-header-top">
+			<div class="site-header-top">
 				<div class="container-fluid">
 					<div class="row">
 						<div class="col header-nav-col">
@@ -56,7 +56,7 @@
 						</div>
 					</div>
 				</div>
-			</nav>
+			</div>
 
 			<div class="header-content">
 				<div class="container-fluid">
@@ -450,23 +450,884 @@
 					<div class="container-fluid">
 						<h2>Новинки</h2>
 						<div class="goods-slider">
+							<div class="goods-slider-nav">
+								<div class="goods-slider-arrows"></div>
+								<div class="goods-slider-dots"></div>
+							</div>
 							<div class="goods-slider-wrap">
 								<div class="goods-slider-list">
-									<div class="goods-slider-item"><div></div></div>
-									<div class="goods-slider-item"><div></div></div>
-									<div class="goods-slider-item"><div></div></div>
-									<div class="goods-slider-item"><div></div></div>
-									<div class="goods-slider-item"><div></div></div>
-									<div class="goods-slider-item"><div></div></div>
+									<!-- <div class="goods-slider-track">
+										<div class="row"> -->
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+<!-- 										</div>
+									</div> -->
 								</div>
 							</div>
+						</div>
+					</div>
+				</section>
+
+				<section>
+					<div class="container-fluid">
+						<div class="features-line">
+							<div class="row">
+								<div class="col-sm-6 col-xl-3 features-line-item">
+									<div>
+										<div><img src="images/features-1.svg" alt=""></div>
+										<div>Бесплатная доставка<br> по РФ от 3000 р.</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-xl-3 features-line-item">
+									<div>
+										<div><img src="images/features-2.svg" alt=""></div>
+										<div>Новое поступление<br> каждые 2 недели</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-xl-3 features-line-item">
+									<div>
+										<div><img src="images/features-3.svg" alt=""></div>
+										<div>Скидка 15%<br> при покупке 2 пар</div>
+									</div>
+								</div>
+								<div class="col-sm-6 col-xl-3 features-line-item">
+									<div>
+										<div><img src="images/features-4.svg" alt=""></div>
+										<div>Крутой опт<br> от 10000 р.</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="typical-section">
+					<div class="container-fluid">
+						<h2>Акции</h2>
+						<div class="goods-slider">
+							<div class="goods-slider-nav">
+								<div class="goods-slider-arrows"></div>
+								<div class="goods-slider-dots"></div>
+							</div>
+							<div class="goods-slider-wrap">
+								<div class="goods-slider-list">
+									<!-- <div class="goods-slider-track">
+										<div class="row"> -->
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+																				<div class="product-card goods-slider-item col">
+										<div>
+											<figure>
+												<a href="products-single.html">
+													<img src="images/product.png" alt="Товар" width="280px" height="240px">
+												</a>
+											</figure>
+											<div class="product-card-content">
+												<div class="product-card-labels">
+													<img src="images/label-new.svg" alt="">
+													<img src="images/label-sale.svg" alt="">
+												</div>
+												<div class="product-card-price">
+													<div>599 р</div>
+													<div>
+														<a href="#">
+															<svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+																<path d="M30.5255 31.203L28.1345 8.92653C28.0947 8.56787 27.7758 8.28892 27.4172 8.28892H22.9938V6.934C22.9938 3.10834 19.8854 0 16.0598 0C12.2341 0 9.12579 3.10834 9.12579 6.934V8.28892H4.58282C4.22417 8.28892 3.90536 8.56787 3.86551 8.92653L1.47448 31.203C1.43463 31.4022 1.51433 31.6015 1.63388 31.7609C1.75343 31.9203 1.95268 32 2.15194 32H29.8481C30.0473 32 30.2466 31.9203 30.3661 31.7609C30.4857 31.6015 30.5654 31.4022 30.5255 31.203ZM22.2765 12.3138C22.6351 12.3138 22.9141 12.5928 22.9141 12.9514C22.9141 13.3101 22.6351 13.589 22.2765 13.589C21.9178 13.589 21.6389 13.3101 21.6389 12.9514C21.6389 12.5928 21.9178 12.3138 22.2765 12.3138ZM10.5604 6.934C10.5604 3.90535 13.0311 1.43462 16.0598 1.43462C19.0884 1.43462 21.5592 3.90535 21.5592 6.934V8.28892H10.5604V6.934ZM9.8431 12.3138C10.2018 12.3138 10.4807 12.5928 10.4807 12.9514C10.4807 13.3101 10.2018 13.589 9.8431 13.589C9.48444 13.589 9.20549 13.3101 9.20549 12.9514C9.20549 12.5928 9.48444 12.3138 9.8431 12.3138ZM2.9888 30.5255L5.22043 9.68369H9.12579V10.9988C8.32877 11.2777 7.77087 12.0349 7.77087 12.9116C7.77087 14.0274 8.68743 14.944 9.80325 14.944C10.9191 14.944 11.8356 14.0274 11.8356 12.9116C11.8356 12.0349 11.2777 11.2777 10.4807 10.9988V9.68369H21.4795V10.9988C20.6824 11.2777 20.1245 12.0349 20.1245 12.9116C20.1245 14.0274 21.0411 14.944 22.1569 14.944C23.2727 14.944 24.1893 14.0274 24.1893 12.9116C24.1893 12.0349 23.6314 11.2777 22.8344 10.9988V9.68369H26.8991L29.1308 30.5255H2.9888Z" fill="#EB5255"/>
+															</svg>
+														</a>
+													</div>
+												</div>
+												<h3><a href="products-single.html">Платье фрукты на лимонном Crockid</a></h3>
+												<div class="product-card-size">
+													<ul>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="12" name="size">
+																<span>12</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="13" name="size">
+																<span>13</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="14" name="size">
+																<span>14</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="15" name="size">
+																<span>15</span>
+															</label>
+														</li>
+														<li>
+															<label class="product-card-size-val">
+																<input type="radio" val="16" name="size">
+																<span>16</span>
+															</label>
+														</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+
+<!-- 										</div>
+									</div> -->
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+
+				<section class="typical-section">
+					<div class="container-fluid">
+						<div class="seo-text">
+							<h2 class="color-danger">Одежда, обувь, игрушки и другие детские товары</h2>
+							<p>Компания «Ай, Нюша» вот уже более десяти лет помогает родителям выбирать самые полезные и качественные товары для детей. Миссия нашей компании — создать магазин товаров для детей, который отвечает международным стандартам качества. Мы предлагаем нашим покупателям только те товары для детей, которые готовы приобрести для собственных малышей, а значит, самые надёжные и безопасные!</p>
+							<p>Мы считаем, что появление в семье малыша — это самое большое чудо. Интернет-магазин товаров для детей «Ай, Нюша» в одном месте представляет качественные детские товары в большом ассортименте. У нас вы найдёте всё необходимое для ухода за ребёнком с самых первых дней.</p>
+							<h3>Удобный каталог интернет-магазина</h3>
+							<p>Товары для детей представлены в удобном каталоге с описанием и характеристиками, что позволяет легко выбрать и купить детскую одежду, обувь, мебель, коляски любой конструкции, детские автокресла. Отдельного внимания заслуживают игрушки и развивающие товары, выбор которых действительно впечатляет. Но самое главное, что наши товары для детей несут не только радость вашему малышу, но и полезны для его развития.</p>
+							<h3>Низкие цены и выгоды при покупке</h3>
+							<p>В интернет-магазине детских товаров «Ай, Нюша» покупателей привлекают невероятно низкие цены. Обратите внимание, что уже после первой покупки вам будет присвоен дисконт, который позволит сэкономить 10% с суммы каждого последующего заказа.</p>
+							<h3>Доставка и самовывоз</h3>
+							<p>Мы готовы бесплатно доставить оплаченные товары в любой город России, ознакомиться с условиями вы можете на странице «Оплата и доставка». Покупателям из Бийска доступен самовывоз.</p>
+							<p>Шоппинг в нашем интернет-магазине - это экономия времени и удобство. Ай, Нюша — самые интересные, полезные и увлекательные товары для детей в одном месте.</p>
+							<h3>Присоединяйтесь!</h3>
 						</div>
 					</div>
 				</section>
 			</main>
 		</div>
 
-		<footer class="site-footer">Footer pressed to the bottom</footer>
+		<footer class="site-footer">
+	<div class="container-fluid">
+		<div class="site-footer-content">
+			<div class="row">
+				<div class="col-sm-6 col-md-4 d-lg-none">
+					<div class="site-footer-nav">
+						<ul>
+							<li><a href="#">О нас</a></li>
+							<li><a href="#">Партнёрам</a></li>
+							<li><a href="#">Обмен и возврат</a></li>
+							<li><a href="#">Оплата и доставка</a></li>
+							<li><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-sm-6 col-md-8 col-lg-12">
+					<div class="row">
+						<div class="col-md-6 col-lg-4 site-footer-adress">
+							<div>
+								<small>Адрес пункта выдачи:</small><br>г. Бийск, Васильева д. 65
+							</div>
+							<div>
+								<small>Режим работы:</small><br>Ежедневно с 9-00 до 19-00
+							</div>
+						</div>
+
+						<div class="col-md-4 hidden-md site-footer-logo">
+							<div>
+								<div><a href="/"><img src="images/logo.png" alt=""></a></div>
+							</div>
+						</div>
+
+						<div class="col-md-6 col-lg-4 site-footer-contacts">
+							<div class="site-footer-tel">
+								<a href="tel:+73833671555">+7 (383) 367-15-55</a>
+							</div>
+							<div class="site-footer-mail">
+								<a href="mailto:support@i-new.ru">support@i-new.ru</a>
+							</div>
+							<div class="site-footer-soc">
+								<a href="https://vk.com" class="vk-ico" target="_blank" rel="nofollow noopener"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.7234 0H1.2766C0.571404 0 0 0.57166 0 1.2766V22.7234C0 23.4283 0.571404 24 1.2766 24H22.7234C23.4286 24 24 23.4283 24 22.7234V1.2766C24 0.57166 23.4286 0 22.7234 0ZM19.1155 13.5174C19.7696 14.1557 20.4613 14.7567 21.0488 15.4621C21.3087 15.7736 21.5538 16.0953 21.7404 16.4576C22.0062 16.9744 21.7662 17.542 21.3031 17.5723L18.4292 17.5716C17.6872 17.6326 17.0964 17.3339 16.598 16.8266C16.201 16.4219 15.8318 15.9899 15.4491 15.5719C15.2931 15.4001 15.1277 15.2385 14.9321 15.1108C14.5404 14.8565 14.2001 14.9341 13.9751 15.3429C13.7464 15.7591 13.6935 16.2207 13.6726 16.6846C13.6407 17.3625 13.4364 17.5394 12.7565 17.5708C11.3037 17.6392 9.92477 17.4186 8.64383 16.6866C7.51302 16.0407 6.63855 15.1282 5.87668 14.0962C4.39174 12.0835 3.25455 9.87421 2.23328 7.60162C2.00323 7.0897 2.17149 6.81574 2.73549 6.80528C3.67404 6.78664 4.61234 6.78919 5.54962 6.80426C5.93157 6.81013 6.18409 7.02868 6.33038 7.38868C6.83719 8.63591 7.45915 9.82264 8.23787 10.9231C8.44545 11.2159 8.65736 11.5083 8.95864 11.7153C9.29157 11.9441 9.54536 11.8688 9.70238 11.4973C9.80272 11.2603 9.84613 11.0086 9.86757 10.7553C9.94213 9.88826 9.95106 9.02119 9.82238 8.15745C9.74196 7.61719 9.43762 7.26817 8.89889 7.16604C8.62468 7.11396 8.66477 7.01234 8.79804 6.85583C9.02936 6.58468 9.2474 6.41719 9.68043 6.41719L12.9283 6.41668C13.4405 6.51677 13.5544 6.74655 13.6241 7.26204L13.6271 10.8705C13.6218 11.0701 13.727 11.6614 14.0854 11.7922C14.3722 11.8869 14.5624 11.6569 14.734 11.4746C15.5122 10.6486 16.0667 9.67302 16.5638 8.66374C16.7826 8.21872 16.9723 7.75762 17.1562 7.29626C17.2923 6.95489 17.5052 6.78689 17.8902 6.79302L21.0169 6.79634C21.1088 6.79634 21.203 6.79736 21.2941 6.81243C21.8206 6.90306 21.9649 7.12979 21.8022 7.644C21.5459 8.45157 21.0467 9.1246 20.5586 9.79915C20.0369 10.5204 19.4801 11.218 18.9623 11.9428C18.4879 12.6077 18.5262 12.9416 19.1155 13.5174Z" fill="#4F4F4F"/></svg></a>
+								<a href="https://www.instagram.com" class="insta-ico" target="_blank" rel="nofollow noopener"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.5313 8.20962H18.7732C19.2642 8.20962 19.6658 7.80775 19.6658 7.31651V5.17924C19.6658 4.68775 19.2642 4.28613 18.7732 4.28613H16.5313C16.04 4.28613 15.6384 4.68775 15.6384 5.17924V7.31651C15.6384 7.80775 16.04 8.20962 16.5313 8.20962Z" fill="#4F4F4F"/><path d="M12.0189 15.8165C14.2189 15.8165 16.0024 14.0885 16.0024 11.9568C16.0024 9.8252 14.2189 8.09717 12.0189 8.09717C9.81887 8.09717 8.0354 9.8252 8.0354 11.9568C8.0354 14.0885 9.81887 15.8165 12.0189 15.8165Z" fill="#4F4F4F"/><path d="M22.7234 0H1.2766C0.57166 0 0 0.57166 0 1.2766V22.7234C0 23.4283 0.57166 24 1.2766 24H22.7234C23.4286 24 24 23.4283 24 22.7234V1.2766C24 0.57166 23.4286 0 22.7234 0ZM21.9174 19.3716C21.9174 20.8808 20.7717 21.9174 19.3716 21.9174H4.62843C3.22826 21.9174 2.08264 20.8808 2.08264 19.3716V4.62843C2.08264 3.11923 3.228 2.08264 4.62843 2.08264H19.3716C20.7715 2.08264 21.9174 3.11923 21.9174 4.62843V19.3716Z" fill="#4F4F4F"/><path d="M18.1842 12.1727C18.1842 15.4719 15.4236 18.1461 12.0192 18.1461C8.61428 18.1461 5.85403 15.4716 5.85403 12.1727C5.85403 11.5813 5.94339 11.0102 6.10858 10.4707H4.28662V18.849C4.28662 19.2825 4.64177 19.6374 5.0753 19.6374H18.8878C19.3211 19.6374 19.6762 19.2825 19.6762 18.849V10.4707H17.9304C18.0948 11.0102 18.1842 11.5811 18.1842 12.1727Z" fill="#4F4F4F"/></svg></a>
+								<a href="https://www.facebook.com" class="f-ico" target="_blank" rel="nofollow noopener"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M22.7234 0H1.2766C0.57166 0 0 0.57166 0 1.2766V22.7234C0 23.4283 0.57166 24 1.2766 24H22.7234C23.4286 24 24 23.4283 24 22.7234V1.2766C24 0.57166 23.4286 0 22.7234 0ZM17.0885 5.45464L15.2436 5.4554C13.7974 5.4554 13.5174 6.14272 13.5174 7.15149V9.37558H16.967L16.966 12.8591H13.5174V21.7984H9.91966V12.8591H6.91149V9.37558H9.91966V6.80655C9.91966 3.82519 11.7409 2.20162 14.4 2.20162L17.0885 2.20596V5.45464Z" fill="#4F4F4F"/></svg></a>
+								<a href="https://ok.ru" class="ok-ico" target="_blank" rel="nofollow noopener"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12.0131 9.59723C13.3527 9.59289 14.4197 8.51723 14.4149 7.17451C14.4095 5.83179 13.3407 4.76225 12.0006 4.76123C10.6492 4.75995 9.56993 5.84864 9.5804 7.20362C9.59036 8.54123 10.6693 9.60285 12.0131 9.59723Z" fill="#4F4F4F"/><path d="M22.7234 0H1.2766C0.57166 0 0 0.571404 0 1.2766V22.7234C0 23.4286 0.57166 24 1.2766 24H22.7234C23.4286 24 24 23.4286 24 22.7234V1.2766C24 0.571404 23.4286 0 22.7234 0ZM12.0204 2.23813C14.7521 2.24502 16.9453 4.48008 16.9317 7.24289C16.9172 9.94162 14.6883 12.1292 11.9609 12.12C9.26068 12.1108 7.04655 9.87243 7.06187 7.16783C7.07796 4.43362 9.29362 2.22996 12.0204 2.23813ZM17.554 14.0609C16.9499 14.6816 16.2227 15.13 15.4149 15.4437C14.6512 15.7389 13.8146 15.8885 12.9863 15.9876C13.1114 16.1239 13.1704 16.19 13.248 16.2689C14.3724 17.3987 15.5014 18.5239 16.622 19.657C17.0035 20.0428 17.0842 20.5215 16.8735 20.9706C16.6435 21.4621 16.129 21.7846 15.624 21.7499C15.3043 21.7274 15.0551 21.5683 14.834 21.346C13.9854 20.4919 13.1206 19.654 12.2898 18.7849C12.048 18.5316 11.9316 18.5788 11.7176 18.7991C10.8641 19.678 9.99728 20.5432 9.12485 21.4034C8.73294 21.79 8.26698 21.8591 7.81174 21.6388C7.32868 21.4047 7.02179 20.9117 7.04553 20.4156C7.06187 20.0806 7.22681 19.8248 7.45685 19.595C8.56902 18.4841 9.67864 17.3704 10.7888 16.2574C10.8626 16.1839 10.931 16.105 11.038 15.9906C9.52417 15.8326 8.15923 15.4603 6.99115 14.5463C6.84638 14.4327 6.69651 14.3229 6.56374 14.1957C6.0526 13.7045 6.00128 13.1426 6.40596 12.5627C6.75166 12.0669 7.33328 11.9336 7.93711 12.2183C8.0543 12.2732 8.16562 12.3424 8.27234 12.4162C10.4497 13.9123 13.4413 13.954 15.6271 12.4841C15.8433 12.3189 16.0749 12.182 16.3435 12.1141C16.8656 11.9801 17.3512 12.1713 17.6316 12.6278C17.9525 13.1479 17.9482 13.6565 17.554 14.0609Z" fill="#4F4F4F"/></svg></a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="site-footer-copy">
+		<div class="container-fluid">
+			© Все права защищены, 2019
+		</div>
+	</div>
+</footer>
 	</div>
 
 	<link rel="stylesheet" href="css/style.css">

@@ -64,8 +64,23 @@ $(function() {
 	//===== Side menu toggle =====//
 	$('a.toggle-menu').on('click', function(e) {
 		e.preventDefault();
+
+		$('.header-search').removeClass('active');
+
 		if ( $(window).width() >= 1024 ) {
 			$('.site').toggleClass('site_menu-on');
+			var k = $('.goods-slider-list .slick-track').width() / $('.goods-slider-list').width();
+			if ( $('.site').hasClass('site_menu-on') ) {
+				var hhh = ( $('.goods-slider-list').width() - 300 ) * k;
+				var hhhItem = hhh - ( hhh * ( $('.goods-slider-list').slick('getSlick').slideCount - $('.goods-slider-list').slick('getSlick').currentSlide ) / $('.goods-slider-list').slick('getSlick').slideCount );
+				$('.goods-slider-list .slick-track').width(hhh);
+				$('.goods-slider-list .slick-track').css('transform', 'translate3d(-' + hhhItem + 'px, 0px, 0px)')
+			} else {
+				var hhh = ( $('.goods-slider-list').width() + 300 ) * k;
+				var hhhItem = hhh - ( hhh * ( $('.goods-slider-list').slick('getSlick').slideCount - $('.goods-slider-list').slick('getSlick').currentSlide ) / $('.goods-slider-list').slick('getSlick').slideCount );
+				$('.goods-slider-list .slick-track').width(hhh);
+				$('.goods-slider-list .slick-track').css('transform', 'translate3d(-' + hhhItem + 'px, 0px, 0px)')
+			}
 		} else {
 			$('.site').toggleClass('site_menu-on-m');
 		}
@@ -123,11 +138,6 @@ $(function() {
 		],
 		cssEase: 'linear'
 	});
-	// var mySwiper = new Swiper('.home-banner-slider', {
-	// 	autoplay: {
-	// 		delay: 5000,
-	// 	}
-	// });
 
 	//===== Custom scrollbar =====//
 	Scrollbar.initAll({
@@ -136,28 +146,51 @@ $(function() {
 	});
 
 	//===== Home main slider =====//
-	$('.goods-slider-list').slick({
-		dots: false,
-		//fade: true,
-		appendArrows: $('.goods-slider-arrows'),
-		arrows: true,
-		prevArrow: '<button type="button" class="slick-prev"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M21.9783 30.0899C22.1767 30.2884 22.4248 30.3876 22.6977 30.3876C22.9705 30.3876 23.2186 30.2884 23.417 30.0899C23.8139 29.693 23.8139 29.0481 23.417 28.6512L10.7659 16L23.417 3.34886C23.8139 2.95196 23.8139 2.307 23.417 1.9101C23.0201 1.5132 22.3752 1.5132 21.9783 1.9101L8.60774 15.2806C8.21084 15.6775 8.21084 16.3225 8.60774 16.7194L21.9783 30.0899Z" fill="#EB5255"/></svg></button>',
-		nextArrow: '<button type="button" class="slick-next"><svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M10.0216 30.0899C9.82314 30.2884 9.57508 30.3876 9.30221 30.3876C9.02934 30.3876 8.78128 30.2884 8.58283 30.0899C8.18593 29.693 8.18593 29.0481 8.58283 28.6512L21.234 16L8.58283 3.34886C8.18593 2.95196 8.18593 2.307 8.58283 1.9101C8.97973 1.5132 9.62469 1.5132 10.0216 1.9101L23.3921 15.2806C23.789 15.6775 23.789 16.3225 23.3921 16.7194L10.0216 30.0899Z" fill="#EB5255"/></svg></button>',
-		infinite: false,
-		speed: 500,
-		//autoplay: true,
-		autoplaySpeed: 5000,
-		slidesToShow: 3,
-		slidesToScroll: 1,
-		//respondTo: 'slider',
-		responsive: [
-			{
-				breakpoint: 1024,
-				settings: {
-					variableWidth: false,
+	$('.goods-slider-list').each( function() {
+		$(this).slick({
+			dots: true,
+			appendDots: $(this).closest('.goods-slider').find('.goods-slider-dots'),
+			arrows: true,
+			appendArrows: $(this).closest('.goods-slider').find('.goods-slider-arrows'),
+			prevArrow: '<button type="button" class="slick-prev"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M16.4838 22.5675C16.6326 22.7163 16.8187 22.7907 17.0233 22.7907C17.228 22.7907 17.414 22.7163 17.5629 22.5675C17.8606 22.2698 17.8606 21.7861 17.5629 21.4884L8.0745 12L17.5629 2.51168C17.8606 2.214 17.8606 1.73028 17.5629 1.43261C17.2652 1.13493 16.7815 1.13493 16.4838 1.43261L6.4559 11.4605C6.15822 11.7582 6.15822 12.2419 6.4559 12.5396L16.4838 22.5675Z" fill="#EB5255"/></button>',
+			nextArrow: '<button type="button" class="slick-next"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M7.51619 22.5675C7.36736 22.7163 7.18131 22.7907 6.97666 22.7907C6.77201 22.7907 6.58596 22.7163 6.43712 22.5675C6.13945 22.2698 6.13945 21.7861 6.43712 21.4884L15.9255 12L6.43712 2.51168C6.13945 2.214 6.13945 1.73028 6.43712 1.43261C6.7348 1.13493 7.21852 1.13493 7.51619 1.43261L17.5441 11.4605C17.8418 11.7582 17.8418 12.2419 17.5441 12.5396L7.51619 22.5675Z" fill="#EB5255"/></button>',
+			infinite: false,
+			speed: 500,
+			//autoplay: true,
+			autoplaySpeed: 5000,
+			slidesToShow: 5,
+			slidesToScroll: 1,
+			//respondTo: 'min',
+			responsive: [
+				{
+					breakpoint: 1601,
+					settings: {
+						slidesToShow: 4
+					}
+				}, {
+					breakpoint: 1300,
+					settings: {
+						slidesToShow: 3
+					}
+				}, {
+					breakpoint: 1024,
+					settings: {
+						slidesToShow: 2
+					}
+				}, {
+					breakpoint: 576,
+					settings: {
+						slidesToShow: 1
+					}
 				}
-			}
-		],
-		cssEase: 'linear'
+			],
+			cssEase: 'linear'
+		});
 	});
+
+
+	// $('.goods-slider-list').on('resize', function() {
+	// 	console.log(1);
+	// 	$('.goods-slider-list').slick('unslick');
+	// });
 });
