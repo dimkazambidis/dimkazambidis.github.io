@@ -489,4 +489,16 @@ $(function() {
 		}
 		//console.log(c);
 	});
+
+	//===== Toggle mobile filter =====//
+	$('.catalog-filters-toggle').on('click', function(e) {
+		$(this).toggleClass('current');
+		$('.catalog-filters-list').slideToggle(0);
+	});
+
+	//===== Toggle mobile sorting =====//
+	$('.catalog-sort-toggle').on('click', function(e) {
+		$(this).toggleClass('current');
+		$('.catalog-sort-content ul').slideToggle(0);
+	});
 });
