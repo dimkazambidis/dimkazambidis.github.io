@@ -51,7 +51,7 @@
 							</div>
 							<div class="header-client">
 								<a href="account.html" class="header-user"><img src="images/ico-user.svg" alt=""></a>
-								<a href="cart.html" class="header-cart"><img src="images/ico-cart.svg" alt="">1 шт</a>
+								<a href="cart.html" class="header-cart"><img src="images/ico-cart.svg" alt=""> 1 шт</a>
 							</div>
 						</div>
 					</div>
@@ -560,11 +560,11 @@
 				<div class="col-sm-6 col-md-4 d-lg-none">
 					<div class="site-footer-nav">
 						<ul>
-							<li><a href="#">О нас</a></li>
-							<li><a href="#">Партнёрам</a></li>
-							<li><a href="#">Обмен и возврат</a></li>
-							<li><a href="#">Оплата и доставка</a></li>
-							<li><a href="#">Контакты</a></li>
+							<li><a href="about.html">О нас</a></li>
+							<li><a href="partners.html">Партнёрам</a></li>
+							<li><a href="exchange.html">Обмен и возврат</a></li>
+							<li><a href="delivery.html">Оплата и доставка</a></li>
+							<li><a href="contacts.html">Контакты</a></li>
 						</ul>
 					</div>
 				</div>
@@ -610,6 +610,186 @@
 		</div>
 	</div>
 </footer>
+
+<div id="popup-cart" class="popup popup_cart">
+	<div class="container">
+		<div class="popup-content">
+			<div class="pre-title">Вы добавили в корзину:</div>
+			<h3>Супер крутые кроссовки</h3>
+			<div class="popup-cart-content">
+				<div class="row">
+					<div class="col-6">
+						<div class="popup-cart-content-img">
+							<figure>
+								<img src="images/product.png" alt="" width="180px" height="154px">
+							</figure>
+						</div>
+					</div>
+					<div class="col-6">
+						<div class="popup-cart-content-sizes">
+							<div class="popup-cart-content-sizes-title">Выберите размер:</div>
+							<div class="products-single-size-content clearfix">
+								<ul class="cleaerfix">
+									<li>
+										<label class="products-single-size-val">
+											<input type="radio" value="68/134" name="size">
+											<span>68/134</span>
+										</label>
+									</li>
+									<li>
+										<label class="products-single-size-val">
+											<input type="radio" value="54(86-92)" name="size">
+											<span>54(86-92)</span>
+										</label>
+									</li>
+									<li>
+										<label class="products-single-size-val">
+											<input type="radio" value="56(92-98)" name="size">
+											<span>56(92-98)</span>
+										</label>
+									</li>
+									<li>
+										<label class="products-single-size-val">
+											<input type="radio" value="64(104-110)" name="size" disabled>
+											<span>64(104-110)</span>
+										</label>
+									</li>
+									<li>
+										<label class="products-single-size-val">
+											<input type="radio" value="64(110-116)" name="size">
+											<span>64(110-116)</span>
+										</label>
+									</li>
+								</ul>
+								<div><a href="#">Таблица размеров</a></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="popup-cart-btn">
+				<a href="cart.html" class="btn">Оформить заказ</a>
+				<a href="#" class="popup-close">Продолжить покупки</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup-in" class="popup popup_form">
+	<div class="container">
+		<div class="popup-content">
+			<h2>Вход</h2>
+			<div class="popup-cart-content">
+				<form action="#">
+					<div class="form-section">
+						<label>
+							Телефон
+							<input id="popup-in-tel" type="tel" placeholder="Только бы не домашний!">
+						</label>
+					</div>
+					<div class="form-section">
+						<label>
+							Электронная почта
+							<input id="popup-in-mail" type="email" placeholder="www LeninGrad www . ru">
+						</label>
+					</div>
+					<div class="form-section form-section_btn">
+						<input type="submit" value="Войти">
+					</div>
+				</form>
+			</div>
+			<div class="popup-cart-btn">
+				<a href="#" class="popup-reg">Зарегистрироваться</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup-reg" class="popup popup_form">
+	<div class="container">
+		<div class="popup-content">
+			<h2>Регистрация</h2>
+			<div class="popup-cart-content">
+				<form action="#">
+					<div class="form-section">
+						<label>
+							Фамилия
+							<input id="popup-reg-sur" type="text" placeholder="Константинопольский">
+						</label>
+					</div>
+					<div class="form-section">
+						<label>
+							Имя
+							<input id="popup-reg-name" type="text" placeholder="Константин">
+						</label>
+					</div>
+					<div class="form-section">
+						<label>
+							Отчество
+							<input id="popup-reg-pat" type="text" placeholder="Константинович">
+						</label>
+					</div>
+					<div class="form-section">
+						<label>
+							Телефон
+							<input id="popup-reg-tel" type="tel" placeholder="Только бы не домашний!">
+						</label>
+					</div>
+					<div class="form-section">
+						<label>
+							Электронная почта
+							<input id="popup-reg-mail" type="email" placeholder="www LeninGrad www . ru">
+						</label>
+					</div>
+					<div class="form-section">
+						<label>
+							Введите пароль
+							<input id="popup-reg-pas" type="password" placeholder="****************">
+						</label>
+					</div>
+					<div class="form-section">
+						<label>
+							Повторите пароль
+							<input id="popup-reg-pas-re" type="password" placeholder="****************" data-double="#popup-reg-pas"><!-- class="no-valid" -->
+							<div class="form-message"></div>
+							<!-- <span class="color-danger">Не верно введен пароль, <a href="#">восстановить пароль</a>?</span> -->
+						</label>
+					</div>
+					<div class="form-section form-section_btn">
+						<input type="submit" value="Зарегистрироваться">
+					</div>
+				</form>
+			</div>
+			<div class="popup-cart-btn">
+				<a href="#" class="popup-in">Войти</a>
+			</div>
+		</div>
+	</div>
+</div>
+
+<div id="popup-thanks" class="popup popup_thanks">
+	<div class="container">
+		<div class="popup-content">
+			<h2>Спасибо за заказ</h2>
+			<a href="index.html" class="btn">Вернуться к покупкам</a>
+		</div>
+	</div>
+</div>
+
+<div id="popup-testi" class="popup popup_testi">
+	<div class="container">
+		<div class="popup-content">
+			<h3>Оставлять отзывы могут только зарегистрированные пользователи</h3>
+			<div class="popup-cart-btn">
+				<a href="#" class="btn popup-in">Войти</a>
+				<a href="#" class="popup-reg">Зарегистрироваться</a>
+			</div>
+		</div>
+	</div>
+</div>
+<!-- <a href="#popup-thanks" data-popup>1111111111111111111111111111111111111111111111111111</a>
+<a href="#popup-testi" data-popup>2222222222222222222222222222222222222222222222222222</a> -->
+
 	</div>
 
 	<link rel="stylesheet" href="css/style.css">

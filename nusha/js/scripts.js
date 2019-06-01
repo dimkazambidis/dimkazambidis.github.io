@@ -72,13 +72,21 @@ $(function() {
 	}
 	addDatapick();
 
-	$('input.number').on('keydown', function(e){
-		if( ( e.keyCode < 48 && e.keyCode != 8 ) || e.keyCode > 57 || ( e.keyCode == 17 && e.keyCode == 86 ) || ( $(this).val().length > 2 && e.keyCode != 8 ) ) {
-			return false;
-		}
-	});
+	//===== Input count products =====//
+	$('input.number').on('input', function(e){
+		var l = e.originalEvent.data;
+		var v = $(this).val();
 
-	$('input.number').on('change', function() {
+		if( isNaN(l) ) {
+			var v = v.replace(l, '');
+			$(this).val(v);
+		}
+
+		if( v.length > 3 ) {
+			var v = v.slice(0, -1);
+			$(this).val(v);
+		}
+
 		if( $(this).val() <= 1 || $(this).val() == '' ) {
 			$(this).val(1);
 		}
@@ -97,21 +105,20 @@ $(function() {
 
 	$('input.number').on('contextmenu', false);
 
-	// $('.account-private-card-number input[type="text"]').on('input', function(e){
-	// 	console.log($(this).val());
-	// });
-
-
-	$('.account-private-card-number input[type="text"]').on('keydown', function(e){
-		if( ( e.keyCode < 48 && e.keyCode != 8 ) || e.keyCode > 57 || ( e.keyCode == 17 && e.keyCode == 86 ) || ( $(this).val().length > 15 && e.keyCode != 8 ) ) {
-			return false;
-		}
-	});
-
-	$('.account-private-card-number input[type="text"').on('keyup', function(e){
+	//===== Input оnly numbers =====//
+	$('.account-private-card-number input[type="text"]').on('input', function(e) {
+		var l = e.originalEvent.data;
 		var v = $(this).val();
+
+		if( isNaN(l) ) {
+			var v = v.replace(l, '');
+			$(this).val(v);
+		}
+
 		$('.account-private-card-text').text(v);
 	});
+
+	$('.account-private-card-number input[type="text"]').on('contextmenu', false);
 
 	//===== Replace select box =====//
 	$('.user-city').select2({
@@ -500,5 +507,111 @@ $(function() {
 	$('.catalog-sort-toggle').on('click', function(e) {
 		$(this).toggleClass('current');
 		$('.catalog-sort-content ul').slideToggle(0);
+	});
+
+	//===== Popups =====//
+	$('a[data-popup]').fancybox({
+		src: $(this).attr('href'),
+		defaultType: 'inline',
+		// btnTpl: {
+		// 	smallBtn:
+		// 	'<button data-fancybox-close class="fancybox-button button_gal-close fancybox-button--close" title="{{CLOSE}}">' +
+		// 	"</button>",
+		// },
+		lang: 'ru',
+		i18n: {
+			ru: {
+				CLOSE: "Закрыть",
+				NEXT: "Вперед",
+				PREV: "Назад",
+				ERROR: "Запрашиваемый контент не может быть загружен. <br/> Пожалуйста попробуйте позже.",
+				PLAY_START: "Запустить слайдшоу",
+				PLAY_STOP: "Остановить слайдшоу",
+				FULL_SCREEN: "Полный экран",
+				THUMBS: "Миниатюры",
+				DOWNLOAD: "Скачать",
+				SHARE: "Поделиться",
+				ZOOM: "Масштаб"
+			}
+		}
+	});
+
+	$('a.popup-close').on('click', function(e) {
+		e.preventDefault();
+		$.fancybox.close();
+	});
+
+	$('a.popup-reg').on('click', function(e) {
+		e.preventDefault();
+		$.fancybox.close();
+		$.fancybox.open({
+			src: '#popup-reg',
+			defaultType: 'inline',
+			// btnTpl: {
+			// 	smallBtn:
+			// 	'<button data-fancybox-close class="fancybox-button button_gal-close fancybox-button--close" title="{{CLOSE}}">' +
+			// 	"</button>",
+			// },
+			lang: 'ru',
+			i18n: {
+				ru: {
+					CLOSE: "Закрыть",
+					NEXT: "Вперед",
+					PREV: "Назад",
+					ERROR: "Запрашиваемый контент не может быть загружен. <br/> Пожалуйста попробуйте позже.",
+					PLAY_START: "Запустить слайдшоу",
+					PLAY_STOP: "Остановить слайдшоу",
+					FULL_SCREEN: "Полный экран",
+					THUMBS: "Миниатюры",
+					DOWNLOAD: "Скачать",
+					SHARE: "Поделиться",
+					ZOOM: "Масштаб"
+				}
+			}
+		});
+	});
+
+	$('a.popup-in').on('click', function(e) {
+		e.preventDefault();
+		$.fancybox.close();
+		$.fancybox.open({
+			src: '#popup-in',
+			defaultType: 'inline',
+			// btnTpl: {
+			// 	smallBtn:
+			// 	'<button data-fancybox-close class="fancybox-button button_gal-close fancybox-button--close" title="{{CLOSE}}">' +
+			// 	"</button>",
+			// },
+			lang: 'ru',
+			i18n: {
+				ru: {
+					CLOSE: "Закрыть",
+					NEXT: "Вперед",
+					PREV: "Назад",
+					ERROR: "Запрашиваемый контент не может быть загружен. <br/> Пожалуйста попробуйте позже.",
+					PLAY_START: "Запустить слайдшоу",
+					PLAY_STOP: "Остановить слайдшоу",
+					FULL_SCREEN: "Полный экран",
+					THUMBS: "Миниатюры",
+					DOWNLOAD: "Скачать",
+					SHARE: "Поделиться",
+					ZOOM: "Масштаб"
+				}
+			}
+		});
+	});
+
+	//===== Redublicate password =====//
+	$('input[data-double]').on('input', function() {
+		var m = $(this).data('double');
+		var p = $(m).val();
+		if ( $(this).val() != p ) {
+			$(this).addClass('no-valid')
+			$(this).closest('.form-section').find('.form-message').html('<span class="color-danger">Не верно введен пароль</span>');
+		} else {
+			$(this).removeClass('no-valid');
+			$(this).closest('.form-section').find('.form-message').html('');
+		}
+		console.log(p);
 	});
 });
