@@ -7094,6 +7094,17 @@ a.account-orders__more:hover {
   transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
+.catalog-filters-item-name i {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border: 3px solid #FFFFFF;
+  -webkit-border-radius: 2px;
+          border-radius: 2px;
+  position: relative;
+  top: 3px;
+}
+
 .catalog-filters-item-content {
   display: none;
   padding: 19px 0 12px;

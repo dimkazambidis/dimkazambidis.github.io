@@ -486,14 +486,20 @@ $(function() {
 		var cases = [];
 		if ( c == 1 ) {
 			var v = $(this).closest('.catalog-filters-item').find('input:checked').val();
-			$(this).closest('.catalog-filters-item').find('.catalog-filters-item-name span').html(v);
+			if ( $(this).closest('.catalog-filters-item').hasClass('filter-color') ) {
+				$(this).closest('.catalog-filters-item').find('.catalog-filters-item-name span>span').html(': <i style="background-color: ' + v + '"></i>' );
+			} else {
+				$(this).closest('.catalog-filters-item').find('.catalog-filters-item-name span>span').html(': ' + v);
+			}
 		} else if ( c >= 1 ) {
 
-			$(this).closest('.catalog-filters-item').find('.catalog-filters-item-name span').html(c + ' ' + declOfNum(c, ['позиция', 'позиции', 'позиций']));
+			$(this).closest('.catalog-filters-item').find('.catalog-filters-item-name span>span').html(': ' + c + ' ' + declOfNum(c, ['позиция', 'позиции', 'позиций']));
 		} else {
 			var d = $(this).closest('.catalog-filters-item').data('filter');
-			$(this).closest('.catalog-filters-item').find('.catalog-filters-item-name span').html(d);
+			$(this).closest('.catalog-filters-item').find('.catalog-filters-item-name span>span').html('');
 		}
+		$('.catalog-filters-item-content').slideUp(300);
+		$('.catalog-filters-item').removeClass('current');
 		//console.log(c);
 	});
 
@@ -645,7 +651,10 @@ $(function() {
 		} else {
 			$('.catalog-filters-toggle').removeClass('current');
 			$('.catalog-filters-item').removeClass('current');
-			mobFilterUp(300);
+			$('.catalog-filters-item-content').slideUp(300);
+			if ($(this).width() < 1024) {
+				$('.catalog-filters-list').slideUp(300);
+			}
 		}
 	});
 
@@ -654,10 +663,14 @@ $(function() {
 		if (e.keyCode == 27) {
 			$('.catalog-filters-toggle').removeClass('current');
 			$('.catalog-filters-item').removeClass('current');
-			mobFilterUp(300);
+			$('.catalog-filters-item-content').slideUp(300);
 
 			$('.header-search').removeClass('active');
-			$('.site').toggleClass('site_menu-on-m');
+			$('.site').removeClass('site_menu-on-m');
+
+			if ($(this).width() < 1024) {
+				$('.catalog-filters-list').slideUp(300);
+			}
 		}
 	});
 });
