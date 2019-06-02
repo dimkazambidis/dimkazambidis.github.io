@@ -181,7 +181,7 @@ $(function() {
 		});
 	}
 
-	$('a.toggle-menu').on('click', function(e) {
+	$('a.toggle-menu, .header-toggle__text').on('click', function(e) {
 		e.preventDefault();
 
 		$('.header-search').removeClass('active');
@@ -498,16 +498,31 @@ $(function() {
 	});
 
 	//===== Toggle mobile filter =====//
+	function mobFilterUp(time) {
+		$('.catalog-filters-list').slideUp(time);
+		$('.catalog-filters-item-content').slideUp(time);
+	}
+
+	function mobFilterDown(time) {
+		$('.catalog-filters-list').slideDown(time);
+	}
+
 	$('.catalog-filters-toggle').on('click', function(e) {
 		$(this).toggleClass('current');
-		$('.catalog-filters-list').slideToggle(0);
+		if ( $(this).hasClass('current') ) {
+			mobFilterDown(300);
+		} else {
+			mobFilterUp(300);
+		}
+		// $('.catalog-filters-list').slideToggle(300);
+		// $('.catalog-filters-item-content').slideUp(300);
 	});
 
 	//===== Toggle mobile sorting =====//
-	$('.catalog-sort-toggle').on('click', function(e) {
-		$(this).toggleClass('current');
-		$('.catalog-sort-content ul').slideToggle(0);
-	});
+	// $('.catalog-sort-toggle').on('click', function(e) {
+	// 	$(this).toggleClass('current');
+	// 	$('.catalog-sort-content ul').slideToggle(0);
+	// });
 
 	//===== Popups =====//
 	$('a[data-popup]').fancybox({
@@ -612,6 +627,37 @@ $(function() {
 			$(this).removeClass('no-valid');
 			$(this).closest('.form-section').find('.form-message').html('');
 		}
-		console.log(p);
+	});
+
+	//===== Window resize =====//
+	$(window).on('resize', function() {
+		if ($(this).width() >= 1024) {
+			$('.catalog-filters-toggle').removeClass('current');
+			$('.catalog-filters-item').removeClass('current');
+			$('.catalog-filters-list').slideUp(0);
+		}
+	});
+
+	//===== Click out of element =====//
+	$(document).mouseup(function(e) {
+		if( $(e.target).closest('.catalog-filters-list, .catalog-filters-toggle').length ) {
+			return;
+		} else {
+			$('.catalog-filters-toggle').removeClass('current');
+			$('.catalog-filters-item').removeClass('current');
+			mobFilterUp(300);
+		}
+	});
+
+	//===== Click Esc =====//
+	$(document).keyup(function(e) {
+		if (e.keyCode == 27) {
+			$('.catalog-filters-toggle').removeClass('current');
+			$('.catalog-filters-item').removeClass('current');
+			mobFilterUp(300);
+
+			$('.header-search').removeClass('active');
+			$('.site').toggleClass('site_menu-on-m');
+		}
 	});
 });

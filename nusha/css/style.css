@@ -5226,6 +5226,7 @@ a.download::before {
   font-size: 0.875rem;
   color: #EB5255;
   padding: 5px 0 0 20px;
+  cursor: pointer;
   float: left;
 }
 
@@ -7200,16 +7201,30 @@ a.account-orders__more:hover {
 }
 
 .catalog-filters-toggle {
-  display: inline-block;
+  display: block;
+  padding: 10px 60px 10px 15px;
+  position: relative;
+  background-color: #E4F1F9;
+  margin-bottom: 15px;
+  -webkit-border-radius: 4px;
+          border-radius: 4px;
+  font-size: 0.875rem;
   cursor: pointer;
 }
 
 .catalog-filters-ico {
   width: 18px;
   height: 12px;
-  position: relative;
-  display: inline-block;
+  position: absolute;
+  top: 13px;
+  right: 15px;
+  display: block;
   margin-left: 10px;
+  -webkit-transition: -webkit-transform 0.2s;
+  transition: -webkit-transform 0.2s;
+  -o-transition: transform 0.2s;
+  transition: transform 0.2s;
+  transition: transform 0.2s, -webkit-transform 0.2s;
 }
 
 .catalog-filters-ico span {
@@ -7219,7 +7234,7 @@ a.account-orders__more:hover {
   left: 3px;
   right: 3px;
   height: 2px;
-  background-color: #4F4F4F;
+  background-color: #EB5255;
 }
 
 .catalog-filters-ico span::before {
@@ -7231,7 +7246,7 @@ a.account-orders__more:hover {
   right: -3px;
   margin-top: -5px;
   height: 2px;
-  background-color: #4F4F4F;
+  background-color: #EB5255;
 }
 
 .catalog-filters-ico span::after {
@@ -7243,23 +7258,29 @@ a.account-orders__more:hover {
   right: 4px;
   margin-top: 5px;
   height: 2px;
-  background-color: #4F4F4F;
+  background-color: #EB5255;
 }
 
-.catalog-sort-toggle, .catalog-filters-toggle {
+.catalog-sort-toggle {
   position: relative;
 }
 
-.catalog-sort-toggle:hover, .catalog-sort-toggle.current, .catalog-filters-toggle:hover, .catalog-filters-toggle.current {
+.catalog-sort-toggle:hover, .catalog-sort-toggle.current {
   color: #EB5255;
 }
 
-.catalog-sort-toggle:hover span, .catalog-sort-toggle.current span, .catalog-filters-toggle:hover span, .catalog-filters-toggle.current span {
+.catalog-sort-toggle:hover span, .catalog-sort-toggle.current span {
   background-color: #EB5255;
 }
 
-.catalog-sort-toggle:hover span:before, .catalog-sort-toggle:hover span:after, .catalog-sort-toggle.current span:before, .catalog-sort-toggle.current span:after, .catalog-filters-toggle:hover span:before, .catalog-filters-toggle:hover span:after, .catalog-filters-toggle.current span:before, .catalog-filters-toggle.current span:after {
+.catalog-sort-toggle:hover span:before, .catalog-sort-toggle:hover span:after, .catalog-sort-toggle.current span:before, .catalog-sort-toggle.current span:after {
   background-color: #EB5255;
+}
+
+.catalog-filters-toggle.current .catalog-filters-ico {
+  -webkit-transform: rotate(180deg);
+      -ms-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .delivery-info {
@@ -7865,13 +7886,24 @@ a.account-orders__more:hover {
             flex: 0 0 50%;
     max-width: 50%;
   }
+  .catalog-filters {
+    margin-bottom: 30px;
+  }
+  .catalog-filters-toggle {
+    margin-bottom: 0;
+  }
   .catalog-filters-list {
     display: none;
     position: absolute;
     top: 100%;
-    left: -10px;
-    width: 100vw;
-    max-height: 290px;
+    left: 10px;
+    right: 10px;
+    padding-top: 4px;
+    margin-top: -4px;
+    -webkit-border-radius: 0 0 4px 4px;
+            border-radius: 0 0 4px 4px;
+    overflow: hidden;
+    background-color: #E4F1F9;
   }
   .catalog-filters-item {
     float: none;
@@ -7888,28 +7920,11 @@ a.account-orders__more:hover {
   .catalog-filters-m {
     display: block;
   }
-  .catalog-sort-content {
-    position: relative;
+  .catalog-sort {
+    margin-bottom: 20px;
   }
-  .catalog-sort-content ul {
-    display: none;
-    position: absolute;
-    background-color: #FFFFFF;
-    left: 0;
-    right: 0;
-    border: 1px solid #F2F2F2;
-    -webkit-border-radius: 4px;
-            border-radius: 4px;
-    padding-top: 5px;
-    padding-bottom: 5px;
-  }
-  .catalog-sort-content ul li {
-    float: none;
+  .catalog-sort-content ul li:first-child {
     margin-left: 0;
-    padding: 5px 10px;
-  }
-  .catalog-sort-toggle {
-    display: inline-block;
   }
   #map-small {
     position: relative;
@@ -8156,6 +8171,9 @@ a.account-orders__more:hover {
 /* Medium Devices, Desktops */
 @media only screen and (min-width: 1024px) {
   /**/
+  .catalog-filters-list {
+    display: block !important;
+  }
 }
 
 /* Large Devices, Wide Screens */
