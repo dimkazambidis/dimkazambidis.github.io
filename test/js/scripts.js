@@ -384,20 +384,6 @@ $(function() {
 			'<svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M15 15L5 5M5 15L15 5" stroke="#282726"/></svg>' +
 			"</button>",
 		},
-		//hideScrollbar: false,
-		beforeLoad: function() {
-			var originalWidth = $('body').width();
-
-			// if ($('body').width() > originalWidth) {
-			// 	$('body').css('padding-right', ( $('body').width() - originalWidth) + 'px');
-			// }
-			console.log(originalWidth);
-		},
-		afterClose: function() {
-			//$('body').css('padding-right', '');
-			var originalWidth = $('body').width();
-			console.log(originalWidth);
-		},
 		lang: 'ru',
 		i18n: {
 			ru: {
