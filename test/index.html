@@ -9,7 +9,8 @@
 	<meta name="description" content="Description">
 
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<meta name="viewport" content="width=640, maximum-scale=1" >
+	<!-- <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1"> -->
 
 	<meta property="og:image" content="path/to/image.jpg">
 	<link rel="shortcut icon" href="images/favicon/favicon.ico" type="image/x-icon">
@@ -18,40 +19,167 @@
 	<link rel="apple-touch-icon" sizes="114x114" href="images/favicon/apple-touch-icon-114x114.png">
 
 	<!-- Chrome, Firefox OS and Opera -->
-	<meta name="theme-color" content="#010510">
+	<meta name="theme-color" content="#11101C">
 	<!-- Windows Phone -->
-	<meta name="msapplication-navbutton-color" content="#010510">
+	<meta name="msapplication-navbutton-color" content="#11101C">
 	<!-- iOS Safari -->
-	<meta name="apple-mobile-web-app-status-bar-style" content="#010510">
+	<meta name="apple-mobile-web-app-status-bar-style" content="#11101C">
 
-	<!--<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>-->
+	<style>body { opacity: 0; overflow-x: hidden; } html { background-color: #fff; }</style>
 
 </head>
 
 <body>
 	<div class="site">
 		<header class="site-header">
-			<div class="site-header-top">
-				<div class="container-fluid">
-					<div class="row">
-						<div class="col-xl-5">
-							<div class="site-header-top-left">
-								<div>
-									<span>МВЦ “Новосибирск Экспоцентр”</span> <span>25—27 сентября 2019</span> <a href="tel:+74951081869">+7 /495/ 108-18-69</a>
-								</div>
-							</div>
-						</div>
-						<div class="col-xl-7">
-							<div class="site-header-top-right">
-								<div>
-									<div class="site-header-top-btn">
-										<a href="#" class="btn btn_s btn_in-dark"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="12px"><path fill-rule="evenodd"  fill="rgb(0, 0, 0)" d="M-0.000,12.000 L-0.000,1.125 C-0.000,0.503 0.504,-0.000 1.125,-0.000 L7.875,-0.000 C8.496,-0.000 9.000,0.503 9.000,1.125 L9.000,12.000 L4.500,9.374 L-0.000,12.000 Z"/></svg>Забронируйте стенд</a>
-
-										<a href="#" class="btn btn_s btn_in-dark"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="13px"><path fill-rule="evenodd"  fill="rgb(0, 0, 0)" d="M0.445,8.356 L3.097,8.356 L1.702,11.809 C1.604,12.048 1.715,12.317 1.938,12.419 L3.167,12.963 C3.396,13.065 3.653,12.948 3.750,12.716 L5.076,9.437 L7.243,11.701 C7.532,12.002 8.000,11.770 8.000,11.374 L8.000,0.464 C8.000,0.048 7.502,-0.155 7.243,0.137 L0.133,7.565 C-0.154,7.850 0.058,8.356 0.445,8.356 L0.445,8.356 Z"/></svg>Подписаться на рассылку</a>
+			<div class="site-header-layer-1">
+				<div class="container">
+					<div class="site-header-city">
+						Ваш город: <a href="#" class="select-city"><img src="images/ico-geo.svg" alt="">Москва и область</a>
+						<div class="site-header-city-list">
+							<div class="site-header-city-list-inner">
+								<div class="site-header-city-list-sc">
+									<div class="site-header-city-close">
+										<a href="#"></a>
 									</div>
-									<div class="site-header-top-lng">
-										<a href="#"><img src="images/en.png" alt="English">English</a>
-										<a href="#"><img src="images/ru.png" alt="Russian">Russian</a>
+									<div class="site-header-city-list__head top">
+										<span>Ваш город: </span><a href="#"><img src="images/ico-geo.svg" alt="">Москва и область</a>
+									</div>
+									<div id="hacker-list" class="site-header-cities">
+										<input type="text" id="cities-search" class="site-header-cities-search" placeholder="Город">
+										<ul id="cities-list" class="site-header-cities-list">
+											<li class="cities-item">
+												<h3>А</h3>
+												<div class="site-header-cities-sub">
+													<ul class="list">
+														<li><a href="#" class="city">Абакан</a></li>
+														<li><a href="#" class="city">Архангельск</a></li>
+													</ul>
+												</div>
+											</li>
+
+											<li class="cities-item">
+												<h3>С</h3>
+												<ul class="list">
+													<div class="site-header-cities-sub">
+														<li><a href="#" class="city">Сармара</a></li>
+														<li><a href="#" class="city">Санкт-Петербург</a></li>
+														<li><a href="#" class="city">Суздаль</a></li>
+													</div>
+												</ul>
+											</li>
+
+											<li class="cities-item">
+												<h3>А</h3>
+												<div class="site-header-cities-sub">
+													<ul class="list">
+														<li><a href="#" class="city">Абакан</a></li>
+														<li><a href="#" class="city">Архангельск</a></li>
+													</ul>
+												</div>
+											</li>
+
+											<li class="cities-item">
+												<h3>С</h3>
+												<ul class="list">
+													<div class="site-header-cities-sub">
+														<li><a href="#" class="city">Сармара</a></li>
+														<li><a href="#" class="city">Санкт-Петербург</a></li>
+														<li><a href="#" class="city">Суздаль</a></li>
+													</div>
+												</ul>
+											</li>
+
+											<li class="cities-item">
+												<h3>А</h3>
+												<div class="site-header-cities-sub">
+													<ul class="list">
+														<li><a href="#" class="city">Абакан</a></li>
+														<li><a href="#" class="city">Архангельск</a></li>
+													</ul>
+												</div>
+											</li>
+
+											<li class="cities-item">
+												<h3>С</h3>
+												<ul class="list">
+													<div class="site-header-cities-sub">
+														<li><a href="#" class="city">Сармара</a></li>
+														<li><a href="#" class="city">Санкт-Петербург</a></li>
+														<li><a href="#" class="city">Суздаль</a></li>
+													</div>
+												</ul>
+											</li>
+
+											<li class="cities-item">
+												<h3>А</h3>
+												<div class="site-header-cities-sub">
+													<ul class="list">
+														<li><a href="#" class="city">Абакан</a></li>
+														<li><a href="#" class="city">Архангельск</a></li>
+													</ul>
+												</div>
+											</li>
+
+											<li class="cities-item">
+												<h3>С</h3>
+												<ul class="list">
+													<div class="site-header-cities-sub">
+														<li><a href="#" class="city">Сармара</a></li>
+														<li><a href="#" class="city">Санкт-Петербург</a></li>
+														<li><a href="#" class="city">Суздаль</a></li>
+													</div>
+												</ul>
+											</li>
+
+											<li class="cities-item">
+												<h3>А</h3>
+												<div class="site-header-cities-sub">
+													<ul class="list">
+														<li><a href="#" class="city">Абакан</a></li>
+														<li><a href="#" class="city">Архангельск</a></li>
+													</ul>
+												</div>
+											</li>
+
+											<li class="cities-item">
+												<h3>С</h3>
+												<ul class="list">
+													<div class="site-header-cities-sub">
+														<li><a href="#" class="city">Сармара</a></li>
+														<li><a href="#" class="city">Санкт-Петербург</a></li>
+														<li><a href="#" class="city">Суздаль</a></li>
+													</div>
+												</ul>
+											</li>
+
+											<li class="cities-item">
+												<h3>А</h3>
+												<div class="site-header-cities-sub">
+													<ul class="list">
+														<li><a href="#" class="city">Абакан</a></li>
+														<li><a href="#" class="city">Архангельск</a></li>
+													</ul>
+												</div>
+											</li>
+
+											<li class="cities-item">
+												<h3>С</h3>
+												<ul class="list">
+													<div class="site-header-cities-sub">
+														<li><a href="#" class="city">Сармара</a></li>
+														<li><a href="#" class="city">Санкт-Петербург</a></li>
+														<li><a href="#" class="city">Суздаль</a></li>
+													</div>
+												</ul>
+											</li>
+										</ul>
+									</div>
+
+									<div class="site-header-city-list-bottom clearfix">
+										<div class="site-header-city-list__head">
+											<span>Ваш город: </span><a href="#"><img src="images/ico-geo.svg" alt="">Москва и область</a>
+										</div>
 									</div>
 								</div>
 							</div>
@@ -59,55 +187,99 @@
 					</div>
 				</div>
 			</div>
-			<div class="site-header-middle">
+
+			<div class="site-header-layer-2">
 				<div class="container">
-					<div class="row">
-						<div class="col-lg-5">
-							<div class="site-header-logo">
+					<div class="row justify-content-between">
+						<div class="col-auto col-lg site-header-burger hidden-xl">
+							<div>
 								<div>
-									<a href="/"><img src="images/logo.png" alt="Майнинг и металлургия"></a>
+									<div id="burger-toggle" class="burger-menu">
+										<span></span>
+									</div>
 								</div>
 							</div>
 						</div>
 
-						<div class="col-lg-7">
-							<div class="site-header-h">
+						<div class="col-auto col-xl site-header-logo">
+							<div>
 								<div>
-									<h1>II ежегодная международная промышленная<br> выставка-форум предприятий горно-металлургического<br> комплекса «МАЙНИНГ И МЕТАЛЛУРГИЯ 2019»</h1>
+									<a href="/" title="Вернуться на главную">
+										<img src="images/logo.svg" alt="Ситимобил">
+									</a>
+								</div>
+							</div>
+						</div>
+
+						<nav class="col site-header-nav">
+							<div>
+								<div>
+									<ul class="clearfix">
+										<li><a href="#rezhim-raboty" class="link-nav" title="Доход и бонусы">Доход и бонусы</a></li>
+										<li><a href="#poyezdka-do-vo-vremya-i-posle" class="link-nav" title="Правила">Правила</a></li>
+										<li><a href="#pomoshch" class="link-nav" title="Помощь">Помощь</a></li>
+										<li><a href="#stante-voditelem" class="link-nav" title="Станьте водителем">Станьте водителем</a></li>
+									</ul>
+								</div>
+							</div>
+						</nav>
+
+						<div class="col-auto col-xl site-header-app">
+							<div>
+								<div>
+									<a href="#" target="_blank">
+										<img src="images/ico-google-app.svg" alt="">
+									</a>
 								</div>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-			<nav class="site-nav clearfix">
-				<div class="container">
-					<ul>
-						<li class="current"><a href="#">О выставке-форуме</a></li>
-						<li><a href="#">Участникам</a></li>
-						<li><a href="#">Посетителям</a></li>
-						<li><a href="#">Пресс-центр</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-					<div class="toggle-menu-container">
-						<a href="#" class="toggle-menu"><span></span></a>
-					</div>
-				</div>
-			</nav>
-			<nav class="site-nav site-nav_m clearfix">
-				<div class="container">
-					<div class="site-nav-logo">
-						<img src="images/logo-inv.png" alt="">
-					</div>
-					<ul>
-						<li class="current"><a href="#">О выставке-форуме</a></li>
-						<li><a href="#">Участникам</a></li>
-						<li><a href="#">Посетителям</a></li>
-						<li><a href="#">Пресс-центр</a></li>
-						<li><a href="#">Контакты</a></li>
-					</ul>
-					<div class="toggle-menu-container">
-						<a href="#" class="toggle-menu"><span></span></a>
+
+			<nav class="site-header-nav-m">
+				<div class="site-header-nav-m-content">
+					<div class="site-header-nav-m-sc">
+						<div class="site-header-nav-m-close">
+							<a href="#"></a>
+						</div>
+						<ul>
+							<li class="has-children">
+								<a href="#" title="Доход и бонусы">Доход и бонусы</a>
+								<ul>
+									<li><a href="#rezhim-raboty" class="link-nav">Режимы работы </a></li>
+									<li><a href="#karta-sprosa" class="link-nav">Карта спроса</a></li>
+									<li><a href="#bonusy" class="link-nav">Бонусы</a></li>
+									<li><a href="#brendirovaniye" class="link-nav">Брендирование</a></li>
+									<li><a href="#statusy" class="link-nav">Статусы</a></li>
+									<li><a href="#smeny" class="link-nav">Смены</a></li>
+									<li><a href="#toplivnyye-karty" class="link-nav">Топливные карты</a></li>
+								</ul>
+							</li>
+							<li class="has-children">
+								<a href="#" title="Правила">Правила</a>
+								<ul>
+									<li><a href="#poyezdka-do-vo-vremya-i-posle" class="link-nav">Поездка: до, во время и после</a></li>
+									<li><a href="#motivatsiya" class="link-nav">Мотивация</a></li>
+									<li><a href="#reyting" class="link-nav">Рейтинг</a></li>
+									<li><a href="#fotokontrol" class="link-nav">Фотоконтроль</a></li>
+									<li><a href="#standarty-servisa" class="link-nav">Стандарты сервиса</a></li>
+									<li><a href="#razdely-prilozheniya" class="link-nav">Разделы приложения</a></li>
+									<li><a href="#aeroporty" class="link-nav">Аэропорты</a></li>
+									<li><a href="#klassifikator-avtomobiley" class="link-nav">Классификатор автомобилей</a></li>
+									<li><a href="#blokirovka" class="link-nav">Блокировка</a></li>
+									<li><a href="#strakhovaniye" class="link-nav">Страхование</a></li>
+								</ul>
+							</li>
+							<li><a href="#pomoshch" class="link-nav" title="Помощь">Помощь</a></li>
+							<li><a href="#stante-voditelem" class="link-nav" title="Станьте водителем">Станьте водителем</a></li>
+						</ul>
+
+						<div class="site-header-nav-m-city clearfix">
+							<div class="site-header-city-list__head">
+								<a href="#"><img src="images/ico-geo.svg" alt="">Москва и область</a>
+							</div>
+						</div>
 					</div>
 				</div>
 			</nav>
@@ -116,552 +288,1771 @@
 		<div class="site-primary">
 			<main class="site-content">
 				<section class="home-banner">
+					<div class="home-banner-bg">
+						<div class="home-banner-bg-img"></div>
+					</div>
 					<div class="home-banner-content">
-						<div class="home-banner-info">
-							<div>
-								<div>
-									<h2>Майнинг и<br> Металлургия 2019</h2>
-									<p>II ежегодная международная<br> выставка-форум предприятий ГМК </p>
-									<div class="home-banner-info-time">25 - 27 сентября 2019 года</div>
-									<div class="home-banner-info-btn">
-										<div><a href="#" class="btn btn_s btn_inv"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="9px" height="12px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M-0.000,12.000 L-0.000,1.125 C-0.000,0.503 0.504,-0.000 1.125,-0.000 L7.875,-0.000 C8.496,-0.000 9.000,0.503 9.000,1.125 L9.000,12.000 L4.500,9.374 L-0.000,12.000 Z"/></svg>Забронируйте стенд</a></div>
-										<div><a href="#" class="btn btn_s btn_inv"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="8px" height="13px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M0.445,8.356 L3.097,8.356 L1.702,11.809 C1.604,12.048 1.715,12.317 1.938,12.419 L3.167,12.963 C3.396,13.065 3.653,12.948 3.750,12.716 L5.076,9.437 L7.243,11.701 C7.532,12.002 8.000,11.770 8.000,11.374 L8.000,0.464 C8.000,0.048 7.502,-0.155 7.243,0.137 L0.133,7.565 C-0.154,7.850 0.058,8.356 0.445,8.356 L0.445,8.356 Z"/></svg>Подписаться на рассылку</a></div>
-										<div><a href="#" class="btn btn_s btn_inv"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="11px" height="8px"><path fill-rule="evenodd" fill="rgb(0, 0, 0)" d="M4.628,7.692 L10.532,1.666 C10.732,1.462 10.732,1.130 10.532,0.925 L9.806,0.185 C9.605,-0.021 9.280,-0.021 9.080,0.185 L4.265,5.098 L2.018,2.804 C1.817,2.600 1.492,2.600 1.292,2.804 L0.566,3.545 C0.365,3.750 0.365,4.081 0.566,4.286 L3.903,7.692 C4.103,7.897 4.428,7.897 4.628,7.692 Z"/></svg>Посетить выставку</a></div>
-									</div>
-								</div>
-							</div>
-						</div>
-						<div class="home-banner-images">
-							<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 626" height="626" width="1920">
-								<polygon style="fill:#ffffff" points="1920,626 0,626 173.023,0 1920,0"/>
-
-								<a xlink:href="#" target="_blank">
-									<polygon fill="url(#pat-1)" points="402.2,626 0,626 173.023,0 574.084,0 "/>
-									<polygon class="op" fill="url(#pat-1-1)" points="402.2,626 0,626 173.023,0 574.084,0 "/>
-								</a>
-
-								<a xlink:href="#" target="_blank">
-									<polygon fill="url(#pat-2)" points="814.06,625.676 411.859,625.676 584.882,0 985.943,0"/>
-									<polygon class="op" fill="url(#pat-2-1)" points="814.06,625.676 411.859,625.676 584.882,0 985.943,0"/>
-								</a>
-
-								<a xlink:href="#" target="_blank">
-									<polygon fill="url(#pat-3)" points="1225.648,625.676 823.447,625.676 996.47,0 1397.531,0"/>
-									<polygon class="op" fill="url(#pat-3-1)" points="1225.648,625.676 823.447,625.676 996.47,0 1397.531,0"/>
-								</a>
-
-								<a xlink:href="#" target="_blank">
-									<polygon fill="url(#pat-4)" points="1636.941,625.676 1234.741,625.676 1407.764,0 1808.825,0"/>
-									<polygon class="op" fill="url(#pat-4-1)" points="1636.941,625.676 1234.741,625.676 1407.764,0 1808.825,0"/>
-								</a>
-
-								<filter id="grayscale">
-									<feColorMatrix type="saturate" values="0"/>
-								</filter>
-
-								<pattern id="pat-1-1" x="0" y="0" height="100%" width="100%" viewBox="0 0 576 626">
-									<image xlink:href="images/svg-img-1-1.png" x="0" y="0" height="626" width="576"/>
-								</pattern>
-								<pattern id="pat-1" x="0" y="0" height="100%" width="100%" viewBox="0 0 576 626">
-									<image xlink:href="images/svg-img-1.png" x="0" y="0" height="626" width="576"/>
-								</pattern>
-
-								<pattern id="pat-2-1" x="0" y="0" height="100%" width="100%" viewBox="0 0 576 626">
-									<image xlink:href="images/svg-img-2-1.png" x="0" y="0" height="626" width="576"/>
-								</pattern>
-								<pattern id="pat-2" x="0" y="0" height="100%" width="100%" viewBox="0 0 576 626">
-									<image xlink:href="images/svg-img-2.png" x="0" y="0" height="626" width="576"/>
-								</pattern>
-
-								<pattern id="pat-3-1" x="0" y="0" height="100%" width="100%" viewBox="0 0 576 626">
-									<image xlink:href="images/svg-img-3-1.png" x="0" y="0" height="626" width="576"/>
-								</pattern>
-								<pattern id="pat-3" x="0" y="0" height="100%" width="100%" viewBox="0 0 576 626">
-									<image xlink:href="images/svg-img-3.png" x="0" y="0" height="626" width="576"/>
-								</pattern>
-
-								<pattern id="pat-4-1" x="0" y="0" height="100%" width="100%" viewBox="0 0 576 626">
-									<image xlink:href="images/svg-img-4-1.png" x="0" y="0" height="626" width="576"/>
-								</pattern>
-								<pattern id="pat-4" x="0" y="0" height="100%" width="100%" viewBox="0 0 576 626">
-									<image xlink:href="images/svg-img-4.png" x="0" y="0" height="626" width="576"/>
-								</pattern>
-
-								<polygon style="fill:#292b29" points="1920,625.676 1646.631,625.676 1819.654,0 1920,0"/>
-							</svg>
-						</div>
-					</div>
-				</section>
-
-				<section class="home-about">
-					<div class="container">
-						<div class="row">
-							<div class="col-lg-6">
-								<h2>Майнинг и Металлургия</h2>
-								<p class="accent">II ежегодная международная промышленная выставка-форум предприятий горно-металлургического комплекса «МАЙНИНГ И МЕТАЛЛУРГИЯ 2019» пройдет в МВК «Новосибирск Экспоцентр» с 25 по 27 сентября 2019 года.</p>
-								<p>МАЙНИНГ И МЕТАЛЛУРГИЯ 2019 - единственное и по-своему уникальное бизнес-событие в России, объединяющее на своей площадке ведущих специалистов и предприятия по добыче угля, драг металлов, никеля, цинка, а также предприятия горно-металлургического комплекса, производителей оборудования и программного обеспечения как локального рынка, так и международных специалистов. В программе выставки-форума круглые столы и дебаты первых лиц компаний-лидеров, международных инвесторов, а также представителей как региональных, так и федеральных властей.</p>
-								<p>Когда мы закрыли двери выставки 2018 года, значительное количество экспонентов уже сказали «да» для выставки 2019 года, забронировали стенд и начали планировать участие!</p>
-							</div>
-							<div class="col-lg-6">
-								<div class="home-about-links">
-									<div class="home-about-links-item">
-										<a href="#">
-											<span class="home-about-links-item-h">План зала</span>
-											<span class="home-about-links-item-img">
-												<span>
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="53px"><path fill-rule="evenodd" fill="rgb(39, 37, 37)" d="M43.684,28.899 L59.089,50.764 C59.259,51.007 59.282,51.325 59.144,51.588 C59.008,51.853 58.735,52.017 58.439,52.017 L0.794,52.017 C0.494,52.017 0.221,51.848 0.085,51.580 C-0.051,51.312 -0.023,50.991 0.156,50.749 L16.321,28.884 C16.471,28.682 16.707,28.562 16.959,28.562 L21.374,28.562 L17.473,20.222 C15.484,15.865 15.787,10.819 18.280,6.715 C20.724,2.694 24.781,0.254 29.412,0.020 C29.923,-0.007 30.444,-0.007 30.955,0.020 C35.588,0.254 39.646,2.694 42.088,6.715 C44.581,10.819 44.885,15.865 42.899,20.215 L38.993,28.562 L43.035,28.562 C43.293,28.562 43.535,28.689 43.684,28.899 ZM41.455,19.548 C43.218,15.685 42.948,11.193 40.730,7.541 C38.565,3.977 34.973,1.814 30.876,1.607 C30.646,1.596 30.417,1.590 30.184,1.590 C29.953,1.590 29.721,1.596 29.493,1.607 C25.396,1.814 21.805,3.977 19.639,7.541 C17.420,11.193 17.150,15.685 18.916,19.554 L30.184,43.638 L41.455,19.548 ZM38.249,30.152 L30.904,45.852 C30.774,46.131 30.492,46.310 30.184,46.310 C29.875,46.310 29.596,46.131 29.463,45.852 L22.120,30.152 L17.360,30.152 L2.372,50.427 L56.906,50.427 L42.622,30.152 L38.249,30.152 ZM22.423,14.080 C22.423,9.801 25.905,6.319 30.184,6.319 C34.465,6.319 37.947,9.801 37.947,14.080 C37.947,18.361 34.465,21.843 30.184,21.843 C25.905,21.843 22.423,18.361 22.423,14.080 ZM36.356,14.080 C36.356,10.678 33.588,7.909 30.184,7.909 C26.782,7.909 24.013,10.678 24.013,14.080 C24.013,17.484 26.782,20.253 30.184,20.253 C33.588,20.253 36.356,17.484 36.356,14.080 Z"/></svg>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="home-about-links-item">
-										<a href="#">
-											<span class="home-about-links-item-h">Список участников</span>
-											<span class="home-about-links-item-img">
-												<span>
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="31px"><path fill-rule="evenodd" fill="rgb(39, 37, 37)" d="M46.557,15.965 L10.487,15.965 C10.048,15.965 9.692,15.609 9.692,15.170 C9.692,14.731 10.048,14.375 10.487,14.375 L46.557,14.375 C46.996,14.375 47.352,14.731 47.352,15.170 C47.352,15.609 46.996,15.965 46.557,15.965 ZM46.557,1.590 L10.487,1.590 C10.048,1.590 9.692,1.233 9.692,0.795 C9.692,0.356 10.048,-0.000 10.487,-0.000 L46.557,-0.000 C46.996,-0.000 47.352,0.356 47.352,0.795 C47.352,1.233 46.996,1.590 46.557,1.590 ZM2.882,30.340 L0.795,30.340 C0.356,30.340 -0.000,29.984 -0.000,29.545 C-0.000,29.106 0.356,28.750 0.795,28.750 L2.882,28.750 C3.321,28.750 3.677,29.106 3.677,29.545 C3.677,29.984 3.321,30.340 2.882,30.340 ZM2.882,15.965 L0.795,15.965 C0.356,15.965 -0.000,15.609 -0.000,15.170 C-0.000,14.731 0.356,14.375 0.795,14.375 L2.882,14.375 C3.321,14.375 3.677,14.731 3.677,15.170 C3.677,15.609 3.321,15.965 2.882,15.965 ZM2.882,1.590 L0.795,1.590 C0.356,1.590 -0.000,1.233 -0.000,0.795 C-0.000,0.356 0.356,-0.000 0.795,-0.000 L2.882,-0.000 C3.321,-0.000 3.677,0.356 3.677,0.795 C3.677,1.233 3.321,1.590 2.882,1.590 ZM10.487,28.750 L46.557,28.750 C46.996,28.750 47.352,29.106 47.352,29.545 C47.352,29.984 46.996,30.340 46.557,30.340 L10.487,30.340 C10.048,30.340 9.692,29.984 9.692,29.545 C9.692,29.106 10.048,28.750 10.487,28.750 Z"/></svg>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="home-about-links-item">
-										<a href="#">
-											<span class="home-about-links-item-h">СМИ</span>
-											<span class="home-about-links-item-img">
-												<span>
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.8px" height="38.8px"><path fill="#000000" d="M67.199,36.649L50,26.509V11.69L67.199,1.549V36.649z M51.199,25.823L66,34.55v-30.9l-14.801,8.727V25.823z M42.509,36.199H5.692C3.105,36.199,1,34.08,1,31.475V6.724c0-2.605,2.105-4.725,4.692-4.725h36.817c2.587,0,4.69,2.12,4.69,4.725 v24.75C47.199,34.08,45.096,36.199,42.509,36.199z M5.692,3.199C3.767,3.199,2.2,4.78,2.2,6.724v24.75C2.2,33.418,3.767,35,5.692,35 h36.817C44.434,35,46,33.418,46,31.475V6.724c0-1.944-1.566-3.525-3.491-3.525H5.692z"/></svg>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="home-about-links-item">
-										<a href="#">
-											<span class="home-about-links-item-h">Партнеры</span>
-											<span class="home-about-links-item-img">
-												<span>
-													<svg xmlns="http://www.w3.org/2000/svg"xmlns:xlink="http://www.w3.org/1999/xlink"width="64.8px" height="53.8px"><path fill="#272525" d="M44.512,52.364H19.538V30.669c0-6.885,5.603-12.487,12.489-12.487c6.884,0,12.485,5.602,12.485,12.487 V52.364z M20.738,51.165h22.574V30.669c0-6.224-5.063-11.287-11.286-11.287c-6.225,0-11.289,5.063-11.289,11.287V51.165z M55.343,47.631H45.189V30.669c0-2.023-0.501-4.023-1.487-5.943l-0.331-0.644l0.693-0.206c0.898-0.267,1.709-0.396,2.479-0.396 c4.853,0,8.8,3.946,8.8,8.795V47.631z M46.389,46.432h7.755V32.275c0-4.188-3.41-7.595-7.601-7.595 c-0.456,0-0.934,0.055-1.448,0.168c0.859,1.885,1.294,3.84,1.294,5.821V46.432z M18.861,47.631H8.719V32.275 c0-4.85,3.947-8.795,8.799-8.795c0.777,0,1.562,0.126,2.468,0.396l0.691,0.206l-0.329,0.643c-0.987,1.93-1.488,3.931-1.488,5.944 V47.631z M9.919,46.432h7.742V30.669c0-1.973,0.436-3.928,1.297-5.822c-0.511-0.113-0.98-0.167-1.44-0.167 c-4.19,0-7.599,3.407-7.599,7.595V46.432z M63.061,43.629H56.02V32.275c0-1.635-0.449-3.234-1.334-4.756L54.3,26.856l0.736-0.215 c0.659-0.192,1.22-0.282,1.766-0.282c3.451,0,6.259,2.811,6.259,6.267V43.629z M57.219,42.43h4.643v-9.803 c0-2.794-2.27-5.067-5.06-5.067c-0.227,0-0.454,0.02-0.699,0.061c0.741,1.496,1.116,3.058,1.116,4.654V42.43z M8.042,43.629H1 V32.627c0-3.456,2.811-6.267,6.266-6.267c0.542,0,1.102,0.09,1.759,0.282l0.74,0.216l-0.391,0.664 c-0.884,1.501-1.332,3.1-1.332,4.753V43.629z M2.2,42.43h4.642V32.275c0-1.611,0.375-3.174,1.114-4.655 c-0.242-0.041-0.467-0.06-0.689-0.06c-2.793,0-5.066,2.273-5.066,5.067V42.43z M56.802,25.603c-2.233,0-4.051-1.814-4.051-4.044 s1.817-4.044,4.051-4.044c2.23,0,4.045,1.814,4.045,4.044S59.032,25.603,56.802,25.603z M56.802,18.715 c-1.572,0-2.852,1.276-2.852,2.844s1.279,2.844,2.852,2.844c1.569,0,2.846-1.276,2.846-2.844S58.371,18.715,56.802,18.715z  M7.266,25.603c-2.234,0-4.052-1.814-4.052-4.044s1.818-4.044,4.052-4.044c2.231,0,4.046,1.814,4.046,4.044 S9.497,25.603,7.266,25.603z M7.266,18.715c-1.573,0-2.852,1.276-2.852,2.844s1.279,2.844,2.852,2.844 c1.569,0,2.846-1.276,2.846-2.844S8.835,18.715,7.266,18.715z M46.551,22.698c-3.156,0-5.724-2.566-5.724-5.72 c0-3.16,2.567-5.73,5.724-5.73c3.16,0,5.731,2.57,5.731,5.73C52.282,20.132,49.711,22.698,46.551,22.698z M46.551,12.448 c-2.494,0-4.524,2.032-4.524,4.53c0,2.492,2.03,4.52,4.524,4.52c2.499,0,4.532-2.028,4.532-4.52 C51.083,14.48,49.05,12.448,46.551,12.448z M17.514,22.698c-3.161,0-5.732-2.566-5.732-5.72c0-3.16,2.572-5.73,5.732-5.73 c3.156,0,5.724,2.57,5.724,5.73C23.238,20.132,20.67,22.698,17.514,22.698z M17.514,12.448c-2.499,0-4.532,2.032-4.532,4.53 c0,2.492,2.033,4.52,4.532,4.52c2.495,0,4.524-2.028,4.524-4.52C22.038,14.48,20.009,12.448,17.514,12.448z M32.027,17.365 c-4.512,0-8.182-3.672-8.182-8.185c0-4.511,3.67-8.181,8.182-8.181c2.183,0,4.238,0.852,5.786,2.398 c1.548,1.547,2.399,3.601,2.397,5.783C40.21,13.693,36.539,17.365,32.027,17.365z M32.027,2.199c-3.85,0-6.982,3.132-6.982,6.981 c0,3.852,3.132,6.985,6.982,6.985c3.851,0,6.984-3.133,6.984-6.985c0.001-1.862-0.726-3.614-2.047-4.934 C35.643,2.926,33.89,2.199,32.027,2.199z"/></svg>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="home-about-links-item">
-										<a href="#">
-											<span class="home-about-links-item-h">Забронировать стенд</span>
-											<span class="home-about-links-item-img">
-												<span>
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="45px" height="59px"><path fill-rule="evenodd"  fill="rgb(39, 37, 37)" d="M44.558,58.254 C44.441,58.316 44.313,58.346 44.186,58.346 C44.029,58.346 43.873,58.300 43.739,58.209 L22.490,43.770 L1.242,58.209 C0.998,58.375 0.683,58.391 0.423,58.254 C0.162,58.116 0.000,57.846 0.000,57.551 L0.000,0.795 C0.000,0.355 0.356,-0.000 0.795,-0.000 L44.186,-0.000 C44.625,-0.000 44.981,0.355 44.981,0.795 L44.981,57.551 C44.981,57.846 44.818,58.116 44.558,58.254 ZM43.390,1.590 L1.590,1.590 L1.590,56.050 L22.043,42.151 C22.178,42.060 22.334,42.015 22.490,42.015 C22.646,42.015 22.802,42.060 22.937,42.151 L43.390,56.050 L43.390,1.590 Z"/></svg>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="home-about-links-item">
-										<a href="#">
-											<span class="home-about-links-item-h">Брошюра выставки</span>
-											<span class="home-about-links-item-img">
-												<span>
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58px" height="46px"><path fill-rule="evenodd"  fill="rgb(39, 37, 37)" d="M54.529,33.314 C54.382,33.533 54.135,33.665 53.870,33.665 L35.923,33.665 C35.484,33.665 35.128,33.309 35.128,32.870 C35.128,32.431 35.484,32.075 35.923,32.075 L53.427,32.075 C54.680,29.874 55.535,25.343 55.535,22.398 C55.535,14.981 49.663,8.947 42.447,8.947 C41.417,8.947 40.350,9.088 39.276,9.363 C38.917,9.455 38.536,9.283 38.368,8.948 C36.088,4.409 31.593,1.590 26.638,1.590 C20.301,1.590 14.848,6.233 13.673,12.629 C13.594,13.056 13.184,13.339 12.760,13.270 C12.192,13.174 11.685,13.129 11.208,13.129 C5.905,13.129 1.590,17.565 1.590,23.017 C1.590,25.906 2.662,30.247 4.129,32.075 L21.611,32.075 C22.051,32.075 22.406,32.431 22.406,32.870 C22.406,33.309 22.051,33.665 21.611,33.665 L3.768,33.665 C3.550,33.665 3.342,33.575 3.192,33.418 C1.110,31.234 -0.000,25.974 -0.000,23.017 C-0.000,16.687 5.029,11.538 11.208,11.538 C11.548,11.538 11.898,11.558 12.264,11.597 C13.852,4.833 19.782,-0.000 26.638,-0.000 C31.992,-0.000 36.863,2.926 39.495,7.678 C40.492,7.465 41.482,7.357 42.447,7.357 C50.541,7.357 57.125,14.105 57.125,22.398 C57.125,25.358 56.223,30.801 54.529,33.314 ZM24.335,37.246 L27.768,42.063 L27.768,19.419 C27.768,18.980 28.124,18.624 28.563,18.624 C29.002,18.624 29.358,18.980 29.358,19.419 L29.358,42.063 L32.791,37.246 C33.047,36.889 33.543,36.806 33.900,37.060 C34.258,37.315 34.341,37.812 34.086,38.170 L29.210,45.010 C29.061,45.220 28.820,45.343 28.563,45.343 C28.306,45.343 28.064,45.220 27.915,45.010 L23.040,38.170 C22.785,37.812 22.868,37.315 23.226,37.060 C23.583,36.806 24.080,36.888 24.335,37.246 Z"/></svg>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="home-about-links-item">
-										<a href="#">
-											<span class="home-about-links-item-h">Подписаться</span>
-											<span class="home-about-links-item-img">
-												<span>
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="42px" height="41px"><path fill-rule="evenodd"  fill="rgb(39, 37, 37)" d="M41.192,1.116 L25.397,36.882 C25.267,37.175 24.967,37.371 24.651,37.355 C24.330,37.347 24.044,37.147 23.928,36.848 L18.633,23.205 L1.351,40.064 C1.036,40.371 0.533,40.365 0.226,40.050 C-0.080,39.736 -0.074,39.233 0.240,38.926 L17.523,22.067 L3.894,16.383 C3.597,16.260 3.404,15.969 3.405,15.647 C3.406,15.325 3.601,15.035 3.898,14.913 L40.163,0.059 C40.260,0.020 40.363,-0.000 40.464,-0.000 C40.675,-0.000 40.882,0.083 41.034,0.240 C41.260,0.473 41.323,0.819 41.192,1.116 ZM6.281,15.657 L19.242,21.062 L19.244,21.062 L19.246,21.062 C19.341,21.102 19.426,21.162 19.499,21.234 C19.502,21.238 19.506,21.238 19.508,21.242 C19.510,21.243 19.510,21.244 19.512,21.245 C19.586,21.323 19.643,21.413 19.680,21.509 L24.717,34.484 L38.940,2.278 L6.281,15.657 Z"/></svg>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="home-about-links-item">
-										<a href="#">
-											<span class="home-about-links-item-h">Скачать презентацию</span>
-											<span class="home-about-links-item-img">
-												<span>
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="60px" height="52px"><path fill-rule="evenodd"  fill="rgb(39, 37, 37)" d="M58.306,1.590 L30.346,1.590 L30.346,7.387 L50.871,7.387 C51.310,7.387 51.666,7.743 51.666,8.182 L51.666,36.740 C51.666,37.179 51.310,37.535 50.871,37.535 L31.516,37.535 L44.515,50.115 C44.830,50.421 44.838,50.924 44.533,51.240 C44.377,51.401 44.169,51.482 43.962,51.482 C43.763,51.482 43.563,51.408 43.409,51.258 L30.346,38.616 L30.346,50.687 C30.346,51.126 29.990,51.482 29.551,51.482 C29.112,51.482 28.756,51.126 28.756,50.687 L28.756,38.589 L15.389,51.263 C15.070,51.566 14.568,51.553 14.265,51.234 C13.963,50.915 13.976,50.412 14.295,50.110 L27.557,37.535 L7.966,37.535 C7.527,37.535 7.171,37.179 7.171,36.740 L7.171,8.182 C7.171,7.743 7.527,7.387 7.966,7.387 L28.756,7.387 L28.756,1.590 L0.795,1.590 C0.356,1.590 0.000,1.234 0.000,0.795 C0.000,0.356 0.356,-0.000 0.795,-0.000 L58.306,-0.000 C58.746,-0.000 59.102,0.356 59.102,0.795 C59.102,1.234 58.746,1.590 58.306,1.590 ZM8.761,8.977 L8.761,35.945 L29.537,35.945 L29.539,35.945 L50.076,35.945 L50.076,8.977 L8.761,8.977 Z"/></svg>
-												</span>
-											</span>
-										</a>
-									</div>
-
-									<div class="home-about-links-item">
-										<a href="#">
-											<span class="home-about-links-item-h">Связаться с нами</span>
-											<span class="home-about-links-item-img">
-												<span>
-													<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="58px" height="58px"><path fill-rule="evenodd"  fill="rgb(39, 37, 37)" d="M57.527,29.369 C57.498,29.813 57.097,30.144 56.653,30.103 C56.222,30.062 55.913,29.685 55.941,29.253 C56.427,21.780 53.699,14.508 48.388,9.196 C43.153,3.961 35.982,1.229 28.611,1.627 C28.179,1.651 27.806,1.338 27.770,0.906 C27.732,0.463 28.068,0.065 28.513,0.040 C36.341,-0.384 43.954,2.515 49.512,8.072 C55.152,13.712 58.047,21.433 57.527,29.369 ZM33.993,16.099 C35.695,16.996 37.251,18.143 38.627,19.520 C39.972,20.865 41.100,22.384 41.987,24.040 C42.198,24.436 42.025,24.929 41.622,25.122 C41.234,25.309 40.777,25.147 40.573,24.768 C39.761,23.256 38.731,21.872 37.503,20.643 C36.246,19.387 34.826,18.338 33.275,17.518 C32.894,17.317 32.729,16.863 32.913,16.473 L32.914,16.472 C33.105,16.068 33.597,15.891 33.993,16.099 ZM32.338,9.663 L32.338,9.661 C32.390,9.217 32.798,8.893 33.239,8.963 C37.257,9.597 40.893,11.450 43.795,14.352 C46.657,17.214 48.502,20.796 49.159,24.754 C49.233,25.196 48.910,25.609 48.466,25.664 C48.039,25.717 47.658,25.418 47.587,24.993 C46.980,21.372 45.290,18.095 42.671,15.476 C40.015,12.821 36.691,11.122 33.016,10.537 C32.591,10.469 32.288,10.091 32.338,9.663 ZM19.339,24.564 L33.464,38.691 L37.891,34.264 C38.201,33.954 38.702,33.953 39.013,34.260 L49.404,44.531 C49.718,44.841 49.719,45.346 49.407,45.658 L37.505,57.560 C37.195,57.870 36.692,57.870 36.381,57.560 C36.071,57.249 36.071,56.745 36.381,56.436 L44.709,48.108 L35.502,38.901 L34.026,40.378 C33.716,40.687 33.212,40.687 32.902,40.378 L17.652,25.126 C17.341,24.817 17.341,24.312 17.652,24.003 L19.057,22.598 L10.062,13.602 L1.920,21.745 L31.154,50.980 C31.465,51.290 31.465,51.793 31.154,52.105 C30.844,52.415 30.341,52.415 30.030,52.105 L0.232,22.307 C-0.078,21.996 -0.078,21.493 0.232,21.182 L12.697,8.719 C13.007,8.408 13.511,8.408 13.821,8.719 L23.941,18.839 C24.252,19.148 24.252,19.652 23.941,19.963 L19.339,24.564 ZM45.833,46.983 L47.717,45.099 L38.457,35.946 L36.626,37.778 L45.833,46.983 ZM13.259,10.405 L11.186,12.478 L20.182,21.473 L22.254,19.400 L13.259,10.405 Z"/></svg>
-												</span>
-											</span>
-										</a>
-									</div>
-								</div>
+						<div>
+							<div class="container">
+								<div class="home-banner-title">Всё о работе<br> водителем с Ситимобил</div>
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="home-achives">
+				<section id="main" class="site-content">
 					<div class="container">
-						<div class="row justify-content-center">
-							<div class="col-sm-6 col-md-4 col-lg home-achives-item">
-								<div class="home-achives-item-ico">
-									<div>
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="100px" height="80px"><path fill-rule="evenodd"  fill="rgb(251, 201, 42)" d="M93.750,74.285 L64.750,74.285 C65.047,72.589 65.000,71.732 65.000,68.571 L93.766,68.571 C94.453,68.571 95.016,67.928 95.016,67.143 L95.016,60.500 C95.016,58.214 94.422,55.999 93.312,54.125 C91.656,51.321 88.719,49.660 85.437,49.660 C82.031,49.660 80.750,51.446 75.000,51.446 C69.250,51.446 67.969,49.660 64.562,49.660 C63.578,49.660 62.656,49.838 61.766,50.125 C61.500,49.589 60.984,48.125 58.609,45.374 C60.484,44.463 62.500,43.928 64.562,43.928 C68.906,43.928 70.000,45.714 75.000,45.714 C80.000,45.714 81.094,43.928 85.437,43.928 C90.156,43.928 94.750,46.339 97.453,50.910 C99.062,53.642 100.000,56.928 100.000,60.481 L100.000,67.143 C100.000,71.089 97.203,74.285 93.750,74.285 ZM75.000,40.000 C66.719,40.000 60.000,32.321 60.000,22.857 C60.000,13.393 66.719,5.714 75.000,5.714 C83.281,5.714 90.000,13.393 90.000,22.857 C90.000,32.321 83.281,40.000 75.000,40.000 ZM75.000,11.428 C69.484,11.428 65.000,16.553 65.000,22.857 C65.000,29.160 69.484,34.285 75.000,34.285 C80.516,34.285 85.000,29.160 85.000,22.857 C85.000,16.553 80.516,11.428 75.000,11.428 ZM60.000,71.428 C60.000,76.160 56.641,80.000 52.500,80.000 L7.500,80.000 C3.359,80.000 -0.000,76.160 -0.000,71.428 L-0.000,63.428 C-0.000,59.178 1.125,55.232 3.062,51.946 C6.297,46.464 11.812,43.571 17.484,43.571 C22.703,43.571 24.000,45.714 30.000,45.714 C36.000,45.714 37.297,43.571 42.516,43.571 C48.187,43.571 53.703,46.464 56.937,51.946 C58.875,55.232 60.000,59.178 60.000,63.428 L60.000,71.428 ZM54.984,71.428 L54.984,63.428 C54.984,60.464 54.219,57.589 52.781,55.142 C50.625,51.482 46.781,49.285 42.516,49.285 C38.250,49.285 36.719,51.428 30.000,51.428 C23.281,51.428 21.750,49.285 17.469,49.285 C13.203,49.285 9.359,51.482 7.203,55.142 C5.766,57.589 5.000,60.464 5.000,63.428 L5.000,71.428 C5.000,73.000 6.125,74.285 7.500,74.285 L52.500,74.285 C53.875,74.285 55.000,73.000 55.000,71.428 L54.984,71.428 ZM30.000,40.000 C20.328,40.000 12.500,31.053 12.500,20.000 C12.500,8.946 20.328,-0.001 30.000,-0.001 C39.672,-0.001 47.500,8.946 47.500,20.000 C47.500,31.053 39.672,40.000 30.000,40.000 ZM30.000,5.714 C23.109,5.714 17.500,12.125 17.500,20.000 C17.500,27.875 23.109,34.285 30.000,34.285 C36.891,34.285 42.500,27.875 42.500,20.000 C42.500,12.125 36.891,5.714 30.000,5.714 Z"/></svg>
-									</div>
-								</div>
-								<div class="home-achives-item-count"><span class="animate-num" data-count="20000">0</span>+</div>
-								<div class="home-achives-item-text">Посетителей</div>
-							</div>
-
-							<div class="col-sm-6 col-md-4 col-lg home-achives-item">
-								<div class="home-achives-item-ico">
-									<div>
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="90px" height="80px"><path fill-rule="evenodd"  fill="rgb(251, 201, 42)" d="M88.287,35.346 L70.539,51.377 L74.737,74.023 C75.492,78.116 70.841,81.167 66.946,79.268 L45.000,68.575 L23.054,79.268 C19.159,81.183 14.507,78.116 15.263,74.023 L19.461,51.377 L1.713,35.346 C-1.478,32.466 0.285,27.439 4.685,26.848 L29.216,23.533 L40.181,2.926 C42.162,-0.794 47.854,-0.747 49.819,2.926 L60.783,23.533 L85.315,26.848 C89.714,27.439 91.478,32.466 88.287,35.346 ZM57.224,28.093 L45.000,5.136 L32.776,28.093 L5.457,31.766 L25.237,49.649 L20.569,74.864 L45.000,62.957 L69.448,74.848 L64.780,49.634 L84.543,31.766 L57.224,28.093 Z"/></svg>
-									</div>
-								</div>
-								<div class="home-achives-item-count"><span class="animate-num" data-count="1128">0</span></div>
-								<div class="home-achives-item-text">Премиум посетителей</div>
-							</div>
-
-							<div class="col-sm-6 col-md-4 col-lg home-achives-item">
-								<div class="home-achives-item-ico">
-									<div>
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="80px" height="80px"><path fill-rule="evenodd"  fill="rgb(251, 201, 42)" d="M40.000,80.000 C17.903,80.000 -0.000,62.097 -0.000,40.000 C-0.000,17.903 17.903,-0.001 40.000,-0.001 C62.097,-0.001 80.000,17.903 80.000,40.000 C80.000,62.097 62.097,80.000 40.000,80.000 ZM71.161,55.484 L57.855,55.484 C56.403,62.660 53.951,68.758 50.887,73.080 C59.758,70.144 67.048,63.742 71.161,55.484 ZM54.193,40.000 C54.193,36.306 53.935,32.870 53.500,29.677 L26.500,29.677 C26.064,32.870 25.806,36.306 25.806,40.000 C25.806,43.693 26.064,47.129 26.500,50.322 L53.500,50.322 C53.935,47.129 54.193,43.693 54.193,40.000 ZM40.000,74.838 C44.339,74.838 49.903,67.725 52.597,55.484 L27.403,55.484 C30.097,67.725 35.661,74.838 40.000,74.838 ZM29.113,73.080 C26.032,68.741 23.597,62.645 22.145,55.484 L8.839,55.484 C12.952,63.742 20.242,70.144 29.113,73.080 ZM5.161,40.000 C5.161,43.596 5.710,47.064 6.726,50.322 L21.322,50.322 C20.887,47.015 20.645,43.580 20.645,40.000 C20.645,36.419 20.903,32.984 21.322,29.677 L6.726,29.677 C5.710,32.935 5.161,36.402 5.161,40.000 ZM8.839,24.515 L22.145,24.515 C23.597,17.339 26.048,11.241 29.113,6.919 C20.242,9.855 12.952,16.257 8.839,24.515 ZM40.000,5.161 C35.661,5.161 30.097,12.274 27.403,24.515 L52.597,24.515 C49.903,12.274 44.339,5.161 40.000,5.161 ZM50.887,6.919 C53.968,11.258 56.403,17.354 57.855,24.515 L71.161,24.515 C67.048,16.257 59.758,9.855 50.887,6.919 ZM58.677,29.677 C59.113,32.984 59.355,36.419 59.355,40.000 C59.355,43.580 59.097,47.015 58.677,50.322 L73.274,50.322 C74.290,47.064 74.839,43.596 74.839,40.000 C74.839,36.402 74.290,32.935 73.274,29.677 L58.677,29.677 Z"/></svg>
-									</div>
-								</div>
-								<div class="home-achives-item-count"><span class="animate-num" data-count="45">0</span></div>
-								<div class="home-achives-item-text">Стран участников</div>
-							</div>
-
-							<div class="col-sm-6 col-md-4 col-lg home-achives-item">
-								<div class="home-achives-item-ico">
-									<div>
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="91px" height="80px"><path fill-rule="evenodd" fill="rgb(251, 201, 42)" d="M88.500,59.999 L80.890,59.999 C79.500,61.843 77.828,63.453 76.000,64.859 L76.000,77.500 C76.000,78.874 74.875,80.000 73.500,80.000 L56.000,80.000 C54.625,80.000 53.500,78.874 53.500,77.500 L53.500,69.999 L43.500,69.999 L43.500,77.500 C43.500,78.874 42.375,80.000 41.000,80.000 L23.500,80.000 C22.125,80.000 21.000,78.874 21.000,77.500 L21.000,64.890 C14.969,60.328 11.000,53.156 11.000,45.000 L9.750,45.000 C4.547,45.000 0.390,40.437 1.078,35.093 C1.641,30.687 5.609,27.499 10.062,27.499 C10.578,27.499 11.000,27.922 11.000,28.437 L11.000,31.562 C11.000,32.078 10.578,32.500 10.062,32.500 L9.906,32.500 C8.094,32.500 6.422,33.719 6.078,35.500 C5.609,37.890 7.437,40.000 9.750,40.000 L11.500,40.000 C13.187,31.718 18.969,24.953 26.625,21.859 C26.250,20.453 26.000,19.015 26.000,17.500 C26.000,7.828 33.828,-0.001 43.500,-0.001 C53.172,-0.001 61.000,7.828 61.000,17.500 C61.000,18.046 60.922,18.562 60.859,19.093 C64.469,16.578 68.766,14.999 73.500,14.999 L76.000,14.999 L76.000,25.094 C79.406,27.671 82.156,31.047 83.891,34.999 L88.500,34.999 C89.875,34.999 91.000,36.125 91.000,37.499 L91.000,57.499 C91.000,58.875 89.875,59.999 88.500,59.999 ZM43.500,5.000 C36.594,5.000 31.000,10.593 31.000,17.500 C31.000,18.531 31.141,19.515 31.391,20.469 C32.890,20.187 34.422,20.000 36.000,20.000 L55.750,20.000 C55.906,19.187 56.000,18.359 56.000,17.500 C56.000,10.593 50.406,5.000 43.500,5.000 ZM86.000,40.000 L80.625,40.000 C77.875,33.719 77.203,32.280 71.000,27.578 L71.000,20.187 C66.453,20.859 63.906,22.890 61.266,24.999 L36.000,24.999 C24.969,24.999 16.000,33.968 16.000,45.000 C16.000,47.780 15.859,54.734 26.000,62.390 L26.000,74.999 L38.500,74.999 L38.500,65.000 L58.500,65.000 L58.500,74.999 L71.000,74.999 L71.000,62.390 C75.734,58.765 75.734,58.499 78.391,55.000 L86.000,55.000 L86.000,40.000 ZM68.500,45.000 C67.125,45.000 66.000,43.875 66.000,42.500 C66.000,41.125 67.125,40.000 68.500,40.000 C69.875,40.000 71.000,41.125 71.000,42.500 C71.000,43.875 69.875,45.000 68.500,45.000 Z"/></svg>
-									</div>
-								</div>
-								<div class="home-achives-item-count"><span class="animate-num" data-count="65">0</span>%</div>
-								<div class="home-achives-item-text">Стран участников</div>
-							</div>
-
-							<div class="col-sm-6 col-md-4 col-lg home-achives-item">
-								<div class="home-achives-item-ico">
-									<div>
-										<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="70px" height="80px"><path fill-rule="evenodd"  fill="rgb(251, 201, 42)" d="M68.750,30.000 L60.000,30.000 L55.016,74.999 L63.750,74.999 C64.441,74.999 65.000,75.559 65.000,76.249 L65.000,78.749 C65.000,79.440 64.441,80.000 63.750,80.000 L6.250,80.000 C5.559,80.000 5.000,79.440 5.000,78.749 L5.000,76.249 C5.000,75.559 5.559,74.999 6.250,74.999 L15.000,74.999 L10.015,30.276 L10.014,30.000 L1.250,30.000 C0.559,30.000 -0.000,29.440 -0.000,28.749 L-0.000,26.250 C-0.000,25.559 0.559,24.999 1.250,24.999 L10.000,24.999 L10.000,22.499 C10.000,13.573 16.745,6.268 25.394,5.212 C26.364,2.197 29.161,-0.001 32.500,-0.001 L42.500,-0.001 C46.642,-0.001 50.000,3.357 50.000,7.500 C50.000,11.642 46.642,14.999 42.500,14.999 L32.500,14.999 C29.312,14.999 26.608,13.002 25.522,10.199 C19.570,11.156 15.000,16.286 15.000,22.499 L15.000,24.999 L68.750,24.999 C69.440,24.999 70.000,25.559 70.000,26.250 L70.000,28.749 C70.000,29.440 69.440,30.000 68.750,30.000 ZM32.500,10.000 L42.500,10.000 C43.878,10.000 45.000,8.878 45.000,7.500 C45.000,6.122 43.878,5.000 42.500,5.000 L32.500,5.000 C31.122,5.000 30.000,6.122 30.000,7.500 C30.000,8.878 31.122,10.000 32.500,10.000 ZM15.000,30.000 L19.984,74.723 L19.986,74.999 L50.000,74.999 L54.984,30.000 L15.000,30.000 Z"/></svg>
-									</div>
-								</div>
-								<div class="home-achives-item-count"><span class="animate-num" data-count="50">0</span></div>
-								<div class="home-achives-item-text">Лучших спикеров</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="home-media">
-					<div class="container">
-						<h2 class="h-section">Информационная поддержка</h2>
-						<div class="row justify-content-center">
-							<div class="col-6 col-md-4 col-lg-3 home-media-item">
-								<div>
-									<div>
-										<a href="#"><img src="images/media-1.png" alt="Добывающая промышленность"></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-md-4 col-lg-3 home-media-item">
-								<div>
-									<div>
-										<a href="#"><img src="images/media-2.png" alt="Rosmining"></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-md-4 col-lg-3 home-media-item">
-								<div>
-									<div>
-										<a href="#"><img src="images/media-3.png" alt="Буровые решения"></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-md-4 col-lg-3 home-media-item">
-								<div>
-									<div>
-										<a href="#"><img src="images/media-4.png" alt="Infomach"></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-md-4 col-lg-3 home-media-item">
-								<div>
-									<div>
-										<a href="#"><img src="images/media-5.png" alt="СГИ"></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-md-4 col-lg-3 home-media-item">
-								<div>
-									<div>
-										<a href="#"><img src="images/media-6.png" alt="Прогресс Техноглогий"></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-md-4 col-lg-3 home-media-item">
-								<div>
-									<div>
-										<a href="#"><img src="images/media-7.png" alt="Хелпинвер"></a>
-									</div>
-								</div>
-							</div>
-							<div class="col-6 col-md-4 col-lg-3 home-media-item">
-								<div>
-									<div>
-										<a href="#"><img src="images/media-8.png" alt="1Build"></a>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-
-				<section class="home-soc">
-					<div class="container">
-						<div class="row">
-							<div class="col-md-7 col-lg-6">
-								<h2>Подписывайтесь на нас в социальных сетях</h2>
-							</div>
-							<div class="col-md-5 col-lg-6">
-								<div class="home-soc-list">
-									<div>
-										<div class="row justify-content-between">
-											<div class="col-auto">
-												<a href="#" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="63px" height="36px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)"d="M62.540,2.685 C61.766,2.061 58.796,2.083 55.842,2.097 C52.828,2.111 49.836,2.133 49.144,2.391 C48.504,2.635 47.061,5.985 45.193,9.436 C43.072,13.339 40.452,17.091 38.793,17.070 C36.650,17.041 37.148,10.620 37.275,5.914 C37.357,2.793 36.836,1.817 36.359,1.509 C35.213,0.770 32.095,0.045 32.095,0.045 C32.095,0.045 22.778,-0.637 21.446,3.273 C23.217,3.496 26.283,2.950 25.100,15.018 C25.040,15.599 23.671,20.570 19.310,13.841 C18.239,12.176 14.056,2.140 12.620,2.097 C7.783,1.968 3.043,1.781 1.353,2.685 C-0.187,3.510 3.445,10.455 9.577,19.709 C14.585,27.286 19.898,33.197 29.052,34.682 C30.763,34.847 35.273,35.048 36.665,34.388 C37.632,33.936 36.456,27.372 39.708,26.754 C41.174,26.482 46.726,33.577 48.839,34.388 C50.119,34.883 52.947,35.070 55.842,34.976 C58.975,34.883 62.502,35.242 62.845,33.219 C63.611,28.691 53.408,22.802 53.103,20.004 C52.880,17.995 56.832,14.300 58.886,11.488 C61.386,8.073 64.102,3.955 62.540,2.685 "/></svg></a>
+						<div class="row site-nav-inner">
+							<div class="col-12 col-xl order-2 order-xl-1 site-nav">
+								<div id="dokhod-i-bonusy" class="site-nav-item">
+									<div class="site-nav-link-box has-children">
+										<div>
+											<a href="#rezhim-raboty" class="site-nav-link link-nav"><span>Доход<br> и бонусы <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 15L8 8L1 1" stroke="#C9C9C9" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+											<div class="site-nav-link-sub">
+												<ul>
+													<li><a href="#rezhim-raboty" class="link-nav">Режимы работы</a></li>
+													<li><a href="#karta-sprosa" class="link-nav">Карта спроса</a></li>
+													<li><a href="#bonusy" class="link-nav">Бонусы</a></li>
+													<li><a href="#brendirovaniye" class="link-nav">Брендирование</a></li>
+													<li><a href="#statusy" class="link-nav">Статусы</a></li>
+													<li><a href="#smeny" class="link-nav">Смены</a></li>
+													<li><a href="#toplivnyye-karty" class="link-nav">Топливные карты</a></li>
+												</ul>
 											</div>
-											<div class="col-auto">
-												<a href="#" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="19px" height="38px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M12.530,11.399 L12.530,8.359 C12.530,6.880 13.589,6.534 14.331,6.534 L18.898,6.534 L18.898,0.025 L12.606,-0.000 C5.626,-0.000 4.041,4.854 4.041,7.964 L4.041,11.399 L-0.000,11.399 L-0.000,15.988 L-0.000,18.997 L4.073,18.997 L4.073,37.999 L12.213,37.999 L12.213,18.997 L18.258,18.997 L18.554,16.013 L19.000,11.399 L12.530,11.399 Z"/></svg></a>
+										</div>
+									</div>
+									<div class="site-nav-content-inner"></div>
+								</div>
+
+								<div id="pravila" class="site-nav-item">
+									<div class="site-nav-link-box has-children">
+										<div>
+											<a href="#poyezdka-do-vo-vremya-i-posle" class="site-nav-link link-nav"><span>Правила <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 15L8 8L1 1" stroke="#C9C9C9" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+											<div class="site-nav-link-sub">
+												<ul>
+													<li><a href="#poyezdka-do-vo-vremya-i-posle" class="link-nav">Поездка: до, во время<br> и после</a></li>
+													<li><a href="#motivatsiya" class="link-nav">Мотивация</a></li>
+													<li><a href="#reyting" class="link-nav">Рейтинг</a></li>
+													<li><a href="#fotokontrol" class="link-nav">Фотоконтроль</a></li>
+													<li><a href="#standarty-servisa" class="link-nav">Стандарты сервиса</a></li>
+													<li><a href="#razdely-prilozheniya" class="link-nav">Разделы приложения</a></li>
+													<li><a href="#aeroporty" class="link-nav">Аэропорты</a></li>
+													<li><a href="#klassifikator-avtomobiley" class="link-nav">Классификатор автомобилей</a></li>
+													<li><a href="#blokirovka" class="link-nav">Блокировка</a></li>
+													<li><a href="#strakhovaniye" class="link-nav">Страхование</a></li>
+												</ul>
 											</div>
-											<div class="col-auto">
-												<a href="#" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="48px" height="39px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M43.066,9.723 C43.096,10.149 43.096,10.576 43.096,11.002 C43.096,24.007 33.198,38.992 15.106,38.992 C9.533,38.992 4.355,37.378 -0.000,34.576 C0.792,34.667 1.553,34.697 2.375,34.697 C6.974,34.697 11.208,33.144 14.589,30.495 C10.264,30.403 6.639,27.571 5.391,23.672 C6.000,23.763 6.609,23.824 7.249,23.824 C8.132,23.824 9.015,23.702 9.837,23.490 C5.330,22.575 1.949,18.616 1.949,13.834 L1.949,13.712 C3.259,14.444 4.782,14.900 6.396,14.961 C3.746,13.195 2.010,10.179 2.010,6.768 C2.010,4.941 2.497,3.266 3.350,1.804 C8.193,7.774 15.472,11.672 23.634,12.098 C23.482,11.367 23.391,10.607 23.391,9.845 C23.391,4.423 27.776,0.007 33.228,0.007 C36.061,0.007 38.619,1.195 40.416,3.114 C42.639,2.687 44.771,1.865 46.660,0.738 C45.929,3.023 44.375,4.941 42.335,6.159 C44.314,5.947 46.233,5.398 48.000,4.637 C46.660,6.586 44.985,8.322 43.066,9.723 Z"/></svg></a>
-											</div>
-											<div class="col-auto">
-												<a href="#" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="39px" height="38px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M31.459,37.999 L7.535,37.999 C3.382,37.999 -0.000,34.704 -0.000,30.657 L-0.000,17.959 L-0.000,15.100 L-0.000,7.342 C-0.000,3.295 3.382,-0.000 7.535,-0.000 L31.459,-0.000 C35.618,-0.000 39.000,3.295 39.000,7.342 L39.000,15.100 L39.000,17.964 L39.000,30.657 C39.000,34.704 35.618,37.999 31.459,37.999 ZM25.478,15.737 C25.350,15.521 25.216,15.306 25.067,15.100 C23.816,13.415 21.793,12.312 19.502,12.312 C17.212,12.312 15.184,13.415 13.933,15.100 C13.784,15.306 13.650,15.521 13.521,15.737 C12.966,16.705 12.636,17.814 12.636,19.002 C12.636,22.688 15.714,25.687 19.502,25.687 C23.286,25.687 26.364,22.688 26.364,19.002 C26.364,17.819 26.039,16.705 25.478,15.737 ZM34.486,5.215 L34.486,4.378 L33.626,4.383 L27.877,4.398 L27.897,10.837 L34.486,10.817 L34.486,5.215 ZM35.201,17.071 L35.201,15.100 L29.380,15.100 C29.524,15.451 29.647,15.807 29.756,16.174 C30.018,17.071 30.162,18.019 30.162,19.002 C30.162,24.729 25.380,29.389 19.502,29.389 C13.619,29.389 8.837,24.729 8.837,19.002 C8.837,18.019 8.982,17.071 9.244,16.174 C9.352,15.807 9.476,15.451 9.620,15.100 L3.798,15.100 L3.798,17.071 L3.798,30.657 C3.798,32.669 5.476,34.298 7.535,34.298 L31.459,34.298 C33.523,34.298 35.201,32.669 35.201,30.657 L35.201,17.071 Z"/></svg></a>
+										</div>
+									</div>
+									<div class="site-nav-content-inner"></div>
+								</div>
+
+								<div id="pomoshch-section" class="site-nav-item">
+									<div class="site-nav-link-box single-link">
+										<div>
+											<a href="#pomoshch" class="site-nav-link link-nav"><span>Помощь <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 15L8 8L1 1" stroke="#C9C9C9" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+										</div>
+									</div>
+									<div class="site-nav-content-inner"></div>
+								</div>
+
+								<div id="stante-voditelem-section" class="site-nav-item">
+									<div class="site-nav-link-box single-link">
+										<div>
+											<a href="#stante-voditelem" class="site-nav-link link-nav"><span>Станьте<br> водителем <svg width="9" height="16" viewBox="0 0 9 16" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 15L8 8L1 1" stroke="#C9C9C9" stroke-linecap="round" stroke-linejoin="round"/></svg></span></a>
+										</div>
+									</div>
+									<div class="site-nav-content-inner"></div>
+								</div>
+							</div>
+
+							<div id="glavnaya" class="col-12 col-xl order-1 order-xl-2 home-content">
+								<div class="home-content-inner">
+									<div class="row">
+										<div class="col-12 col-md home-content-text">
+											<h2>Хотите работать<br> с нами?</h2>
+											<p>Оставьте заявку, и мы позвоним<br> вам в течение дня</p>
+										</div>
+										<div class="col-12 col-md home-content-form">
+											<div class="form-phone">
+												<div class="form-phone-list">
+													<div class="form-phone-item start active">
+														<div class="form-phone-step">
+															<form action="#">
+																<h3>Стать водителем</h3>
+																<div class="form-input form-input_tel">
+																	<label for="your-tel">Введите номер телефона</label>
+																	<input id="your-tel" type="tel" placeholder="+7" data-require>
+																</div>
+																<div class="form-btn">
+																	<input type="submit" value="Оставить заявку" class="btn-step" data-step="tel">
+																</div>
+																<div class="form-privacy">
+																	Нажимая на кнопку, я соглашаюсь<br> с условиями <a href="#" class="green" title="политики конфиденциальности">политики конфиденциальности</a>
+																</div>
+															</form>
+														</div>
+													</div>
+
+													<div class="form-phone-item">
+														<div class="form-phone-step">
+															<h3>Введите пароль из СМС</h3>
+															<div class="form-pass">
+																<input type="hidden">
+																<div class="form-pass-container sms-pass">
+																	<input type="text" class="number" placeholder="X" data-require>
+																	<input type="text" class="number" placeholder="X" data-require>
+																	<input type="text" class="number" placeholder="X" data-require>
+																	<input type="text" class="number" placeholder="X" data-require>
+																</div>
+															</div>
+															<div class="form-desc-sms">
+																Отправить пароль<br> повторно через: XXXX
+															</div>
+															<div class="form-btn">
+																<a href="#" class="btn btn-step" data-step="sms">Далее</a>
+															</div>
+														</div>
+													</div>
+
+													<div class="form-phone-item">
+														<div class="form-phone-step">
+															<form action="#">
+																<h3>Заполните поля</h3>
+																<div class="form-input form-input_name">
+																	<input type="text" placeholder="Имя" data-require>
+																</div>
+																<div class="form-input form-input_city">
+																	<input type="text" placeholder="Город" data-require>
+																</div>
+																<div class="form-btn">
+																	<input type="submit" value="Готово" class="btn-step" data-step="client">
+																</div>
+															</form>
+														</div>
+													</div>
+
+													<div class="form-phone-item finish">
+														<div class="form-phone-step">
+															<figure>
+																<img src="images/form-ico-ok.svg" alt="">
+															</figure>
+															<h3>Спасибо!</h3>
+															<div class="form-desc-ok">
+																Мы скоро<br> свяжемся с вами
+															</div>
+															<div class="form-btn">
+																<a href="#" class="btn btn-step" data-step="close">Закрыть</a>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 									</div>
 								</div>
-
 							</div>
 						</div>
 					</div>
 				</section>
 
-				<section class="home-support">
-					<div class="container">
-						<h2 class="h-section">Поддержка добычи и металлургии России</h2>
-						<div class="row">
-							<div class="col-lg-6">
-								<h3>Выставка с проверенной репутацией</h3>
-								<p>Майнинг и Металлургия 2019 традиционно получило поддержку отраслевых Министерств и ведомств Российской Федерации:</p>
-								<p>Министерства энергетики Российской Федерации<br> Министерства экономического развития Российской Федерации<br> Министерства финансов Российской Федерации<br> Министерства промышленности и торговли<br> Комитета по энергетике Государственной Думы Российской Федерации<br> АО «Российский экспортный центр»<br> Некоммерческого партнерства «Горнопромышленники России»<br> Торгово-промышленной палаты Российской Федерации<br> Центра поддержки экспорта Новосибирской области<br> Российско-азиатского союза промышленников и предпринимателей<br> Администрации Новосибирской области<br> Союза добывающих предприятий РФ</p>
-							</div>
-							<div class="col-lg-6">
-								<div class="home-support-map">
-									<img src="images/map-dotted.png" alt="">
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
+				<div id="rezhim-raboty" data-section="#dokhod-i-bonusy" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll">
+								<div class="site-content-body-scroll-inner">
+									<div class="site-content-title site-content-title_air">
+										<h1>Режимы работы</h1>
+										<p>В Ситимобил есть три режима работы приложения:</p>
+									</div>
 
-				<section class="home-gallery">
-					<div class="home-gallery-list">
-						<div class="home-gallery-item">
-							<a href="images/folio-1.jpg"><img src="images/folio-1.jpg" alt=""></a>
-						</div>
-						<div class="home-gallery-item">
-							<a href="images/folio-2.jpg"><img src="images/folio-2.jpg" alt=""></a>
-						</div>
-						<div class="home-gallery-item">
-							<a href="images/folio-3.jpg"><img src="images/folio-3.jpg" alt=""></a>
-						</div>
-						<div class="home-gallery-item">
-							<a href="images/folio-4.jpg"><img src="images/folio-4.jpg" alt=""></a>
-						</div>
-						<div class="home-gallery-item">
-							<a href="images/folio-5.jpg"><img src="images/folio-5.jpg" alt=""></a>
-						</div>
-						<div class="home-gallery-item">
-							<a href="images/folio-6.jpg"><img src="images/folio-6.jpg" alt=""></a>
-						</div>
-						<div class="home-gallery-item">
-							<a href="images/folio-7.jpg"><img src="images/folio-7.jpg" alt=""></a>
-						</div>
-						<div class="home-gallery-item">
-							<a href="images/folio-8.jpg"><img src="images/folio-8.jpg" alt=""></a>
-						</div>
-						<div class="home-gallery-item">
-							<a href="images/folio-9.jpg"><img src="images/folio-9.jpg" alt=""></a>
-						</div>
-						<div class="home-gallery-item">
-							<a href="images/folio-10.jpg"><img src="images/folio-10.jpg" alt=""></a>
-						</div>
-						<div class="home-gallery-item">
-							<a href="images/folio-11.jpg"><img src="images/folio-11.jpg" alt=""></a>
-						</div>
-						<div class="home-gallery-item">
-							<a href="images/folio-12.jpg"><img src="images/folio-12.jpg" alt=""></a>
-						</div>
-					</div>
-				</section>
+									<div class="card card_full">
+										<div>
+											<h2 class="title-robot title-robot_green">Назначать<br> (зеленый робот)</h2>
+											<div class="card-content">
+												<p>Мы рекомендуем выполнять заказы в режиме «Назначать». По нашим данным, на зеленом роботе водители зарабатывают на Х% больше, чем на других.</p>
+												<h4>Главное о режиме:</h4>
+												<ul class="ul-green">
+													<li>Заказы назначаются автоматически<br> Но если к ним есть комментарии, система<br> предлагает их вам, а не назначает.</li>
+													<li>У вас есть приоритет, так как система в первую очередь распределяет заказы на водителей с включенным зеленым роботом.</li>
+													<li>В этом режиме вы можете получать стандартные и повышенные минималки, бонусы за выполнение «Персональных целей», доплаты по акции «Гарантированный доход» (Больше в разделе бонусы).</li>
+												</ul>
+											</div>
+										</div>
+									</div>
 
-				<section class="home-news">
-					<div class="container">
-						<h2 class="h-section">Новости</h2>
-						<div class="row">
-							<div class="col-md-6 home-news-item">
-								<div class="home-news-item-content">
-									<h3>Выберите себе подарок</h3>
-									<time>26 ноября 2018</time>
-									<p>Оргкомитет выставки-форума «Майнинг и Металлургия 2019» объявляет сезон подарков к Новому году открытым!!! Подтвердив свое участие в выставке-форуме «ММ19» до…</p>
-									<a href="news-single.html" class="btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M7.538,13.871 C7.194,14.005 6.806,14.005 6.461,13.871 C3.339,12.655 -0.000,8.909 -0.000,3.492 C-0.000,2.964 0.340,2.487 0.862,2.284 L6.462,0.100 C6.806,-0.034 7.194,-0.034 7.538,0.100 L13.138,2.284 C13.660,2.487 14.000,2.964 14.000,3.492 C14.000,9.531 10.035,12.898 7.538,13.871 ZM11.763,4.784 L11.103,4.166 C10.921,3.995 10.626,3.995 10.443,4.166 L6.067,8.262 L4.023,6.350 C3.841,6.179 3.546,6.179 3.363,6.350 L2.703,6.967 C2.521,7.137 2.521,7.414 2.703,7.584 L5.737,10.422 C5.919,10.593 6.214,10.593 6.397,10.422 L11.763,5.401 C11.945,5.231 11.945,4.954 11.763,4.784 Z"/></svg>Читать полностью</a>
+									<div class="card card_full">
+										<div>
+											<h2 class="title-robot title-robot_orange">Предлагать<br> (желтый робот)</h2>
+											<div class="card-content">
+												<h4>Главное о режиме:</h4>
+												<ul class="ul-orange">
+													<li>В этом режиме система предлагает вам заказ, а вы можете выбирать: принимать его или отказаться.</li>
+													<li>На желтом роботе нет приоритета в распределении заказов, так как самые выгодные поездки получают водители в режиме «Назначать».</li>
+													<li>Выполняя заказы в этом режиме, у вас нет возможности получить бонусы.</li>
+												</ul>
+											</div>
+										</div>
+									</div>
+
+									<div class="card card_full">
+										<div>
+											<h2 class="title-robot title-robot_red">Выключено<br> (выбор из списка)</h2>
+											<div class="card-content">
+												<p>В этом режиме система не предлагает вам заказы, но вы выбираете их сами из списка во вкладке «Заказы»</p>
+												<h4>Главное о режиме:</h4>
+												<ul class="ul-red">
+													<li>В этот список попадают только те заказы, которые не были распределены зеленым и желтым роботами</li>
+													<li>В этом списке есть и срочные поездки, и заказы, оформленные на конкретное время</li>
+													<li>В списке заказов вы можете настроить фильтр (нажав на оранжевую кнопку в правом нижнем углу) и выбирать поездки только в определенном районе</li>
+													<li>В этом режиме нет доплат, бонусов и акций</li>
+												</ul>
+											</div>
+										</div>
+									</div>
 								</div>
 							</div>
-							<div class="col-md-6 home-news-item">
-								<div class="home-news-item-content">
-									<h3>Выберите себе подарок</h3>
-									<time>26 ноября 2018</time>
-									<p>Оргкомитет выставки-форума «Майнинг и Металлургия 2019» объявляет сезон подарков к Новому году открытым!!! Подтвердив свое участие в выставке-форуме «ММ19» до…</p>
-									<a href="news-single.html" class="btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M7.538,13.871 C7.194,14.005 6.806,14.005 6.461,13.871 C3.339,12.655 -0.000,8.909 -0.000,3.492 C-0.000,2.964 0.340,2.487 0.862,2.284 L6.462,0.100 C6.806,-0.034 7.194,-0.034 7.538,0.100 L13.138,2.284 C13.660,2.487 14.000,2.964 14.000,3.492 C14.000,9.531 10.035,12.898 7.538,13.871 ZM11.763,4.784 L11.103,4.166 C10.921,3.995 10.626,3.995 10.443,4.166 L6.067,8.262 L4.023,6.350 C3.841,6.179 3.546,6.179 3.363,6.350 L2.703,6.967 C2.521,7.137 2.521,7.414 2.703,7.584 L5.737,10.422 C5.919,10.593 6.214,10.593 6.397,10.422 L11.763,5.401 C11.945,5.231 11.945,4.954 11.763,4.784 Z"/></svg>Читать полностью</a>
-								</div>
-							</div>
-							<div class="col-md-6 home-news-item">
-								<div class="home-news-item-content">
-									<h3>Выберите себе подарок</h3>
-									<time>26 ноября 2018</time>
-									<p>Оргкомитет выставки-форума «Майнинг и Металлургия 2019» объявляет сезон подарков к Новому году открытым!!! Подтвердив свое участие в выставке-форуме «ММ19» до…</p>
-									<a href="news-single.html" class="btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M7.538,13.871 C7.194,14.005 6.806,14.005 6.461,13.871 C3.339,12.655 -0.000,8.909 -0.000,3.492 C-0.000,2.964 0.340,2.487 0.862,2.284 L6.462,0.100 C6.806,-0.034 7.194,-0.034 7.538,0.100 L13.138,2.284 C13.660,2.487 14.000,2.964 14.000,3.492 C14.000,9.531 10.035,12.898 7.538,13.871 ZM11.763,4.784 L11.103,4.166 C10.921,3.995 10.626,3.995 10.443,4.166 L6.067,8.262 L4.023,6.350 C3.841,6.179 3.546,6.179 3.363,6.350 L2.703,6.967 C2.521,7.137 2.521,7.414 2.703,7.584 L5.737,10.422 C5.919,10.593 6.214,10.593 6.397,10.422 L11.763,5.401 C11.945,5.231 11.945,4.954 11.763,4.784 Z"/></svg>Читать полностью</a>
-								</div>
-							</div>
-							<div class="col-md-6 home-news-item">
-								<div class="home-news-item-content">
-									<h3>Выберите себе подарок</h3>
-									<time>26 ноября 2018</time>
-									<p>Оргкомитет выставки-форума «Майнинг и Металлургия 2019» объявляет сезон подарков к Новому году открытым!!! Подтвердив свое участие в выставке-форуме «ММ19» до…</p>
-									<a href="news-single.html" class="btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M7.538,13.871 C7.194,14.005 6.806,14.005 6.461,13.871 C3.339,12.655 -0.000,8.909 -0.000,3.492 C-0.000,2.964 0.340,2.487 0.862,2.284 L6.462,0.100 C6.806,-0.034 7.194,-0.034 7.538,0.100 L13.138,2.284 C13.660,2.487 14.000,2.964 14.000,3.492 C14.000,9.531 10.035,12.898 7.538,13.871 ZM11.763,4.784 L11.103,4.166 C10.921,3.995 10.626,3.995 10.443,4.166 L6.067,8.262 L4.023,6.350 C3.841,6.179 3.546,6.179 3.363,6.350 L2.703,6.967 C2.521,7.137 2.521,7.414 2.703,7.584 L5.737,10.422 C5.919,10.593 6.214,10.593 6.397,10.422 L11.763,5.401 C11.945,5.231 11.945,4.954 11.763,4.784 Z"/></svg>Читать полностью</a>
-								</div>
-							</div>
-							<div class="col-md-6 home-news-item">
-								<div class="home-news-item-content">
-									<h3>Выберите себе подарок</h3>
-									<time>26 ноября 2018</time>
-									<p>Оргкомитет выставки-форума «Майнинг и Металлургия 2019» объявляет сезон подарков к Новому году открытым!!! Подтвердив свое участие в выставке-форуме «ММ19» до…</p>
-									<a href="news-single.html" class="btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M7.538,13.871 C7.194,14.005 6.806,14.005 6.461,13.871 C3.339,12.655 -0.000,8.909 -0.000,3.492 C-0.000,2.964 0.340,2.487 0.862,2.284 L6.462,0.100 C6.806,-0.034 7.194,-0.034 7.538,0.100 L13.138,2.284 C13.660,2.487 14.000,2.964 14.000,3.492 C14.000,9.531 10.035,12.898 7.538,13.871 ZM11.763,4.784 L11.103,4.166 C10.921,3.995 10.626,3.995 10.443,4.166 L6.067,8.262 L4.023,6.350 C3.841,6.179 3.546,6.179 3.363,6.350 L2.703,6.967 C2.521,7.137 2.521,7.414 2.703,7.584 L5.737,10.422 C5.919,10.593 6.214,10.593 6.397,10.422 L11.763,5.401 C11.945,5.231 11.945,4.954 11.763,4.784 Z"/></svg>Читать полностью</a>
-								</div>
-							</div>
-							<div class="col-md-6 home-news-item">
-								<div class="home-news-item-content">
-									<h3>Выберите себе подарок</h3>
-									<time>26 ноября 2018</time>
-									<p>Оргкомитет выставки-форума «Майнинг и Металлургия 2019» объявляет сезон подарков к Новому году открытым!!! Подтвердив свое участие в выставке-форуме «ММ19» до…</p>
-									<a href="news-single.html" class="btn"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="14px" height="14px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M7.538,13.871 C7.194,14.005 6.806,14.005 6.461,13.871 C3.339,12.655 -0.000,8.909 -0.000,3.492 C-0.000,2.964 0.340,2.487 0.862,2.284 L6.462,0.100 C6.806,-0.034 7.194,-0.034 7.538,0.100 L13.138,2.284 C13.660,2.487 14.000,2.964 14.000,3.492 C14.000,9.531 10.035,12.898 7.538,13.871 ZM11.763,4.784 L11.103,4.166 C10.921,3.995 10.626,3.995 10.443,4.166 L6.067,8.262 L4.023,6.350 C3.841,6.179 3.546,6.179 3.363,6.350 L2.703,6.967 C2.521,7.137 2.521,7.414 2.703,7.584 L5.737,10.422 C5.919,10.593 6.214,10.593 6.397,10.422 L11.763,5.401 C11.945,5.231 11.945,4.954 11.763,4.784 Z"/></svg>Читать полностью</a>
-								</div>
-							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
 						</div>
-						<div class="home-news-more">
-							<a href="#">Читать все новости></a>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_next">
+								<a href="#karta-sprosa" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Карта спроса
+							</div>
 						</div>
 					</div>
-				</section>
+				</div>
+
+				<div id="karta-sprosa" data-section="#dokhod-i-bonusy" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll site-content-body-scroll_large">
+								<div class="site-content-body-scroll-inner">
+									<div class="site-content-title">
+										<h1>Карта спроса</h1>
+									</div>
+
+									<div class="media-card row">
+										<div class="col media-card-img">
+											<figure>
+												<img src="images/img-spros.png" alt="Карта спроса">
+											</figure>
+										</div>
+										<div class="col media-card-text">
+											<div class="card card_middle">
+												<div>
+													<div class="card-content text-normal">
+														<p>В разделе приложения «Спрос» — карта вашего города и зоны спроса, которые отражают ситуацию в реальном времени.</p>
+														<p>Фиолетовым цветом выделены зоны, где сейчас много заказов. Чем темнее зона,тем выше в ней спрос.</p>
+														<p>На карте спроса синим цветом выделяются зоны, в которых действуют повышенные минималки в режиме «Назначать». Подробнее о них в разделе <a href="bonusy.html">Бонусы</a></p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#rezhim-raboty" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Режимы
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#bonusy" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Бонусы
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="bonusy" data-section="#dokhod-i-bonusy" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-630">
+										<div class="site-content-title site-content-title_air">
+											<h1>Бонусы</h1>
+											<p>За поездки с Ситимобил вы можете получать бонусы дополнительно к стоимости заказов. Будьте внимательны: все бонусы действуют только в режиме «Назначать».</p>
+										</div>
+
+										<p><strong>Бонусы для водителей [города]</strong></p>
+
+										<div class="card card_check">
+											<div>
+												<h2>Стандартные минималки</h2>
+												<div class="card-content text-normal">
+													<p>За каждую поездку в режиме «Назначать» водитель Ситимобил гарантированно получает не менее [ХХХ] рублей (до вычета комиссии) — вне зависимости от того, сколько платит пассажир. Вы можете быть уверены в стабильном доходе в любое время и в любом районе города.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card card_check">
+											<div>
+												<h2>Повышенные минималки</h2>
+												<div class="card-content text-normal">
+													<p>В определенных районах города и в определенное время могут действовать повышенные минималки. Этот бонус действует только на зеленом роботе и только в зонах, выделенных синим цветом на карте в приложении. Зоны повышенных минималок появляются на карте за час до начала их действия.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card card_check">
+											<div>
+												<h2>Персональная цель</h2>
+												<div class="card-content text-normal">
+													<p>У вас может появиться персональная цель — фиксированный бонус, который выплачивается дополнительно к стоимости поездок за выполнение определенных условий</p>
+													<p>Условия для получения фиксированного бонуса могут быть разными: например, выполнить конкретное количество поездок или заработать конкретную сумму за отрезок времени. Подробности всегда описаны в разделе Кабинет — Акции и бонусы — Персональная цель. Здесь же можно следить за своим прогрессом.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card card_check">
+											<div>
+												<h2>Гарантированный доход</h2>
+												<div class="card-content text-normal">
+													<p>Этот бонус защищает вас от «дешевых» поездок — если вы выполняете определенное количество заказов за сутки и зарабатываете меньше установленной суммы (до вычета комиссии), мы компенсируем разницу.</p>
+													<p>Отсчёт выполненных заказов начинается в 0:00. Учитываются все заказы, выполненные в режиме «Назначать» (включая предложенные, с комментариями).</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#karta-sprosa" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Карта спроса
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#brendirovaniye" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Брендирование
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="brendirovaniye" data-section="#dokhod-i-bonusy" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-630">
+										<div class="site-content-title site-content-title_air">
+											<h1>Брендирование</h1>
+											<p>Вы можете оклеить свой автомобиль или взять в аренду машину с брендингом Ситимобил. Зачем?</p>
+										</div>
+
+										<figure>
+											<img src="images/img-bonus.png" alt="">
+										</figure>
+
+										<div class="card">
+											<div>
+												<h2>Пониженная комиссия Ситимобил</h2>
+												<div class="card-content text-normal">
+													<p>19% для водителей без статуса, для обладателей статуса Silver — 16% и 14% — статуса Gold</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Приоритет в распределении заказов</h2>
+												<div class="card-content text-normal">
+													<p>если на примерно одинаковом расстоянии от клиента находятся две машины — с брендингом и без, заказ назначается автомобилю с оклейкой</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Бонус «Гарантированный доход»</h2>
+												<div class="card-content text-normal">
+													<p>Для водителей брендированных авто суммы доплат выше</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Повышенные минималки</h2>
+												<div class="card-content text-normal">
+													<p>Для водителей брендированных авто минимальная стоимость заказа выше</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Возможность выбирать заказы по способу оплаты</h2>
+												<div class="card-content text-normal">
+													<p>Даже в режиме «Назначать» водители могут ставить фильтр на заказы по способу их оплаты</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Ежемесячные выплаты</h2>
+												<div class="card-content text-normal">
+													<p>Для владельцев автомобилей: 4 000₽ для класса «Эконом», 6 000₽ — «Комфорт» и 8 000₽ — «Комфорт+» (при установке лайтбокса).</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card card_center text-normal">
+											<div>
+												<p>Вы можете сделать брендинг автомобиля, если на нем нет внешних дефектов и поврежденной пленки от прошлой оклейки.</p>
+												<p>Чтобы сохранять все преимущества брендинга, необходимо регулярно проходить фотоконтроль — как только вы получаете сообщение об этом.</p>
+											</div>
+										</div>
+
+										<div class="card text-normal">
+											<div>
+												<p>Вы можете бесплатно оклеить автомобиль по адресам:</p>
+												<ul class="ul-green">
+													<li>Первый адрес</li>
+													<li>Второй адрес</li>
+													<li>Третий адрес</li>
+												</ul>
+												<p><strong>Предварительно запишитесь по телефону</strong></p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#bonusy" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Бонусы
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#statusy" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Статусы
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="statusy" data-section="#dokhod-i-bonusy" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll site-content-body-scroll_large">
+								<div class="site-content-body-scroll-inner">
+									<div class="site-content-title site-content-title_air">
+										<h1>Статусы</h1>
+										<p>В Ситимобил есть система статусов. Получить статус<br> могут активные водители с высоким рейтингом:</p>
+									</div>
+
+									<div class="status-cards row text-normal">
+										<div class="status-cards-item status-cards-item_gold col-6">
+											<div>
+												<h3>Gold</h3>
+												<p>за 70 поездок<br> в неделю<br> и рейтинг </p>
+												<div class="status-cards-item-index">4.9</div>
+											</div>
+										</div>
+										<div class="status-cards-item status-cards-item_silver col-6">
+											<div>
+												<h3>Silver</h3>
+												<p>за 50 поездок<br> в неделю<br> и рейтинг</p>
+												<div class="status-cards-item-index">4.7</div>
+											</div>
+										</div>
+									</div>
+
+									<h2>Привилегии статусов</h2>
+
+									<div class="status-list row text-normal">
+										<div class="status-list-item status-list-item_gold col">
+											<div>
+												<div class="status-list-item-head"><span>Gold</span></div>
+												<div class="status-list-item-percent"><span></span>16%</div>
+												<div class="status-list-item-body">
+													<span></span>
+													<ul>
+														<li>Скидка на комиссию 2%<br> для брендированных<br> автомобилей</li>
+														<li>Приоритетная<br> портовая очередь</li>
+														<li>Приоритетная<br> поддержка по телефону</li>
+														<li>Участие<br> в розыгрышах призов</li>
+														<li>Повышенные<br> персональные цели</li>
+														<li>Выбор метода<br> оплаты заказов</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="status-list-item status-list-item_silver col">
+											<div>
+												<div class="status-list-item-head"><span>Silver</span></div>
+												<div class="status-list-item-percent">18%</div>
+												<div class="status-list-item-body">
+													<ul>
+														<li>Скидка на комиссию 2%<br> для брендированных<br> автомобилей</li>
+														<li>Приоритетная<br> портовая очередь</li>
+														<li>Приоритетная<br> поддержка по телефону</li>
+														<li>Участие<br> в розыгрышах призов</li>
+													</ul>
+												</div>
+											</div>
+										</div>
+										<div class="status-list-item status-list-item_none col">
+											<div>
+												<div class="status-list-item-head"><span>Без<br> статуса</span></div>
+												<div class="status-list-item-percent">20%</div>
+												<div class="status-list-item-body"></div>
+											</div>
+										</div>
+									</div>
+
+									<div>* Статусы пересматриваются каждый понедельник.<br> Комиссия партнера устанавливается отдельно.</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#brendirovaniye" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Брендирование
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#smeny" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Смены
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="smeny" data-section="#dokhod-i-bonusy" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll">
+								<div class="site-content-body-scroll-inner">
+									<div class="site-content-title">
+										<h1>Смены</h1>
+									</div>
+
+									<div class="smeny-card row">
+										<div class="col smeny-card-img">
+											<figure>
+												<img src="images/img-smeny.png" alt="">
+											</figure>
+										</div>
+										<div class="col smeny-card-text text-normal">
+											<p>Водители, которые совершили более 10 поездок с Ситимобил, могут покупать смены.</p>
+											<p>За все заказы, полученные в период действия смены в режиме «Назначать», комиссия Ситимобил не списывается — даже если поездка завершена после окончания смены. Комиссию партнера смена не отключает — она остается неизменной.</p>
+										</div>
+									</div>
+									<div class="warning">* Найти всю подробную информацию, а также купить смену можно в приложении: <strong>Кабинет — Акции и бонусы — Купить смену.</strong></div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#statusy" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Статусы
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#toplivnyye-karty" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Топливные карты
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="toplivnyye-karty" data-section="#dokhod-i-bonusy" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll">
+								<div class="site-content-body-scroll-inner">
+									<div class="site-content-title site-content-title_air">
+										<h1>Топливные карты</h1>
+										<p>Вы можете пользоваться топливными картами в приложении Ситимобил и оплачивать топливо с баланса водителя по фиксированной цене — ниже, чем на АЗС.</p>
+									</div>
+
+									<div class="fuel-maps row">
+										<div class="fuel-maps-item col-12 col-md-6">
+											<div class="row">
+												<div class="fuel-maps-item-img col-5 col-md-12">
+													<figure>
+														<img src="images/img-fuel-1.png" alt="">
+													</figure>
+												</div>
+												<div class="fuel-maps-item-text text-normal col-7 col-md-12">
+													<div>
+														<div>
+															<h2>Подключите</h2>
+															<p>Для того, чтобы воспользоваться картой, просто подключите свой аккаунт к приложению Turbo или FuelUP.</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="fuel-maps-item col-12 col-md-6">
+											<div class="row">
+												<div class="fuel-maps-item-img col-5 col-md-12">
+													<figure>
+														<img src="images/img-fuel-2.png" alt="">
+													</figure>
+												</div>
+												<div class="fuel-maps-item-text text-normal col-7 col-md-12">
+													<div>
+														<div>
+															<h2>Инструкция</h2>
+															<p>Посмотреть пошаговую инструкцию с иллюстрациями можно по ссылке: <a href="http://bit.ly/2K9fnFX">http://bit.ly/2K9fnFX</a></p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+
+									<div class="card card_middle">
+										<div>
+											<div class="card-content text-normal">
+												<p>Оплачивать топливо можно заранее, а заправляться — по необходимости.</p>
+												<p>Узнать, на каких АЗС действуют топливные карты, можно на сайтах FuelUP и Turbo.</p>
+												<p>Чтобы раздел Топливная карта появился в приложении, вам нужно обратиться к своему партнеру.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#smeny" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Смены
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#poyezdka-do-vo-vremya-i-posle" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Правила
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="poyezdka-do-vo-vremya-i-posle" data-section="#pravila" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-630">
+										<div class="site-content-title">
+											<h1>Поездка: до, во время и после</h1>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-1.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<h2>Навигация</h2>
+												<p>Перед началом поездки выберите удобный для вас навигатор в приложении или перейдите в навигатор на экране заказа.</p>
+												<p>В приложении: <strong>Меню — Настройки интерфейса — Навигатор по умолчанию.</strong></p>
+												<p>Чтобы выбрать навигатор на экране заказа, нажмите на значок <strong>Навигатор.</strong></p>
+												<p><strong>Обратите внимание: некоторые навигаторы ограничивают количество переходов из нашего приложения.</strong></p>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-1.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<h2>Принятие заказа</h2>
+												<p>В разных режимах работы заказы принимаются разными способами:</p>
+												<h4>В режиме «Назначать»</h4>
+												<p>Заказы назначаются автоматически, нажимать ничего не нужно. Просто скопируйте адрес в навигатор.</p>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-3.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<h4>В режиме «Предлагать»</h4>
+												<p>Нажмите «Принять заказ» на всплывающем окне или выберите заказ из списка.</p>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-4.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<p>Нажмите «Принять заказ» на всплывающем окне или выберите заказ из списка.</p>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-5.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<h2>Новый заказ</h2>
+												<p>Нажмите «Принять заказ» на всплывающем окне или выберите заказ из списка.</p>
+
+												<ul class="ul-green">
+													<li>Выбрать статус поездки</li>
+													<li>Перейти в навигатор или скопировать адрес, если открываете его в другом приложении</li>
+													<li>Узнать свое время в пути</li>
+													<li>Связаться с пассажиром</li>
+													<li>Связаться со службой поддержки</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-6.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<h2>Когда вы приняли заказ</h2>
+												<p>Если нажать на кнопку «i», вы увидите подробную информацию о заказе и клиенте.</p>
+
+												<h4>Когда вы приняли заказ</h4>
+												<ul class="ul-green">
+													<li>Не нажимайте кнопку «На месте» раньше, чем вы действительно будете в точке подачи</li>
+													<li>Не стойте на месте после принятия заказа</li>
+													<li>Отправляйтесь сразу на место подачи, а не в другую сторону</li>
+													<li>Не просите пассажира отменить заказ</li>
+													<li>Нельзя начать и сразу же завершить поездку</li>
+												</ul>
+												<div><strong>Мы внимательно относимся к таким ситуациям. Если вы не следуете этим правилам, для вас может быть закрыт доступ к заказам.</strong></div>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-7.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<h2>«Подъехать ко мне»</h2>
+												<p>Пассажир может попросить вас подъехать ближе (система оповестит об этом мигающей иконкой): адрес может немного отличаться от изначального.</p>
+
+												<ul class="ul-green">
+													<li>Если пассажир рядом с точкой подачи, можете подъехать ближе по его просьбе</li>
+													<li>Если пассажир далеко от точки подачи, свяжитесь с ним и уточните, куда именно подать автомобиль</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-8.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<h2>Время ожидания на месте</h2>
+												<p>После того как вы подъехали к точке подачи, нажмите «На месте». Так пассажир узнает, что вы приехали.</p>
+
+												<ul class="ul-green">
+													<li>В этот момент запустится таймер ожидания.</li>
+													<li>После 3-х минут таймер станет красным, а ожидание для клиента — платным.</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-9.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<h2>Время ожидания на месте</h2>
+
+												<ul class="ul-green">
+													<li>Если вы прибыли на место, а клиент не подходит к машине и не выходит на связь — позвоните или напишите ему.</li>
+													<li>Если клиент не ответил, то через 8 минут ожидания кнопка «Отказаться» сменится на «Клиент не вышел».</li>
+													<li>Баллы Мотивации при такой отмене заказа не спишутся, и звонить в службу поддержки не нужно.</li>
+												</ul>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-9.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<h2>Начало поездки</h2>
+												<p>После того как пассажир сел в автомобиль, уточните адрес назначения, пожелания по маршруту и нажмите кнопку «Поехали».</p>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-10.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<h2>Ожидание в пути</h2>
+												<p>Во время поездки пассажир может попросить вас сделать остановку, чтобы, например, зайти в магазин. Ожидание в пути оплачивается.</p>
+												<p>Для этого необходимо нажать кнопку <strong>«Ожидание».</strong></p>
+												<p>Заранее предупредите пассажира о платном ожидании.</p>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-poezdki-11.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<h2>Оценка пассажира</h2>
+												<p>По итогам поездки приложение предложит оценить клиента.</p>
+												<p>Вы можете поставить палец вверх или вниз — эти данные сохранятся в системе.</p>
+												<p>Также откроется окно, в котором можно сообщить о возникшей проблеме.</p>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#toplivnyye-karty" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Топливные карты
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#motivatsiya" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Мотивация
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="motivatsiya" data-section="#pravila" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-630">
+										<div class="site-content-title">
+											<h1>Мотивация</h1>
+											<p>Мотивация — показатель, который отражает<br> вашу работу на платформе Ситимобил.</p>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-motiv.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<p>Когда вы принимаете заказ, баллы Мотивации <strong>начисляются</strong>. А когда отменяете — <strong>вычитаются</strong>.</p>
+												<p>Изначальный показатель Мотивации — <strong>100 баллов</strong>.</p>
+											</div>
+										</div>
+
+										<div class="card card_middle">
+											<div>
+												<div class="card-content">
+													<p><strong>Если ваш показатель остается на высоком уровне, вам будут доступны повышенные минималки или базовые — в зависимости от количества баллов.</strong></p>
+													<p><strong>Если ваш показатель опускается ниже установленных порогов, вы потеряете доступ к бонусам и даже заказам.</strong></p>
+												</div>
+											</div>
+										</div>
+										<p>Узнать подробности и свой уровень Мотивации можно в разделе: <strong>Кабинет — Профиль — Мотивация.</strong></p>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#poyezdka-do-vo-vremya-i-posle" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Поездка
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#reyting" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Рейтинг
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="reyting" data-section="#pravila" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-630">
+										<div class="site-content-title">
+											<h1>Рейтинг</h1>
+											<p>Рейтинг — ещё один показатель работы водителя на линии.<br> Он складывается из оценок пассажиров после поездок.</p>
+										</div>
+
+										<div class="card card_middle">
+											<div>
+												<div class="card-content">
+													<h2 class="title-rating">На что влияет рейтинг?</h2>
+													<p>На получение статусов и вместе с ними — привилегий. Чтобы стать обладателем статуса Silver, необходимо удерживать рейтинг не ниже оценки <strong>4.7</strong>, статуса Gold — не ниже <strong>4.9</strong>.</p>
+													<p>На получение заказов: если рейтинг опускается ниже оценки <strong>4.6</strong>, аккаунт водителя блокируется (сначала временно, потом — навсегда).</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card card_middle">
+											<div>
+												<div class="card-content">
+													<h2 class="title-rating">Как рассчитывается рейтинг?</h2>
+													<p>Изначальный рейтинг всех водителей — <strong>4.7</strong>.</p>
+													<p>Этот уровень сохраняется, пока у водителя меньше 30 выполненных поездок с оценками от пассажиров.</p>
+													<p>После 30-й оцененной поездки рейтинг считается как простое среднее по последним 200 оценкам.</p>
+													<p>На рейтинг водителей не влияют низкие оценки с причинами «Стоимость поездки» и «Работа приложения».</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card card_middle">
+											<div>
+												<div class="card-content">
+													<h2 class="title-rating">Как повысить свой рейтинг?</h2>
+													<p>С каждой новой поездкой ваш рейтинг может расти. Главное — это вежливость, аккуратное вождение и соблюдение сервисных стандартов (подробнее о них в соответствующем разделе).</p>
+													<p>Создавайте комфортные условия для каждого пассажира и получайте только хорошие оценки!</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#motivatsiya" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Мотивация
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#fotokontrol" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Фотоконтроль
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="fotokontrol" data-section="#pravila" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll site-content-body-scroll_large">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-600">
+										<div class="site-content-title">
+											<h1>Фотоконтроль</h1>
+											<p>Мы регулярно просим водителей проходить фотоконтроль, чтобы подтвердить удовлетворительное состояние автомобиля. Вне зависимости от того, есть оклейка на машине или нет.</p>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-foto.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<div class="text-middle">
+													<div>
+														<p>Уведомление о необходимости пройти фотоконтроль появляется в разделе <strong>Кабинет — Новости.</strong></p>
+														<p>Фотографии автомобиля нужно загрузить в соответствующем разделе во вкладке <strong>Меню</strong>.</p>
+														<p>Важно всегда проходить фотоконтроль вовремя. Иначе ваш автомобиль может быть заблокирован, и вы потеряете доступ к заказам Ситимобил.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Как пройти фотоконтроль?</h2>
+												<div class="card-content">
+													<p>Успешно пройти фотоконтроль легко. Достаточно:</p>
+													<ul class="ul-green">
+														<li><strong>Загружать светлые и четкие фотографии</strong></li>
+														<li><strong>Поддерживать исправность, чистоту автомобиля и внутри, и снаружи</strong></li>
+														<li><strong>Соблюдать условия брендирования (при наличии оклейки)</strong></li>
+														<li><strong>Правильно фотографировать автомобиль</strong></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="card photocontrol-item">
+											<div>
+												<h2>Как сделать фото<br> правильно?</h2>
+												<div class="card-content">
+													<div class="row">
+														<div class="col-4">
+															<strong>Кузов спереди:</strong> световой короб (при наличии) и фары включены, отчетливо виден номер и все элементы брендирования.
+														</div>
+														<div class="col-4 photocontrol-ok">
+															<figure>
+																<img src="images/foto-1.png" alt="">
+															</figure>
+														</div>
+														<div class="col-4 photocontrol-no">
+															<figure>
+																<img src="images/foto-2.png" alt="">
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="card photocontrol-item photocontrol-item_col-2">
+											<div>
+												<h2>Как сделать фото<br> правильно?</h2>
+												<div class="card-content">
+													<div class="row">
+														<div class="col-12">
+															<strong>Кузов сбоку:</strong> машина на фото показана полностью от кузова до багажника, световой короб и фары включены, виден бортовой номер.
+														</div>
+														<div class="col-6 photocontrol-ok">
+															<figure>
+																<img src="images/foto-3.png" alt="">
+															</figure>
+														</div>
+														<div class="col-6 photocontrol-no">
+															<figure>
+																<img src="images/foto-4.png" alt="">
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="card photocontrol-item photocontrol-item_col-2">
+											<div>
+												<h2>Как сделать фото<br> правильно?</h2>
+												<div class="card-content">
+													<div class="row">
+														<div class="col-12">
+															<strong>Кузов сзади:</strong> фары и световой короб включены, номер и марка авто хорошо просматриваются, виден каждый элемент брендирования на борту.
+														</div>
+														<div class="col-6 photocontrol-ok">
+															<figure>
+																<img src="images/foto-5.png" alt="">
+															</figure>
+														</div>
+														<div class="col-6 photocontrol-no">
+															<figure>
+																<img src="images/foto-6.png" alt="">
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="card photocontrol-item photocontrol-item_col-2">
+											<div>
+												<h2>Как сделать фото<br> правильно?</h2>
+												<div class="card-content">
+													<div class="row">
+														<div class="col-12">
+															<strong>Салон спереди:</strong> виден каркас автомобиля, передняя часть салона показана полностью (панель, сиденья, коврики).
+														</div>
+														<div class="col-6 photocontrol-ok">
+															<figure>
+																<img src="images/foto-7.png" alt="">
+															</figure>
+														</div>
+														<div class="col-6 photocontrol-no">
+															<figure>
+																<img src="images/foto-8.png" alt="">
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+
+										<div class="card photocontrol-item">
+											<div>
+												<h2>Как сделать фото<br> правильно?</h2>
+												<div class="card-content">
+													<div class="row">
+														<div class="col-4">
+															<strong>Салон сзади:</strong> виден каркас автомобиля, задняя часть салона показана полностью (сиденья, коврики, ремни безопасности и детское кресло, при его наличии).
+														</div>
+														<div class="col-4 photocontrol-ok">
+															<figure>
+																<img src="images/foto-9.png" alt="">
+															</figure>
+														</div>
+														<div class="col-4 photocontrol-no">
+															<figure>
+																<img src="images/foto-10.png" alt="">
+															</figure>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#reyting" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Рейтинг
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#standarty-servisa" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Стандарты
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="standarty-servisa" data-section="#pravila" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll site-content-body-scroll_large">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-600">
+										<div class="site-content-title">
+											<h1>Стандарты сервиса</h1>
+											<p>Впечатление каждого пассажира от поездки<br> складывается из:</p>
+										</div>
+
+										<div class="standart-list row">
+											<div class="standart-item col-4">
+												<div>
+													<img src="images/ico-standart-1.svg" alt="">
+													<h3>Профессионализма водителя</h3>
+												</div>
+											</div>
+
+											<div class="standart-item col-4">
+												<div>
+													<img src="images/ico-standart-2.svg" alt="">
+													<h3>Безопасности движения</h3>
+												</div>
+											</div>
+
+											<div class="standart-item col-4">
+												<div>
+													<img src="images/ico-standart-3.svg" alt="">
+													<h3>Состояния автомобиля</h3>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Правила технической безопасности</h2>
+												<div class="card-content">
+													<p>Вы в первую очередь отвечаете за безопасность поездки. Поэтому следует соблюдать основные правила.</p>
+													<ul class="ul-green">
+														<li><strong>Следите за технической исправностью автомобиля, в том числе ремней и подушек безопасности.</strong></li>
+														<li><strong>Не соглашайтесь на поездки с детьми без кресла, даже если родители готовы взять ответственность на себя. Детское кресло должно быть исправно и соответствовать возрасту ребенка.</strong></li>
+														<li><strong>Отвечайте на звонки и сообщения только во время остановок.</strong></li>
+														<li><strong>Меняйте шины вовремя — в соответствии с сезоном.</strong></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Общение с пассажирами</h2>
+												<div class="card-content">
+													<p>Иногда поведение водителя может заставить пассажира чувствовать себя некомфортно, а значит, испортить впечатление о поездке и сервисе в целом. Поэтому мы рекомендуем:</p>
+													<ul class="ul-green">
+														<li><strong>Обращаться к пассажиру на вы, даже если он моложе вас</strong></li>
+														<li><strong>Не задавать личные вопросы и не обсуждать темы политики и религии</strong></li>
+														<li><strong>Не пытаться связаться с пассажиром после поездки</strong></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#fotokontrol" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Фотоконтроль
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#razdely-prilozheniya" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Приложение
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="razdely-prilozheniya" data-section="#pravila" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-600">
+										<div class="site-content-title">
+											<h1>Разделы приложения</h1>
+											<p>В приложении для водителей Ситимобил есть 4 основных раздела — <strong>Меню, Заказы, Спрос, Кабинет.</strong></p>
+										</div>
+
+										<div class="card card_check">
+											<div>
+												<h2>Меню</h2>
+												<div class="card-content text-normal">
+													<p>Здесь собрана информация о водителе, его рейтинг, баллы Мотивации, назначенные заказы.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card card_check">
+											<div>
+												<h2>Заказы</h2>
+												<div class="card-content text-normal">
+													<p>Список заказов, которые можно выбирать в режимах «Предлагать» и «Выключено».</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card card_check">
+											<div>
+												<h2>Спрос</h2>
+												<div class="card-content text-normal">
+													<p>Здесь вы увидите зоны с высоким спросом, а значит, повышенным коэффициентом.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card card_check">
+											<div>
+												<h2>Кабинет</h2>
+												<div class="card-content text-normal">
+													<p>Здесь собрана вся необходимая информация об акциях и бонусах, статусах, специальных предложениях, режимах, Мотивации, а также обучающие материалы.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="text-normal">* подробную информацию о каждом разделе<br> Вы найдете по <a href="#">ссылке</a></div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#standarty-servisa" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Стандарты
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#aeroporty" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Аэропорты
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="aeroporty" data-section="#pravila" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll site-content-body-scroll_large">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-600">
+										<div class="site-content-title">
+											<h1>Аэропорты</h1>
+										</div>
+
+										<div class="card">
+											<div>
+												<div class="card-content">
+													<p>В аэропортах своя система распределения заказов —  электронная очередь.</p>
+													<p>Все водители, которые хотят принять заказ из аэропорта, сначала попадают в электронную очередь. Место в ней — бесплатно.</p>
+													<p><strong>Распределение заказов зависит от разных условий:</strong></p>
+													<ul class="ul-green">
+														<li><strong>Высокий приоритет в портовых очередях у водителей (вне зависимости от статуса), которые приехали в аэропорт с пассажиром. Выполнив один заказ, они получают приоритет в получении следующего.</strong></li>
+														<li><strong>Средний приоритет получают водители со статусом Silver или Gold, но они приехали в аэропорт без заказа.</strong></li>
+														<li><strong>Водители без статуса, которые приехали в аэропорт без заказа, занимают места в очереди без приоритета.</strong></li>
+														<li><strong>МВодители на брендированных автомобилях получают приоритет перед другими водителями.</strong></li>
+													</ul>
+												</div>
+											</div>
+										</div>
+
+										<div class="media-card row">
+											<div class="col media-card-img">
+												<figure>
+													<img src="images/img-air.png" alt="">
+												</figure>
+											</div>
+											<div class="col media-card-text">
+												<div class="text-middle">
+													<div>
+														<p><strong>Чтобы не потерять место в портовой очереди, водитель должен оставаться в нужной зоне (ее границы отмечаются на карте в приложении).</strong></p>
+														<p><strong>Бесплатное ожидание клиентов в аэропортах увеличено и составляет 10 минут.</strong>.</p>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#razdely-prilozheniya" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Приложение
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#klassifikator-avtomobiley" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Классификатор
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="klassifikator-avtomobiley" data-section="#pravila" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll site-content-body-scroll_large">
+								<div class="site-content-body-scroll-inner">
+									<!-- <div class="content-600"> -->
+										<div class="site-content-title">
+											<h1>Классификатор автомобилей</h1>
+										</div>
+
+										<div class="card card_full">
+											<div>
+												<div class="card-content text-normal">
+													<p>В Ситимобил есть требования к автомобилям, на которых можно выполнять поездки. Они включают в себя марку автомобиля, модель и год выпуска.</p>
+													<p>Безусловно, все автомобили, подключенные к сервису Ситимобил, не должны иметь дефектов и внешних повреждений.</p>
+													<p>Здесь вы можете узнать, какие автомобили подходят для работы в разных тарифах, а также для брендирования в вашем городе.</p>
+													<p>Уточнить, подходит ли ваш автомобиль для работы с Ситимобил, вы всегда можете в своем таксопарке.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="klassifikator-list">
+											<h4>Автомобили для работы с Ситимобил</h4>
+											<ul class="ul-green">
+												<li>Эконом</li>
+												<li>Эконом Подмосковье</li>
+												<li>Комфорт</li>
+												<li>Комфорт +</li>
+												<li>Бизнес</li>
+												<li>Минивэн</li>
+											</ul>
+										</div>
+
+										<p>Перейдите по <a href="#">ссылке</a>, чтобы посмотреть полный список марок и моделей, которые подходят для работы с сервисом в Москве или Московской области.</p>
+									<!-- </div> -->
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#aeroporty" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Аэропорты
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#blokirovka" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Блокировка
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="blokirovka" data-section="#pravila" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll site-content-body-scroll_large">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-730">
+										<div class="site-content-title">
+											<h1>Блокировка</h1>
+											<p>Соблюдайте правила и стандарты качества нашего сервиса, чтобы не оказаться заблокированным и не потерять доступ к заказам.</p>
+										</div>
+
+										<div class="card card_full text-center">
+											<div>
+												<div class="card-content text-normal">
+													<p>Существуют временные и постоянные блокировки, которые зависят от количества нарушений и их деталей. Под блокировку попадают и водители, и автомобили.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="blocking-list">
+											<h4>Основные причины блокировок:</h4>
+											<ul class="ul-red">
+												<li>Низкий рейтинг</li>
+												<li>Низкий уровень Мотивации</li>
+												<li>Не пройден фотоконтроль</li>
+												<li>Нарушение стандартов качества или безопасности</li>
+												<li>Несоответствие водителя или автомобиля на линии тем, что указаны в системе</li>
+											</ul>
+										</div>
+
+										<div class="card card_full text-center">
+											<div>
+												<div class="card-content text-normal">
+													<p>Если вам не поступают заказы, возможно, вы заблокированы. Ситимобил всегда оповещает водителей о блокировке. Чтобы узнать ее причину и возможность снятия, обратитесь в свой таксопарк.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#klassifikator-avtomobiley" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Классификатор
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#strakhovaniye" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Страхование
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="strakhovaniye" data-section="#pravila" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-700">
+										<div class="site-content-title">
+											<h1>Страхование</h1>
+											<p>Все поездки Ситимобил, совершенные после 29 апреля 2019 года, застрахованы на 2 000 000 рублей</p>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Как работает страхование?</h2>
+												<div class="card-content text-normal">
+													<p>Страхование действует с момента, когда водитель начинает поездку с пассажиром и нажимает кнопку <strong>«Поехали»</strong> и заканчивается, когда водитель нажимает кнопку <strong>«Завершить»</strong>. Страхование перестает действовать, если пассажир отменяет поездку.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Кто застрахован?</h2>
+												<div class="card-content text-normal">
+													<p>Мы заботимся как о наших водителях, так и о пассажирах, поэтому страхование распространяется на всех. При этом количество застрахованных лиц не может превышать количество посадочных мест в автомобиле.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Что застраховано?</h2>
+												<div class="card-content text-normal">
+													<p>Ваша жизнь и здоровье.</p>
+												</div>
+											</div>
+										</div>
+
+										<div class="card">
+											<div>
+												<h2>Кто имеет право на страховую выплату?</h2>
+												<div class="card-content text-normal">
+													<p>Право на компенсацию имеют водитель и пассажиры, попавшие в ДТП во время поездки с Ситимобил. Застрахованы все, кто был в машине во время происшествия.</p>
+													<p>Обратите внимание: водитель не получает страховую выплату, если им были совершены грубые нарушения Правил дорожного движения.</p>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#blokirovka" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Блокировка
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#pomoshch" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Помощь
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="pomoshch" data-section="#pomoshch-section" class="hidden-content">
+					<div class="site-content-item">
+						<div class="site-content-body">
+							<div class="site-content-body-scroll site-content-body-scroll_large">
+								<div class="site-content-body-scroll-inner">
+									<div class="content-700">
+										<div class="site-content-title">
+											<h1>Помощь</h1>
+											<p>Если у вас есть вопросы, отправьте сообщение в службу<br> поддержки через приложение: в разделе <strong>Меню</strong> нажмите<br> кнопку <strong>Помощь</strong>, а затем — <strong>Поддержка</strong>.</p>
+										</div>
+
+										<div class="help-images">
+											<div class="help-images-list row">
+												<div class="help-images-item col-auto">
+													<img src="images/img-help-1.png" alt="">
+												</div>
+												<div class="help-images-item col-auto">
+													<img src="images/img-help-2.png" alt="">
+												</div>
+											</div>
+										</div>
+
+										<div class="help-addresses text-normal">
+											<div class="help-addresses-list row">
+												<div class="help-addresses-item col-12 col-md-6">
+													<h4>Дома такси и офисы Ситимобил:</h4>
+													<div class="row">
+														<div class="col col-md-12">
+															<div class="help-addresses-name">Дом такси Шереметьево</div>
+															<p><strong>Международное шоссе</strong><br> Режим работы: в пн-пт с 09:00 до 18:00</p>
+														</div>
+
+														<div class="col-auto col-md-12">
+															<div class="help-addresses-name">Дом такси Шереметьево</div>
+															<p><strong>ул. Архитектора Власова, д. 55</strong><br> Режим работы: 24/7</p>
+														</div>
+													</div>
+												</div>
+												<div class="help-addresses-item col-12 col-md-6">
+													<h4>Партнеры Ситимобил в Москве:</h4>
+													<div class="row">
+														<div class="col-md-12">
+															<div class="help-addresses-name">Офис</div>
+															<p><strong>Олонецкий проезд, 4к2, офис 5, этаж 4</strong><br> Режим работы: ежедневно с 09:00 до 21:00</p>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+							<span class="gradient gradient_top"></span>
+							<span class="gradient gradient_bottom"></span>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#strakhovaniye" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Страхование
+							</div>
+							<div class="nav-btn nav-btn_next">
+								<a href="#stante-voditelem" class="link-nav">Далее<svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M1 9L5 5L1 1" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg></a><br> Станьте водителем
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div id="stante-voditelem" data-section="#stante-voditelem-section" class="hidden-content">
+					<div class="site-content-item site-content-item_form">
+						<div class="home-content-inner">
+							<div class="row">
+								<div class="col-12 col-md home-content-text">
+									<h2>Хотите работать<br> с нами?</h2>
+									<p>Начните работать с Ситимобил — оставьте свой номер телефона, и с вами свяжется наш менеджер.</p>
+									<p>Также вы можете пройти регистрацию в офисах наших партнеров и в <a href="#">Домах такси Ситимобил.</a></p>
+								</div>
+								<div class="col-12 col-md home-content-form">
+									<div class="form-phone">
+										<div class="form-phone-list">
+											<div class="form-phone-item start active">
+												<div class="form-phone-step">
+													<form action="#">
+														<h3>Стать водителем</h3>
+														<div class="form-input form-input_tel">
+															<label for="your-tel">Введите номер телефона</label>
+															<input id="your-tel" type="tel" placeholder="+7" data-require>
+														</div>
+														<div class="form-btn">
+															<input type="submit" value="Оставить заявку" class="btn-step" data-step="tel">
+														</div>
+														<div class="form-privacy">
+															Нажимая на кнопку, я соглашаюсь<br> с условиями <a href="#" class="green" title="политики конфиденциальности">политики конфиденциальности</a>
+														</div>
+													</form>
+												</div>
+											</div>
+
+											<div class="form-phone-item">
+												<div class="form-phone-step">
+													<h3>Введите пароль из СМС</h3>
+													<div class="form-pass">
+														<input type="hidden" id="sms-total-pass">
+														<div class="form-pass-container sms-pass">
+															<input type="text" class="number" placeholder="X" data-require>
+															<input type="text" class="number" placeholder="X" data-require>
+															<input type="text" class="number" placeholder="X" data-require>
+															<input type="text" class="number" placeholder="X" data-require>
+														</div>
+													</div>
+													<div class="form-desc-sms">
+														Отправить пароль<br> повторно через: XXXX
+													</div>
+													<div class="form-btn">
+														<a href="#" class="btn btn-step" data-step="sms">Далее</a>
+													</div>
+												</div>
+											</div>
+
+											<div class="form-phone-item">
+												<div class="form-phone-step">
+													<form action="#">
+														<h3>Заполните поля</h3>
+														<div class="form-input form-input_name">
+															<input type="text" placeholder="Имя" data-require>
+														</div>
+														<div class="form-input form-input_city">
+															<input type="text" placeholder="Город" data-require>
+														</div>
+														<div class="form-btn">
+															<input type="submit" value="Готово" class="btn-step" data-step="client">
+														</div>
+													</form>
+												</div>
+											</div>
+
+											<div class="form-phone-item finish">
+												<div class="form-phone-step">
+													<figure>
+														<img src="images/form-ico-ok.svg" alt="">
+													</figure>
+													<h3>Спасибо!</h3>
+													<div class="form-desc-ok">
+														Мы скоро<br> свяжемся с вами
+													</div>
+													<div class="form-btn">
+														<a href="#" class="btn btn-step" data-step="close">Закрыть</a>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="features">
+							<h2>Преимущества работы<br> водителем с Ситимобил:</h2>
+							<div class="features-list row">
+								<div class="features-item col-6 col-md-3">
+									<div>
+										<div class="features-item-ico">
+											<div>
+												<img src="images/ico-feat-1.svg" alt="">
+											</div>
+										</div>
+										<div>Комиссия<br> от 14%</div>
+									</div>
+								</div>
+
+								<div class="features-item col-6 col-md-3">
+									<div>
+										<div class="features-item-ico">
+											<div>
+												<img src="images/ico-feat-2.svg" alt="">
+											</div>
+										</div>
+										<div>Стартовый бонус<br> 1 500 рублей</div>
+									</div>
+								</div>
+
+								<div class="features-item col-6 col-md-3">
+									<div>
+										<div class="features-item-ico">
+											<div>
+												<img src="images/ico-feat-3.svg" alt="">
+											</div>
+										</div>
+										<div>Поддержка<br> по телефону 24/7</div>
+									</div>
+								</div>
+
+								<div class="features-item col-6 col-md-3">
+									<div>
+										<div class="features-item-ico">
+											<div>
+												<img src="images/ico-feat-4.svg" alt="">
+											</div>
+										</div>
+										<div>Конечная точка<br> известна заранее</div>
+									</div>
+								</div>
+							</div>
+						</div>
+
+						<div class="site-content-pagination">
+							<div class="nav-btn nav-btn_prev">
+								<a href="#pomoshch" class="link-nav"><svg width="6" height="10" viewBox="0 0 6 10" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M5 0.999999L1 5L5 9" stroke="#1EA44F" stroke-linecap="round" stroke-linejoin="round"/></svg>Назад</a><br> Помощь
+							</div>
+						</div>
+					</div>
+				</div>
 			</main>
 		</div>
 
 		<footer class="site-footer">
-	<div class="site-footer-content">
-		<div class="container">
+	<div class="container">
+		<div class="site-footer-inner">
 			<div class="row">
-				<div class="col-lg-4">
-					<div class="site-footer-desc">
-						<div class="site-footer-desc-h">“Майнинг и металлургия 2019”<br> 2-я международная<br> выставка-форум<br>предприятий ГМК</div>
-						<div class="site-footer-desc-text"><span><strong>25—27 сентября 2019</strong></span><br> 2019 МВЦ “Новосибирск экспоцентр”</div>
-						<div class="site-footer-desc-contacts">Оргкомитет<br> Москва, Столешников пер., 7/2<br> <a href="tel:+74951081869">+7 /495/ 108-18-69</a><br> <a href="mailto:epo@miningmetall.com">epo@miningmetall.com</a><br> пн–пт 10:00—18:00 (msk)</div>
-						<div class="site-footer-soc">
-							<a href="http://tot.guru/" target="_blank" rel="nofollow noopener"><img src="images/tot.png" alt=""></a>
-							<div class="site-footer-soc-links">
-								<a href="https://vk.com" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="22px"> <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M31.762,1.611 C31.363,1.236 29.830,1.249 28.305,1.258 C26.750,1.266 25.206,1.280 24.849,1.434 C24.518,1.581 23.773,3.591 22.809,5.661 C21.714,8.003 20.362,10.254 19.506,10.242 C18.400,10.224 18.657,6.372 18.722,3.548 C18.765,1.675 18.496,1.090 18.250,0.905 C17.659,0.461 16.049,0.027 16.049,0.027 C16.049,0.027 11.240,-0.382 10.553,1.964 C11.467,2.097 13.049,1.770 12.439,9.010 C12.408,9.359 11.701,12.342 9.450,8.305 C8.897,7.306 6.739,1.284 5.997,1.258 C3.501,1.180 1.054,1.068 0.182,1.611 C-0.613,2.105 1.262,6.272 4.426,11.825 C7.011,16.371 9.754,19.918 14.478,20.809 C15.362,20.908 17.689,21.028 18.407,20.633 C18.907,20.362 18.300,16.422 19.978,16.052 C20.735,15.888 23.600,20.146 24.691,20.633 C25.352,20.930 26.811,21.042 28.305,20.986 C29.923,20.930 31.743,21.145 31.920,19.931 C32.315,17.215 27.050,13.680 26.892,12.002 C26.777,10.796 28.816,8.580 29.876,6.892 C31.167,4.843 32.569,2.372 31.762,1.611 "/></svg></a>
-								<a href="https://facebook.com" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="22px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M6.595,6.599 L6.595,4.839 C6.595,3.983 7.152,3.782 7.542,3.782 L9.946,3.782 L9.946,0.014 L6.635,-0.001 C2.961,-0.001 2.127,2.809 2.127,4.610 L2.127,6.599 L-0.000,6.599 L-0.000,9.256 L-0.000,10.997 L2.144,10.997 L2.144,21.999 L6.428,21.999 L6.428,10.997 L9.610,10.997 L9.765,9.271 L10.000,6.599 L6.595,6.599 Z"/></svg></a>
-								<a href="https://twitter.com" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="23px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M22.430,5.733 C22.446,5.985 22.446,6.236 22.446,6.488 C22.446,14.157 17.291,22.995 7.868,22.995 C4.965,22.995 2.268,22.043 -0.000,20.391 C0.412,20.444 0.809,20.462 1.237,20.462 C3.632,20.462 5.837,19.546 7.598,17.984 C5.346,17.930 3.458,16.259 2.808,13.960 C3.125,14.014 3.442,14.050 3.775,14.050 C4.235,14.050 4.695,13.978 5.124,13.852 C2.776,13.313 1.015,10.978 1.015,8.158 L1.015,8.087 C1.697,8.518 2.490,8.787 3.331,8.823 C1.951,7.781 1.047,6.003 1.047,3.991 C1.047,2.914 1.301,1.926 1.745,1.063 C4.267,4.584 8.058,6.883 12.309,7.135 C12.230,6.703 12.183,6.255 12.183,5.806 C12.183,2.608 14.467,0.004 17.306,0.004 C18.782,0.004 20.114,0.705 21.050,1.836 C22.208,1.585 23.318,1.099 24.302,0.435 C23.921,1.782 23.112,2.914 22.049,3.632 C23.080,3.507 24.080,3.183 25.000,2.734 C24.302,3.884 23.429,4.907 22.430,5.733 Z"/></svg></a>
-								<a href="https://instagram.com" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="22px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M16.133,21.999 L3.864,21.999 C1.734,21.999 -0.000,20.091 -0.000,17.749 L-0.000,10.397 L-0.000,8.742 L-0.000,4.250 C-0.000,1.907 1.734,-0.001 3.864,-0.001 L16.133,-0.001 C18.266,-0.001 20.000,1.907 20.000,4.250 L20.000,8.742 L20.000,10.399 L20.000,17.749 C20.000,20.091 18.266,21.999 16.133,21.999 ZM13.066,9.110 C13.000,8.985 12.931,8.861 12.855,8.742 C12.213,7.766 11.176,7.127 10.001,7.127 C8.827,7.127 7.787,7.766 7.145,8.742 C7.069,8.861 7.000,8.985 6.934,9.110 C6.649,9.671 6.480,10.313 6.480,11.001 C6.480,13.135 8.058,14.871 10.001,14.871 C11.941,14.871 13.520,13.135 13.520,11.001 C13.520,10.316 13.353,9.671 13.066,9.110 ZM17.685,3.019 L17.685,2.534 L17.244,2.537 L14.296,2.546 L14.306,6.274 L17.685,6.262 L17.685,3.019 ZM18.052,9.883 L18.052,8.742 L15.067,8.742 C15.140,8.945 15.204,9.151 15.259,9.363 C15.394,9.883 15.468,10.432 15.468,11.001 C15.468,14.317 13.016,17.014 10.001,17.014 C6.984,17.014 4.532,14.317 4.532,11.001 C4.532,10.432 4.606,9.883 4.740,9.363 C4.796,9.151 4.859,8.945 4.933,8.742 L1.948,8.742 L1.948,9.883 L1.948,17.749 C1.948,18.913 2.808,19.856 3.864,19.856 L16.133,19.856 C17.191,19.856 18.052,18.913 18.052,17.749 L18.052,9.883 Z"/></svg></a>
-							</div>
-						</div>
+				<div class="col site-footer-nav">
+					<ul>
+						<li><a href="#">О компании</a></li>
+						<li><a href="#">Публичная оферта</a></li>
+						<li><a href="#">Новости</a></li>
+						<li><a href="#">Контакты</a></li>
+					</ul>
+				</div>
+				<div class="col site-footer-soc">
+					<div class="site-footer-soc-list">
+						<a href="#" title="Вконтакте" target="_blank"><span><span><img src="images/ico-soc-vk.svg" alt=""></span></span></a>
+						<a href="#" title="Instagram" target="_blank"><span><span><img src="images/ico-soc-insta.svg" alt=""></span></span></a>
+						<a href="#" title="Facebook" target="_blank"><span><span><img src="images/ico-soc-f.svg" alt=""></span></span></a>
+						<a href="#" title="Одноклассники" target="_blank"><span><span><img src="images/ico-soc-ok.svg" alt=""></span></span></a>
+						<a href="#" title="Twitter" target="_blank"><span><span><img src="images/ico-soc-t.svg" alt=""></span></span></a>
 					</div>
 				</div>
-				<div class="col hidden-md">
-					<div class="site-footer-item">
-						<div class="site-footer-nav">
-							<h3>О выставке</h3>
-							<ul>
-								<li><a href="#">Тематические разделы</a></li>
-								<li><a href="#">Деловая программа</a></li>
-								<li><a href="#">Государственная поддержка</a></li>
-								<li><a href="#">Информационная поддержка</a></li>
-								<li><a href="#">Приветствия</a></li>
-								<li><a href="#">Место проведения</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col hidden-md">
-					<div class="site-footer-item">
-						<div class="site-footer-nav">
-							<h3>Участникам</h3>
-							<ul>
-								<li><a href="#">Заявка на участие в форуме</a></li>
-								<li><a href="#">План экспозиции</a></li>
-								<li><a href="#">Заявка на рекламу</a></li>
-								<li><a href="#">Каталог выставки-форума</a></li>
-							</ul>
-						</div>
-						<div class="site-footer-nav">
-							<h3>Посетителям</h3>
-							<ul>
-								<li><a href="#">Пригласительный билет</a></li>
-								<li><a href="#">Участники выставки</a></li>
-								<li><a href="#">Место проведения</a></li>
-							</ul>
-						</div>
-					</div>
-				</div>
-				<div class="col hidden-md">
-					<div class="site-footer-item">
-						<div class="site-footer-nav">
-							<h3>Пресс-центр</h3>
-							<ul>
-								<li><a href="#">Новости</a></li>
-								<li><a href="#">Пресса о нас</a></li>
-								<li><a href="#">Материалы для СМИ</a></li>
-								<li><a href="#">Фотогалерея</a></li>
-							</ul>
-						</div>
-						<div class="site-footer-soc">
-							<a href="http://tot.guru/" target="_blank" rel="nofollow noopener"><img src="images/tot.png" alt=""></a>
-							<div class="site-footer-soc-links">
-								<a href="https://vk.com" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32px" height="22px"> <path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M31.762,1.611 C31.363,1.236 29.830,1.249 28.305,1.258 C26.750,1.266 25.206,1.280 24.849,1.434 C24.518,1.581 23.773,3.591 22.809,5.661 C21.714,8.003 20.362,10.254 19.506,10.242 C18.400,10.224 18.657,6.372 18.722,3.548 C18.765,1.675 18.496,1.090 18.250,0.905 C17.659,0.461 16.049,0.027 16.049,0.027 C16.049,0.027 11.240,-0.382 10.553,1.964 C11.467,2.097 13.049,1.770 12.439,9.010 C12.408,9.359 11.701,12.342 9.450,8.305 C8.897,7.306 6.739,1.284 5.997,1.258 C3.501,1.180 1.054,1.068 0.182,1.611 C-0.613,2.105 1.262,6.272 4.426,11.825 C7.011,16.371 9.754,19.918 14.478,20.809 C15.362,20.908 17.689,21.028 18.407,20.633 C18.907,20.362 18.300,16.422 19.978,16.052 C20.735,15.888 23.600,20.146 24.691,20.633 C25.352,20.930 26.811,21.042 28.305,20.986 C29.923,20.930 31.743,21.145 31.920,19.931 C32.315,17.215 27.050,13.680 26.892,12.002 C26.777,10.796 28.816,8.580 29.876,6.892 C31.167,4.843 32.569,2.372 31.762,1.611 "/></svg></a>
-								<a href="https://facebook.com" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="10px" height="22px"><path fill-rule="evenodd" fill="rgb(255, 255, 255)" d="M6.595,6.599 L6.595,4.839 C6.595,3.983 7.152,3.782 7.542,3.782 L9.946,3.782 L9.946,0.014 L6.635,-0.001 C2.961,-0.001 2.127,2.809 2.127,4.610 L2.127,6.599 L-0.000,6.599 L-0.000,9.256 L-0.000,10.997 L2.144,10.997 L2.144,21.999 L6.428,21.999 L6.428,10.997 L9.610,10.997 L9.765,9.271 L10.000,6.599 L6.595,6.599 Z"/></svg></a>
-								<a href="https://twitter.com" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="25px" height="23px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M22.430,5.733 C22.446,5.985 22.446,6.236 22.446,6.488 C22.446,14.157 17.291,22.995 7.868,22.995 C4.965,22.995 2.268,22.043 -0.000,20.391 C0.412,20.444 0.809,20.462 1.237,20.462 C3.632,20.462 5.837,19.546 7.598,17.984 C5.346,17.930 3.458,16.259 2.808,13.960 C3.125,14.014 3.442,14.050 3.775,14.050 C4.235,14.050 4.695,13.978 5.124,13.852 C2.776,13.313 1.015,10.978 1.015,8.158 L1.015,8.087 C1.697,8.518 2.490,8.787 3.331,8.823 C1.951,7.781 1.047,6.003 1.047,3.991 C1.047,2.914 1.301,1.926 1.745,1.063 C4.267,4.584 8.058,6.883 12.309,7.135 C12.230,6.703 12.183,6.255 12.183,5.806 C12.183,2.608 14.467,0.004 17.306,0.004 C18.782,0.004 20.114,0.705 21.050,1.836 C22.208,1.585 23.318,1.099 24.302,0.435 C23.921,1.782 23.112,2.914 22.049,3.632 C23.080,3.507 24.080,3.183 25.000,2.734 C24.302,3.884 23.429,4.907 22.430,5.733 Z"/></svg></a>
-								<a href="https://instagram.com" target="_blank" rel="nofollow noopener"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="20px" height="22px"><path fill-rule="evenodd"  fill="rgb(255, 255, 255)" d="M16.133,21.999 L3.864,21.999 C1.734,21.999 -0.000,20.091 -0.000,17.749 L-0.000,10.397 L-0.000,8.742 L-0.000,4.250 C-0.000,1.907 1.734,-0.001 3.864,-0.001 L16.133,-0.001 C18.266,-0.001 20.000,1.907 20.000,4.250 L20.000,8.742 L20.000,10.399 L20.000,17.749 C20.000,20.091 18.266,21.999 16.133,21.999 ZM13.066,9.110 C13.000,8.985 12.931,8.861 12.855,8.742 C12.213,7.766 11.176,7.127 10.001,7.127 C8.827,7.127 7.787,7.766 7.145,8.742 C7.069,8.861 7.000,8.985 6.934,9.110 C6.649,9.671 6.480,10.313 6.480,11.001 C6.480,13.135 8.058,14.871 10.001,14.871 C11.941,14.871 13.520,13.135 13.520,11.001 C13.520,10.316 13.353,9.671 13.066,9.110 ZM17.685,3.019 L17.685,2.534 L17.244,2.537 L14.296,2.546 L14.306,6.274 L17.685,6.262 L17.685,3.019 ZM18.052,9.883 L18.052,8.742 L15.067,8.742 C15.140,8.945 15.204,9.151 15.259,9.363 C15.394,9.883 15.468,10.432 15.468,11.001 C15.468,14.317 13.016,17.014 10.001,17.014 C6.984,17.014 4.532,14.317 4.532,11.001 C4.532,10.432 4.606,9.883 4.740,9.363 C4.796,9.151 4.859,8.945 4.933,8.742 L1.948,8.742 L1.948,9.883 L1.948,17.749 C1.948,18.913 2.808,19.856 3.864,19.856 L16.133,19.856 C17.191,19.856 18.052,18.913 18.052,17.749 L18.052,9.883 Z"/></svg></a>
-							</div>
-						</div>
-					</div>
-				</div>
+				<div class="col-12 site-footer-copy">© 2019 Citymobil</div>
 			</div>
 		</div>
-	</div>
-	<div class="site-footer-bottom">
-		<div class="container">© МОСКВА, 2017-2019<br> ВСЕ ПРАВА ЗАЩИЩЕНЫ. ПРИ КОПИРОВАНИИ И ИСПОЛЬЗОВАНИИ МАТЕРИАЛОВ САЙТА, СCЫЛКА И АКТИВНАЯ ГИПЕРССЫЛКА НА САЙТ MININGMETALL.COM ОБЯЗАТЕЛЬНА.<br> © "МАЙНИНГ И МЕТАЛЛУРГИЯ 2018–2019". ВСЕ ПРАВА ЗАЩИЩЕНЫ</div>
 	</div>
 </footer>
 	</div>
