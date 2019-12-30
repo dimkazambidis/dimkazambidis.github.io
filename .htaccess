@@ -45,5 +45,5 @@ AddOutputFilterByType DEFLATE text/html text/plain text/xml application/xml appl
 </ifModule>
 
 RewriteEngine On
-RewriteCond %{HTTP_HOST} dimkazambidis.github.io/
+RewriteCond %{HTTP_HOST} dimkazambidis.github.io
 RewriteRule (.*) https://dimkazambidis.ru/$1 [R=301,L]
