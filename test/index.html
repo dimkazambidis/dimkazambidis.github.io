@@ -34,21 +34,21 @@
 			<div class="site-header-info">
 				<div class="container">
 					<div class="row">
-						<div class="col-auto site-header-info-item site-header-logo">
+						<div class="col-md-auto site-header-info-item site-header-logo">
 							<div>
 								<div>
 									<img src="images/logo.svg" alt="Logotype">
 								</div>
 							</div>
 						</div>
-						<div class="col site-header-info-item site-header-desc">
+						<div class="col-md-5 site-header-info-item site-header-desc">
 							<div>
 								<div>
 									<p>Диспетчерская служба грузоперевозки<br> из Москвы во все города</p>
 								</div>
 							</div>
 						</div>
-						<div class="col site-header-info-item site-header-contacts">
+						<div class="col-auto col-md site-header-info-item site-header-contacts">
 							<div>
 								<div>
 									<i class="fas fa-phone-alt"></i> <a href="tel:88007004986" title="Позвонить нам">8 (800) 700-49-86</a>
@@ -58,7 +58,7 @@
 						<div class="col-auto site-header-info-item site-header-call">
 							<div>
 								<div>
-									<i class="fas fa-headset"></i> <a href="#" title="Заказать звонок">Заказать звонок</a>
+									<i class="fas fa-headset"></i> <a href="#popup-call" title="Заказать звонок" data-popup>Заказать звонок</a>
 								</div>
 							</div>
 						</div>
@@ -75,7 +75,7 @@
 							<div class="main-banner-content">
 								<h1>Грузоперевозке в <strong>Москве</strong></h1>
 								<div class="main-banner-desc"><br>У нас выгодные цены на грузоперевозки</div>
-								<a href="#" class="btn" title="Запросить расчёт стоимости">Запросить расчёт стоимости</a>
+								<a href="#popup-calc" class="btn" title="Запросить расчёт стоимости" data-popup>Запросить расчёт стоимости</a>
 							</div>
 						</div>
 					</div>
@@ -84,8 +84,8 @@
 				<nav class="page-nav">
 					<div class="container">
 						<div class="row">
-							<div class="col-4 page-nav-item">
-								<a href="#" title="Как мы работаем?">
+							<div class="col-md-4 page-nav-item">
+								<a href="#steps" title="Как мы работаем?" data-anchor>
 									<span>
 										<span>
 											<i class="far fa-question-circle"></i><br>
@@ -94,8 +94,8 @@
 									</span>
 								</a>
 							</div>
-							<div class="col-4 page-nav-item">
-								<a href="#" title="Преимущества">
+							<div class="col-md-4 page-nav-item">
+								<a href="#features" title="Преимущества" data-anchor>
 									<span>
 										<span>
 											<i class="fas fa-check-double"></i><br>
@@ -104,8 +104,8 @@
 									</span>
 								</a>
 							</div>
-							<div class="col-4 page-nav-item">
-								<a href="#" title="Заявка на расчет">
+							<div class="col-md-4 page-nav-item">
+								<a href="#request" title="Заявка на расчет" data-anchor>
 									<span>
 										<span>
 											<i class="fas fa-calculator"></i><br>
@@ -129,7 +129,7 @@
 					<div class="container">
 						<h2 class="title-section title-section_center">Грузоперевозки в Москве</h2>
 						<div class="row">
-							<div class="col-6 services-item">
+							<div class="col-md-6 services-item">
 								<div>
 									<div>
 										<a href="#" title="Перевозка грузов по России из Москвы"><img src="images/services_1.png" alt=""></a>
@@ -140,7 +140,7 @@
 								</div>
 							</div>
 
-							<div class="col-6 services-item">
+							<div class="col-md-6 services-item">
 								<div>
 									<div>
 										<a href="#" title="Аренда фуры 10 тонн"><img src="images/services_2.png" alt=""></a>
@@ -151,7 +151,7 @@
 								</div>
 							</div>
 
-							<div class="col-6 services-item">
+							<div class="col-md-6 services-item">
 								<div>
 									<div>
 										<a href="#" title="Аренда фуры 20 тонн"><img src="images/services_3.png" alt=""></a>
@@ -162,7 +162,7 @@
 								</div>
 							</div>
 
-							<div class="col-6 services-item">
+							<div class="col-md-6 services-item">
 								<div>
 									<div>
 										<a href="#" title="Перевозка грузов другим транспортом"><img src="images/services_1.png" alt=""></a>
@@ -173,7 +173,7 @@
 								</div>
 							</div>
 
-							<div class="col-6 services-item">
+							<div class="col-md-6 services-item">
 								<div>
 									<div>
 										<a href="#" title="Стоимость перевозки грузов в Москва"><img src="images/services_1.png" alt=""></a>
@@ -187,32 +187,31 @@
 					</div>
 				</section>
 
-				<section class="request">
+				<section id="request" class="request">
 					<div class="container">
 						<div class="request-inner">
-							<!-- <div class="request-ico"><i class="fas fa-headset"></i></div> -->
 							<h2 class="title-section title-section_center">Заявка на расчёт</h2>
 							<p>Наш сайт позволяет за несколько минут найти надежного перевозчика для любых целей по самым выгодным ценам. Просто разместите заявку, и мы Вам предложим лучшую цену!</p>
 							<form action="#">
 								<div class="row justify-content-center">
-									<div class="col-4 request-input input-container">
+									<div class="col-md-4 request-input input-container">
 										<label for="request-from">Откуда (укажите город):</label>
 										<input type="text" id="request-from" name="request-from" require>
 									</div>
-									<div class="col-4 request-input input-container">
+									<div class="col-md-4 request-input input-container">
 										<label for="request-to">Куда (укажите город):</label>
 										<input type="text" id="request-to" name="request-to" require>
 									</div>
-									<div class="col-2 request-input input-container">
+									<div class="col-6 col-md-2 request-input input-container">
 										<label for="request-weight">Вес (кг):</label>
 										<input type="text" id="request-weight" name="request-weight" require>
 									</div>
-									<div class="col-2 request-input input-container">
+									<div class="col-6 col-md-2 request-input input-container">
 										<label for="request-size">Объём (м3):</label>
 										<input type="text" id="request-size" name="request-size" require>
 									</div>
 
-									<div class="col-4 request-submit">
+									<div class="col-md-4 request-submit">
 										<input type="submit" value="Отправить заявку">
 									</div>
 								</div>
@@ -221,25 +220,25 @@
 					</div>
 				</section>
 
-				<section class="features">
+				<section id="features" class="features">
 					<div class="container">
 						<h2 class="title-section title-section_center">Преимущества Logotype</h2>
 						<div class="row">
-							<div class="col-4 features-item">
+							<div class="col-md-4 features-item">
 								<div class="features-ico">
 									<i class="fas fa-map-marked-alt"></i>
 								</div>
 								<h3>Широкая география доставки</h3>
 								<p>Охватываем всю Россию<br> +1200 населенных пунктов</p>
 							</div>
-							<div class="col-4 features-item">
+							<div class="col-md-4 features-item">
 								<div class="features-ico">
 									<i class="fas fa-headset"></i>
 								</div>
 								<h3>Высокий клиенский сервис</h3>
 								<p>Время ответа менеджера<br> на каждый запрос гарантированно<br> не более 5 минут</p>
 							</div>
-							<div class="col-4 features-item">
+							<div class="col-md-4 features-item">
 								<div class="features-ico">
 									<i class="fas fa-file-signature"></i>
 								</div>
@@ -250,7 +249,7 @@
 					</div>
 				</section>
 
-				<section class="steps">
+				<section id="steps" class="steps">
 					<div class="container">
 						<h2 class="title-section title-section_center">Как мы работаем</h2>
 						<div class="steps-list">
@@ -317,32 +316,32 @@
 					<div class="container">
 						<h2 class="title-section">Мы работаем и в других городах</h2>
 						<div class="row">
-							<div class="col-6">
+							<div class="col-md-6">
 								<div class="cities-item">
 									<a href="#" title="Гркузоперевозки в Искитиме">Гркузоперевозки в <strong>Искитиме</strong></a>
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-md-6">
 								<div class="cities-item">
 									<a href="#" title="Гркузоперевозки в Усть-Калманке">Гркузоперевозки в <strong>Усть-Калманке</strong></a>
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-md-6">
 								<div class="cities-item">
 									<a href="#" title="Гркузоперевозки в Переволоцком">Гркузоперевозки в <strong>Переволоцком</strong></a>
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-md-6">
 								<div class="cities-item">
 									<a href="#" title="Гркузоперевозки в Братске">Гркузоперевозки в <strong>Братске</strong></a>
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-md-6">
 								<div class="cities-item">
 									<a href="#" title="Гркузоперевозки в Завьялово">Гркузоперевозки в <strong>Завьялово</strong></a>
 								</div>
 							</div>
-							<div class="col-6">
+							<div class="col-md-6">
 								<div class="cities-item">
 									<a href="#" title="Гркузоперевозки в Сеченово">Гркузоперевозки в <strong>Сеченово</strong></a>
 								</div>
@@ -357,21 +356,21 @@
 	<div class="site-footer-content">
 		<div class="container">
 			<div class="row">
-				<div class="col-auto site-header-info-item site-header-logo">
+				<div class="col-md-auto site-header-info-item site-header-logo">
 					<div>
 						<div>
 							<img src="images/logo.svg" alt="Logotype">
 						</div>
 					</div>
 				</div>
-				<div class="col site-header-info-item site-header-desc">
+				<div class="col-md site-header-info-item site-header-desc">
 					<div>
 						<div>
 							<p>Диспетчерская служба грузоперевозки<br> из Москвы во все города</p>
 						</div>
 					</div>
 				</div>
-				<div class="col site-header-info-item site-header-contacts">
+				<div class="col-md site-header-info-item site-header-contacts">
 					<div>
 						<div>
 							<div class="footer-contacts-item">
@@ -381,7 +380,7 @@
 								<i class="fas fa-envelope"></i> <a href="mailto:gruz@logotype.ru" title="Написать нам">gruz@logotype.ru</a>
 							</div>
 							<div class="footer-contacts-item">
-								<i class="fas fa-headset"></i> <a href="#" title="Заказать звонок">Заказать звонок</a>
+								<i class="fas fa-headset"></i> <a href="#popup-call" title="Заказать звонок" data-popup>Заказать звонок</a>
 							</div>
 						</div>
 					</div>
@@ -400,6 +399,76 @@
 		<div class="container">© 2018 Logotype. Все права защищены.</div>
 	</div>
 </footer>
+
+		<div id="popup-call" class="popup popup_inline">
+			<div class="popup-bg"></div>
+			<div class="popup-inner">
+				<div>
+					<div>
+						<div class="popup-content">
+							<div>
+								<h2 class="title-section">Заказать звонок</h2>
+								<form action="#">
+									<div class="request-input input-container">
+										<label for="call-name">Укажите имя</label>
+										<input type="text" id="call-name" name="call-name" require>
+									</div>
+									<div class="request-input input-container">
+										<label for="call-tel">Укажите телефон</label>
+										<input type="tel" id="call-tel" name="call-tel" require>
+									</div>
+
+									<p>Нажатием на кнопку "Отправить заявку" я даю свое согласие на обработку персональных данных в соответствии с указанными <a href="term.html" target="blank">здесь</a> условиями.</p>
+
+									<div class="request-submit">
+										<input type="submit" value="Отправить заявку">
+									</div>
+								</form>
+							</div>
+
+							<a href="#" class="popup-close" title="Закрыть"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="popup-calc" class="popup popup_inline">
+			<div class="popup-bg"></div>
+			<div class="popup-inner">
+				<div>
+					<div>
+						<div class="popup-content">
+							<div>
+								<h2 class="title-section">Заявка на расчет</h2>
+								<form action="#">
+									<div class="request-input input-container">
+										<label for="calc-name">Укажите имя*</label>
+										<input type="text" id="calc-name" name="calc-name" require>
+									</div>
+									<div class="request-input input-container">
+										<label for="calc-tel">Укажите телефон*</label>
+										<input type="tel" id="calc-tel" name="calc-tel" require>
+									</div>
+									<div class="request-input input-container">
+										<label for="calc-detail">Подробности заявки:</label>
+										<textarea name="detail" id="detail" rows="4"></textarea>
+									</div>
+
+									<p>Нажатием на кнопку "Отправить заявку" я даю свое согласие на обработку персональных данных в соответствии с указанными <a href="term.html" target="blank">здесь</a> условиями.</p>
+
+									<div class="request-submit">
+										<input type="submit" value="Отправить заявку">
+									</div>
+								</form>
+							</div>
+
+							<a href="#" class="popup-close" title="Закрыть"></a>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
 	</div>
 
 	<link rel="stylesheet" href="css/style.css">
