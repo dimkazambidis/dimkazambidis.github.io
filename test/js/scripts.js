@@ -130,7 +130,6 @@ void 0!==c?null===c?void r.removeAttr(a,b):e&&"set"in e&&void 0!==(d=e.set(a,c,b
 	//Close popup (click out of content)
 	document.querySelectorAll('.popup').forEach( function(item, i, arr) {
 		item.addEventListener('click', function(e) {
-			e.preventDefault();
 
 			var p = closest(e.target, '.popup-content');
 			var t = this.id;

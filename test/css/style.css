@@ -9988,4 +9988,10 @@ body.popup_on .popup.visible .popup-inner {
 
 body {
   opacity: 1;
+  -webkit-transition: opacity 0.4s;
+  -o-transition: opacity 0.4s;
+  transition: opacity 0.4s;
+  -webkit-transition-delay: 0.2s;
+       -o-transition-delay: 0.2s;
+          transition-delay: 0.2s;
 }
